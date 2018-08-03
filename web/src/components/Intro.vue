@@ -1,8 +1,8 @@
 <template>
-   <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}">  
+   <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}" v-if="seen">  
         <div class="container">
             <a>
-                <img src='../assets/media/logo.png'>
+                <img src='../assets/media/logo.png' v-on:click="seen = !seen">
             </a>
                 <p class="hidden-md hidden-lg subt-responsive">{{ legend }}</p> 
         </div>    
@@ -15,6 +15,7 @@ export default {
   name: 'intro',
   data () {
     return {
+      seen: true,
       background: '../assets/media/intro.jpg',
       logo: '../assets/media/logo.png',
       legend: 'Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología.'
@@ -48,22 +49,22 @@ section {
 @media screen and (min-width: 701px) {
 
   p {
-    font-size: 25px;
+    display: none;
   }
 
   img {
-    width: 600px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 700px) {
 
   p {
-    font-size: 18px;
+    display: none;
   }
 
   img {
-    width: 350px;
+    width: 250px;
   }
 }
 

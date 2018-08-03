@@ -28,6 +28,9 @@
 <script>
 export default {
     name: 'slides',
+    components: {
+        slidesinfo
+    },
   data () {
     return {
     }

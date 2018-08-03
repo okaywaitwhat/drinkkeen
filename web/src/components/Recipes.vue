@@ -29,8 +29,13 @@
 </template>
 
 <script>
+import filterscol from './components/FiltersColumns'
+
 export default {
   name: 'recipes',
+  components: {
+    filterscol
+  },
   data () {
     return {
     }
@@ -40,7 +45,7 @@ export default {
 
 <style scoped lang="scss">
 
-section { //fix 2 sections
+#recipesSection { //fix 2 sections
   float: center;
   background: #e9ecef;
   padding: 4rem;
@@ -75,4 +80,9 @@ section { //fix 2 sections
   align-content: space-between;
 }
 
+@media screen and (max-width: 700px) {
+  #recipesSection {
+    padding: 1rem !important;
+  }
+}
 </style>

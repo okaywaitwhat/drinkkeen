@@ -18,8 +18,13 @@
 </template>
 
 <script>
+import slides from './components/Slides'
+
 export default {
     name: 'carousel',
+    components: {
+      slides
+    },
   data () {
     return {
     }

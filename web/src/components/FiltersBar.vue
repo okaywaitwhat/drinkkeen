@@ -1,5 +1,5 @@
 <template>
-    <section id="filtersBar">
+    <section>
         <div class="pos-f-t">
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-light p-4">
@@ -159,10 +159,16 @@ export default {
 
 <style lang="scss" scoped>
 
-#filtersBar {
+section {
   float: center;
   background: #e9ecef;
   display: none;
+}
+
+@media screen and (min-width: 701px) {
+  section {
+    display: none;
+  }
 }
 
 </style>

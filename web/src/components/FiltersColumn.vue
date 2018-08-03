@@ -1,5 +1,5 @@
 <template>
-    <aside class="filters" id="recipesFilters">
+    <section class="filters" id="recipesFilters">
             <h5>Filtrar por</h5>
                 <span>Tipo de mixología</span>
                         <nav>
@@ -130,10 +130,11 @@
                                 </dt>
                             </dl>
                         </nav>
-            </aside>
+            </section>
 </template>
 
 <script>
+
 export default {
   name: 'filterscol',
   data () {
@@ -141,16 +142,22 @@ export default {
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
 
-#recipesFilters {
+section {
   background: #e9ecef;
   float: left;
   text-align: left;
   display: none;
 }
 
+@media screen and (max-width: 700px) {
+  section {
+    display: none !important;
+  }
+}
 </style>
 

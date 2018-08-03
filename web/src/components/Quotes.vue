@@ -3,7 +3,7 @@
         <div class="jumbotron jumbotron-fluid vertical-center">
           <div class="container d-flex">
             <blockquote class="blockquote mb-0">
-              <h1 class="display-4 quote-responsive"></h1>
+              <h1 class="display-4"></h1>
               <p class="lead"></p>
             </blockquote>
           </div>
@@ -13,11 +13,13 @@
 
 <script>
 
+import quotes from '../data/quotes.js'
+
 export default {
   name: 'quotes',
   data () {
     return {
-     
+     quotes
     }
   }
 }
@@ -41,4 +43,15 @@ div {
   }
 }
 
+@media screen and (min-width: 701px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 </style>
