@@ -33,7 +33,6 @@ import recipes from '../data/recipes.js';
 import products from '../data/products.js';
 
 export default {
-  name: 'intro',
   data () {
     return {
         drinks, recipes, products,
