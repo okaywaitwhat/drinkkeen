@@ -1,10 +1,7 @@
 <template>
    <section>  
         <b-navbar toggleable="md" class="navbar-light bg-light">
-            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
             <img :src="require(`../assets/media/navbrand.png`)">
-
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item-dropdown text="Bebidas">
@@ -23,6 +20,7 @@
                     <b-nav-item v-on:click="prox" disabled>Contacto</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
+            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
         </b-navbar>
     </section> 
 </template>
