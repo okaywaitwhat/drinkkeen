@@ -56,7 +56,11 @@ export default {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+.dropdown-item {
+    outline: none;
+}
 
 section {
   float: center;
