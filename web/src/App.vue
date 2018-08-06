@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-    <intro></intro>
-    <navbar></navbar>
-    <quotes></quotes>
-    <login></login>
-    <foot></foot>
+    <Intro />
+    <Navbar />
+    <Quotes />
+    <Login />
+    <Foot />
   </div>
 </template>
 
 <script>
-import intro from './components/Intro'
-import navbar from './components/NavBar'
-import quotes from './components/Quotes'
-import login from './components/Login'
-import foot from './components/Foot'
+import Intro from './components/Intro'
+import Navbar from './components/NavBar'
+import Quotes from './components/Quotes'
+import Login from './components/Login'
+import Foot from './components/Foot'
 
 
 export default {
   name: 'app',
   components: {
-    intro, navbar, quotes, login, foot,
+    Intro, Navbar, Quotes, Login, Foot,
   }
 }
 </script>
