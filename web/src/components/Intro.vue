@@ -1,10 +1,11 @@
 <template>
    <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}" v-if="seen">  
         <div class="container">
-            <a>
-                <img src='../assets/media/logo.png' v-on:click="seen = !seen">
-            </a>
-                <p class="hidden-md hidden-lg subt-responsive">{{ legend }}</p> 
+          <a>
+            <img src='../assets/media/logo.png' v-on:click="seen = !seen">
+          </a>
+          <!-- legend viene de prop @ App.vue -->
+          <p class="subt-responsive">{{ legend }}</p>
         </div>    
     </section>
 </template>
@@ -17,10 +18,12 @@ export default {
     return {
       seen: true,
       background: '../assets/media/intro.jpg',
-      logo: '../assets/media/logo.png',
-      legend: 'Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología.'
+      logo: '../assets/media/logo.png'
     }
-  }
+  },
+  props: [
+    'legend'
+  ]
 }
 
 </script>
@@ -47,22 +50,12 @@ section {
 }
 
 @media screen and (min-width: 701px) {
-
-  p {
-    display: none;
-  }
-
   img {
     width: 500px;
   }
 }
 
 @media screen and (max-width: 700px) {
-
-  p {
-    display: none;
-  }
-
   img {
     width: 250px;
   }

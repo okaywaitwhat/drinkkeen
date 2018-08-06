@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Intro />
+    <!-- atributos con `:` (props) son para tomar lo que le paso como variable, si no tiene `:` entonces lo toma como texto plano -->
+    <Intro :legend="legend" />
     <Navbar />
     <Quotes />
     <Login />
@@ -20,6 +21,11 @@ export default {
   name: 'app',
   components: {
     Intro, Navbar, Quotes, Login, Foot,
+  },
+  data () {
+    return {
+      legend: 'Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología.'
+    }
   }
 }
 </script>
