@@ -16,7 +16,6 @@ import Quotes from './components/Quotes'
 import Login from './components/Login'
 import Foot from './components/Foot'
 
-
 export default {
   name: 'app',
   components: {

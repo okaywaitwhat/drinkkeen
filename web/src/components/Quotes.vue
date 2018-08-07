@@ -2,32 +2,38 @@
     <section>
         <div class="jumbotron jumbotron-fluid vertical-center">
           <div class="container d-flex">
-            <blockquote class="blockquote mb-0">
-              <h1 class="display-4"></h1>
-              <p class="lead"></p>
-            </blockquote>
+            <!-- pasamos quote como prop -->
+            <!-- el v-if es para apenas se renderiza porque quoteActual es null -->
+            <Quote :quote="quoteActual" v-if="quoteActual" />
           </div>
         </div>
     </section>
 </template>
 
 <script>
-
+import Quote from './Quote'
 import quotes from '../data/quotes.js'
 
 export default {
   name: 'quotes',
+  components: { Quote },
   data () {
     return {
-     quotes
+      quoteActual: null
     }
+  },
+  mounted () {
+    /* hacemos el intervalo que seleccione y cambie una quote aleatoria */
+    setInterval(() => {
+      const numeroRandom = Math.floor(Math.random() * quotes.length)
+      this.quoteActual = quotes[numeroRandom]
+    }, 1000)
   }
 }
 
 </script>
 
 <style scoped lang="scss">
-
 section {
   height: 100%;
   width: 100%;
@@ -43,15 +49,4 @@ div {
   }
 }
 
-@media screen and (min-width: 701px) {
-  h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 30px;
-  }
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
    <section>  
-        <b-navbar toggleable="md" class="navbar-light bg-light">
+        <b-navbar toggleable="md" class="navbar-light bg-light" fixed="top">
             <img :src="require(`../assets/media/navbrand.png`)">
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
@@ -17,8 +17,10 @@
                         <b-dropdown-item v-for="item in products" :key="item.products" href="#">{{item.name}}</b-dropdown-item>
                     </b-nav-item-dropdown>
 
-                    <b-nav-item v-on:click="prox">Calculadora</b-nav-item>
-                    <b-nav-item v-on:click="prox" disabled>Contacto</b-nav-item>
+                    <!-- el @ sirve como shorthand de `v-on:` -->
+                    <b-nav-item @click="prox()">Calculadora</b-nav-item>
+                    <!-- la funcion se puede pasar con `()` o sin ellos -->
+                    <b-nav-item @click="prox()" disabled>Contacto</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
