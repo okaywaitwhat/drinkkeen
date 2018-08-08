@@ -6,105 +6,33 @@ export default [
       {
         name: 'Black bar roll',
         description: 'a black bar roll',
-        img: 'images/mediaproductos/barroll3.jpg'
+        img: 'barroll3'
       },
       {
         name: 'Brown bar roll',
         description: 'a brown bar roll',
-        img: 'images/mediaproductos/barroll4.jpg'
-      },
-      {
-        name: 'Black bar roll',
-        description: 'a black bar roll',
-        img: 'images/mediaproductos/barroll3.jpg'
-      },
-      {
-        name: 'Brown bar roll',
-        description: 'a brown bar roll',
-        img: 'images/mediaproductos/barroll4.jpg'
-      },
-      {
-        name: 'Black bar roll',
-        description: 'a black bar roll',
-        img: 'images/mediaproductos/barroll3.jpg'
-      },
-      {
-        name: 'Brown bar roll',
-        description: 'a brown bar roll',
-        img: 'images/mediaproductos/barroll4.jpg'
-      }
-    ]
-  },
-  {
-    name: 'Aprons',
-    description: 'an apron',
-    stock: [
-      {
-        name: 'Black Apron',
-        description: 'a black apron',
-        img: 'images/mediaproductos/barroll2.jpg'
-      },
-      {
-        name: 'Brown Apron',
-        description: 'a brown apron',
-        img: 'images/mediaproductos/barroll1.jpg'
+        img: 'barroll4'
       },
       {
         name: 'Black Apron',
         description: 'a black apron',
-        img: 'images/mediaproductos/barroll2.jpg'
+        img: 'barroll2'
       },
       {
         name: 'Brown Apron',
         description: 'a brown apron',
-        img: 'images/mediaproductos/barroll1.jpg'
-      },
-      {
-        name: 'Black Apron',
-        description: 'a black apron',
-        img: 'images/mediaproductos/barroll2.jpg'
-      },
-      {
-        name: 'Brown Apron',
-        description: 'a brown apron',
-        img: 'images/mediaproductos/barroll1.jpg'
-      }
-    ]
-  },
-  {
-    name: 'Lewis bags',
-    description: 'a lewis bag',
-    stock: [
-      {
-        name: 'Big Lewis bag',
-        description: 'a big Lewis bag',
-        img: 'images/mediaproductos/lewisbag3.jpg'
-      },
-      {
-        name: 'Small Lewis bag',
-        description: 'a small Lewis bag',
-        img: 'images/mediaproductos/lewisbag1.jpg'
+        img: 'barroll1'
       },
       {
         name: 'Big Lewis bag',
         description: 'a big Lewis bag',
-        img: 'images/mediaproductos/lewisbag3.jpg'
+        img: 'lewisbag3'
       },
       {
         name: 'Small Lewis bag',
         description: 'a small Lewis bag',
-        img: 'images/mediaproductos/lewisbag1.jpg'
+        img: 'lewisbag1'
       },
-      {
-        name: 'Big Lewis bag',
-        description: 'a big Lewis bag',
-        img: 'images/mediaproductos/lewisbag3.jpg'
-      },
-      {
-        name: 'Small Lewis bag',
-        description: 'a small Lewis bag',
-        img: 'images/mediaproductos/lewisbag1.jpg'
-      }
     ]
   }
 ]

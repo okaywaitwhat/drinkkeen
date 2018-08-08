@@ -2,7 +2,8 @@
     <section id="productsSection">
         <section>
             <div class="container">
-                <div class="card-columns" id="productsCards">
+                <div class="card-columns">
+                    <Product :product="product" v-for="product in store" :key="product.name"></Product>  
                 </div>
             </div>
         </section>
@@ -10,10 +11,17 @@
 </template>
 
 <script>
+import Product from './Product'
+import Products from '../data/products.js';
+
 export default {
   name: 'products',
+  components: {
+    Product,
+  },
   data () {
     return {
+      store: Products[0].stock,
     }
   }
 }
@@ -25,25 +33,10 @@ section {
   float: center;
   background: #e9ecef;
   padding-top: 4rem;
-  display: none;
+  padding-bottom: 4rem;
   text-align: center;
   min-height: 100%;
   width: 100%;
-
-    .card {
-    width: 100%;
-    padding-right: 20%;
-    padding-left: 20%;
-    background-color: transparent;
-    text-align: center;
-    border: 0;
-    p {
-        font-style: italic;
-    }
-    h5 {
-        text-transform: capitalize;
-    }
-  }
 }
 
 </style>

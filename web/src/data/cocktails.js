@@ -13,7 +13,7 @@ export default [
     menu: [
       {
         name: 'Top Shelf Long Island',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -61,7 +61,7 @@ export default [
       },
       {
         name: 'Dirty Martini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -89,7 +89,7 @@ export default [
       },
       {
         name: 'Extra Dry Martini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -123,7 +123,7 @@ export default [
       },
       {
         name: 'Mint Julep',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -159,7 +159,7 @@ export default [
       },
       {
         name: 'Harvey Wallbanger',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -193,7 +193,7 @@ export default [
       },
       {
         name: 'Classic Singapore Sling',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -247,7 +247,7 @@ export default [
       },
       {
         name: 'Cuba Libre',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -275,7 +275,7 @@ export default [
       },
       {
         name: 'Moscow Mule',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -297,7 +297,7 @@ export default [
       },
       {
         name: 'Mai Tai',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -340,7 +340,7 @@ export default [
       },
       {
         name: 'Piña Colada',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'frozen',
         ingredients: [
@@ -375,7 +375,7 @@ export default [
       },
       {
         name: 'Black Russian',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -398,7 +398,7 @@ export default [
       },
       {
         name: 'Martini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -427,7 +427,7 @@ export default [
       },
       {
         name: 'Bloody Mary',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -477,7 +477,7 @@ export default [
       },
       {
         name: 'Tom Collins',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -516,7 +516,7 @@ export default [
       },
       {
         name: 'Riviera Margarita',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -556,7 +556,7 @@ export default [
       },
       {
         name: 'Bramble #10',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -595,7 +595,7 @@ export default [
       },
       {
         name: "Horse's Neck",
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -627,7 +627,7 @@ export default [
       },
       {
         name: 'Sex on the Beach',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -665,7 +665,7 @@ export default [
       },
       {
         name: 'Southside',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -700,7 +700,7 @@ export default [
       },
       {
         name: 'Whisky Sour',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -735,7 +735,7 @@ export default [
       },
       {
         name: 'Vodka Martini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -764,7 +764,7 @@ export default [
       },
       {
         name: 'French 75',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -796,7 +796,7 @@ export default [
       },
       {
         name: 'Sazerac',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -828,7 +828,7 @@ export default [
       },
       {
         name: 'Between the Sheets',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -865,7 +865,7 @@ export default [
       },
       {
         name: 'Manhattan',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -898,7 +898,7 @@ export default [
       },
       {
         name: 'Martinez',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -937,7 +937,7 @@ export default [
       },
       {
         name: 'White Russian',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -964,7 +964,7 @@ export default [
       },
       {
         name: 'Whisky Old Fashioned',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1002,7 +1002,7 @@ export default [
       },
       {
         name: 'Bloody Mary Vodka',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1030,7 +1030,7 @@ export default [
       },
       {
         name: 'Blood & Sand',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1063,7 +1063,7 @@ export default [
       },
       {
         name: 'Irish Coffee',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1096,7 +1096,7 @@ export default [
       },
       {
         name: 'Old Fashioned',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1135,7 +1135,7 @@ export default [
       },
       {
         name: 'Bellini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1169,7 +1169,7 @@ export default [
       },
       {
         name: 'Gin Tonic',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1198,7 +1198,7 @@ export default [
       },
       {
         name: 'White Lady',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1230,7 +1230,7 @@ export default [
       },
       {
         name: 'Rossini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1269,7 +1269,7 @@ export default [
       },
       {
         name: 'Raspberry Caipiroska',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1310,7 +1310,7 @@ export default [
       },
       {
         name: 'Rob Roy',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -1344,7 +1344,7 @@ export default [
       },
       {
         name: 'Martini Vodka',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1371,7 +1371,7 @@ export default [
       },
       {
         name: 'Negroni',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1404,7 +1404,7 @@ export default [
       },
       {
         name: 'Rickey',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1443,7 +1443,7 @@ export default [
       },
       {
         name: 'Rusty Nail',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1464,7 +1464,7 @@ export default [
       },
       {
         name: 'Vesper',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1499,7 +1499,7 @@ export default [
       },
       {
         name: 'Clover Club',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1532,7 +1532,7 @@ export default [
       },
       {
         name: 'Stinger',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1559,7 +1559,7 @@ export default [
       },
       {
         name: 'Sidecar',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1593,7 +1593,7 @@ export default [
       },
       {
         name: 'Alexander',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1632,7 +1632,7 @@ export default [
       },
       {
         name: 'Dry Martini',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -1666,7 +1666,7 @@ export default [
       },
       {
         name: 'John Collins',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1698,7 +1698,7 @@ export default [
       },
       {
         name: 'Gin Fizz',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1730,7 +1730,7 @@ export default [
       },
       {
         name: 'Derby',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -1759,7 +1759,7 @@ export default [
       },
       {
         name: 'Casino',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1791,7 +1791,7 @@ export default [
       },
       {
         name: 'Bacardi',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1818,7 +1818,7 @@ export default [
       },
       {
         name: 'Americano',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1846,7 +1846,7 @@ export default [
       },
       {
         name: 'Mary Pickford',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1875,7 +1875,7 @@ export default [
       },
       {
         name: 'Monkey Gland',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -1906,7 +1906,7 @@ export default [
       },
       {
         name: 'Paradise',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1932,7 +1932,7 @@ export default [
       },
       {
         name: "Planter's Punch",
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -1981,7 +1981,7 @@ export default [
       },
       {
         name: 'Porto Flip',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -2008,7 +2008,7 @@ export default [
       },
       {
         name: 'Ramos Fizz',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'shaken',
         ingredients: [
@@ -2063,7 +2063,7 @@ export default [
       },
       {
         name: 'Screwdriver',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'direct',
         ingredients: [
@@ -2086,7 +2086,7 @@ export default [
       },
       {
         name: 'Tuxedo',
-        img: 'images/mediarecetas/negroni.jpg',
+        img: 'negroni',
         family: 'classic',
         type: 'mixed',
         ingredients: [
@@ -2133,7 +2133,7 @@ export default [
       [
         {
           name: 'Scotch & Ginger',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
           ingredients: [
@@ -2163,7 +2163,7 @@ export default [
 
         {
           name: 'Caipiroska',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
           ingredients: [
@@ -2198,7 +2198,7 @@ export default [
 
         {
           name: 'Vodka, Albahaca & Limón',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
           ingredients: [
@@ -2237,7 +2237,7 @@ export default [
         {
 
           name: 'Kamikaze',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2259,7 +2259,7 @@ export default [
         {
 
           name: 'Ron & Cola',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2281,7 +2281,7 @@ export default [
         {
 
           name: 'Ron & Gaseosa Lima-Limón',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2301,7 +2301,7 @@ export default [
         {
 
           name: 'Mixed Whisky',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2322,7 +2322,7 @@ export default [
         {
 
           name: 'Gin Rickey',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2343,7 +2343,7 @@ export default [
         {
 
           name: 'Ginebra & Ginger Ale',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2364,7 +2364,7 @@ export default [
         {
 
           name: 'Whisky Piña',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'frozen',
 
@@ -2389,7 +2389,7 @@ export default [
         {
 
           name: 'Vodka Pink',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'frozen',
 
@@ -2413,7 +2413,7 @@ export default [
         {
 
           name: 'Citrus Flush',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2436,7 +2436,7 @@ export default [
         {
 
           name: 'Gin Toddy',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2459,7 +2459,7 @@ export default [
         {
 
           name: 'Whisky con Miel y Ginger Ale',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2484,7 +2484,7 @@ export default [
         {
 
           name: 'Whisky, piña y jugo de arándano',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2505,7 +2505,7 @@ export default [
         {
 
           name: 'Scotch & Cola',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2526,7 +2526,7 @@ export default [
         {
 
           name: 'Tequila & Ginger',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2550,7 +2550,7 @@ export default [
         {
 
           name: 'Luxury Margarita',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2572,7 +2572,7 @@ export default [
         {
 
           name: 'Gin Breeze',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2596,7 +2596,7 @@ export default [
         {
 
           name: 'The Tom Nichol',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2621,7 +2621,7 @@ export default [
         {
 
           name: 'Vodka & Tonic',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2643,7 +2643,7 @@ export default [
         {
 
           name: 'Gin & Juice',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2665,7 +2665,7 @@ export default [
         {
 
           name: 'Vodka Minted',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2691,7 +2691,7 @@ export default [
         {
 
           name: 'Death of a Scotsman',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2715,7 +2715,7 @@ export default [
         {
 
           name: 'Scotch & Soda',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2737,7 +2737,7 @@ export default [
         {
 
           name: 'Ponche Corsario',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2763,7 +2763,7 @@ export default [
         {
 
           name: 'Espresso Martini',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2786,7 +2786,7 @@ export default [
         {
 
           name: 'TLC',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2812,7 +2812,7 @@ export default [
         {
 
           name: 'Ron Bloody Madras',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2834,7 +2834,7 @@ export default [
         {
 
           name: 'Limonada con Bourbon',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2855,7 +2855,7 @@ export default [
         {
 
           name: 'Cuban T&T',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2879,7 +2879,7 @@ export default [
         {
 
           name: 'Vodka & Arándano',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2902,7 +2902,7 @@ export default [
         {
 
           name: 'Paloma Rusa',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2929,7 +2929,7 @@ export default [
         {
 
           name: 'Vodka Greyhound',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2951,7 +2951,7 @@ export default [
         {
 
           name: 'Ginebra Platinum',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2975,7 +2975,7 @@ export default [
         {
 
           name: 'Chocolate Caliente con Crema Irlandesa',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -2997,7 +2997,7 @@ export default [
         {
 
           name: 'Shrunken Head',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -3039,7 +3039,7 @@ export default [
         {
 
           name: 'Spiced Barrel',
-          img: 'images/mediarecetas/mojito.jpg',
+          img: 'mojito',
           family: 'modern',
           type: 'direct',
 
@@ -3078,7 +3078,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 
@@ -3108,7 +3108,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 
@@ -3138,7 +3138,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 
@@ -3176,7 +3176,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 
@@ -3206,7 +3206,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 
@@ -3236,7 +3236,7 @@ export default [
         {
 
           name: 'Luque',
-          img: 'images/mediarecetas/luque.jpg',
+          img: 'luque',
           family: 'author',
           type: 'direct',
 

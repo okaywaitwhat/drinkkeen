@@ -1,28 +1,43 @@
 <template>
     <div>
         <div  class="card card-shadow bg-light mb-3">
-            <img class="card-img-top" src='../assets/mediarecetas/mojito.jpg'>
+            <img class="card-img-top" :src="imgPath">
                 <div class="card-body">
                     <h5 class="card-title">{{ recipe.name }}</h5>
                     <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
                       <section class="btn-group-toggle" data-toggle="button">
-                        <button type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Ingredientes</button>
-                        <button type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Procedimiento</button>
+                        <button v-on:click="showIngredients = !showIngredients" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Ingredientes</button>
+                        <button v-on:click="showSteps = !showSteps" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Procedimiento</button>
                       </section>
                 </div>
-                    <ul class="list-group list-group-flush">
-                      <li>Ingredient<span style="float: right;">Q</span></li>
+                    <ul class="list-group list-group-flush" v-if="showIngredients">
+                      <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span style="float: right;">{{ ingredient.portion }} {{ ingredient.unit }}</span></li>
+                    </ul>
+                    <ul class="list-group list-group-flush" v-if="showSteps">
+                      <li v-for="step in recipe.steps" :key="step.step">{{ step }}</li>
                     </ul>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
   name: 'recipe',
+  data () {
+    return {
+      showIngredients: false,
+      showSteps: false,
+    }
+  },
   props: [
-    'recipe'
-  ]
+    'recipe',
+  ],
+   computed: 
+  { imgPath: function () { 
+    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg') 
+    } 
+  },
 }
 </script>
 

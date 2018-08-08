@@ -44,19 +44,17 @@ export default {
 <style scoped lang="scss">
 
 section {
-  float: center;
   text-align: center;
-  height: 15%;
   width: 100%;
   background: #e9ecef;
 }
 
 footer {
   img {
-    width: 150px;
+    width: 200px;
   }
   div {
-    margin-bottom: 15px;
+    margin: 15px;
   }
   a {
     color: #212529;
@@ -69,6 +67,7 @@ footer {
   padding-right: 40px;
   padding-left: 40px;
   color: #212529;
+  margin-bottom: 20px;
 }
 
 </style>
