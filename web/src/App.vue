@@ -3,8 +3,9 @@
     <!-- atributos con `:` (props) son para tomar lo que le paso como variable, si no tiene `:` entonces lo toma como texto plano -->
     <Intro :legend="legend" />
     <Navbar />
-    <Quotes />
-    <Login />
+    <FiltersBar />
+
+    <Recipes />
     <Foot />
   </div>
 </template>
@@ -12,14 +13,14 @@
 <script>
 import Intro from './components/Intro'
 import Navbar from './components/NavBar'
-import Quotes from './components/Quotes'
-import Login from './components/Login'
+import FiltersBar from './components/FiltersBar'
+import Recipes from './components/Recipes'
 import Foot from './components/Foot'
 
 export default {
   name: 'app',
   components: {
-    Intro, Navbar, Quotes, Login, Foot,
+    Intro, Navbar, FiltersBar, Recipes, Foot
   },
   data () {
     return {

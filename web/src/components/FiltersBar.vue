@@ -14,28 +14,10 @@
                                         <input class="recipes-filter" type="checkbox" name="recipes-filter" value="todaslasrecetas">
                                     </label>
                                 </dt>
-                                <dt aria-current="page">
+                                <dt v-for="item in cocktails" :key="item.cocktails" aria-current="page">
                                     <label>
-                                        <span>Clásica</span>
+                                        <span>{{ item.name }}</span>
                                         <input class="recipes-filter" type="checkbox" name="recipes-filter" value="clasicas">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Moderna</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="modernas">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Molecular</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="modernas">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>De autor</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="deautor">
                                     </label>
                                 </dt>
                             </dl>
@@ -84,52 +66,10 @@
                                         <input class="recipes-filter form-control-label" type="checkbox" name="recipes-filter" value="vermouth">
                                     </label>
                                 </dt>
-                                <dt aria-current="page">
+                                <dt v-for="item in drinks" :key="item.drinks" aria-current="page">
                                     <label>
-                                        <span>Vermouth</span>
+                                        <span>{{ item.name }}</span>
                                         <input class="recipes-filter form-control-label" type="checkbox" name="recipes-filter" value="vermouth">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Vodka</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="vodka">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Whiskey</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="whiskey">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Ron</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="ron">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Gin & Ginebra</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="ginginebra">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Tequila</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="tequila">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Mezcal</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="mezcal">
-                                    </label>
-                                </dt>
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Licor</span>
-                                        <input class="recipes-filter" type="checkbox" name="recipes-filter" value="licores">
                                     </label>
                                 </dt>
                             </dl>
@@ -147,10 +87,14 @@
 </template>
 
 <script>
+import drinks from '../data/drinks.js';
+import cocktails from '../data/cocktails.js';
+
 export default {
-    name: 'filtersBar',
+  name: 'filtersbar',
   data () {
     return {
+        drinks, cocktails
     }
   }
 }
@@ -162,7 +106,6 @@ export default {
 section {
   float: center;
   background: #e9ecef;
-  display: none;
 }
 
 @media screen and (min-width: 701px) {

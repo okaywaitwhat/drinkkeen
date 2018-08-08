@@ -46,7 +46,7 @@ export default {
 section {
   float: center;
   text-align: center;
-  height: 10%;
+  height: 15%;
   width: 100%;
   background: #e9ecef;
 }

@@ -5,7 +5,7 @@
             <img src='../assets/media/logo.png' v-on:click="seen = !seen">
           </a>
           <!-- legend viene de prop @ App.vue -->
-          <p class="subt-responsive">{{ legend }}</p>
+          <p class="subt-responsive"></p>
         </div>    
     </section>
 </template>
@@ -47,6 +47,10 @@ section {
   background-size: cover;
   color: #f8f9fa;
   font-weight: 100;
+}
+
+img {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 701px) {

@@ -7,7 +7,7 @@ export let methodFilters = [
 
 export default [
   {
-    name: 'Coctelería clásica',
+    name: 'Clásica',
     description: 'Desde el popular Mojito hasta un irresistible Sazerac, los clásicos son los cócteles que todos deberíamos conocer, disfrutar y saber preparar. Un cocktail que ha trascendido a lo largo del tiempo será tu mejor aliado para hacer memorable todo momento, nunca fallará y jamás pasará de moda.',
     history: 'Antes de meternos a fondo en la preparación de las bebidas, es de suma importancia conocer los cocteles que se ha convertido en clásicos y son las bases de la mixología. Existen referencias de que los primeros se prepararon a mediados del siglo XVIII; esto quiere decir que llevamos mezclándolos más de 200 años. La coctelería clásica es la que conocemos y se sigue preparando en los bares de todo el mundo, drinks que no han pasado de moda en estos dos siglos. Uno de los beneficios de nuestro trabajo como bartenders es crear combinaciones aplicando nuevas técnicas, también investigar y recrear estas recetas que nos ha acompañado históricamente en diferentes bares y países. Conocer estos cocteles clásicos nos beneficia en dos sentidos. Primero, podemos entender los componentes y sus fechas de creación (lo que dictamina las tendencias de las barras de la época), así como analizar sus partes para el desarrollo de uno nuevo, basándonos en sus ingredientes y técnicas para darle un twist; El segundo consiste en saber qué opciones existen a lo largo de la historia y poder ofrecérselas a nuestro cliente o invitado. Cocteles como el Dry Martini, el Cosmopolitan, el Mojito, la Margarita o la Paloma son clásicos que se basaron en alguna mezcla o técnica previa, y fueron tan bien balanceados y aceptados por los clientes, que hasta la fecha siguen siendo consumidos. Al conocerlos, podemos educar a nuestros sentidos para preparar, balancear y presentar un coctel, pues dieron pie a lo que ahora llamamos mixología moderna.',
     menu: [
@@ -1134,33 +1134,6 @@ export default [
         ]
       },
       {
-        name: 'Stinger',
-        img: 'images/mediarecetas/negroni.jpg',
-        family: 'classic',
-        type: 'shaken',
-        ingredients: [
-          {
-            ingredient: 'Dry Gin',
-            portion: '1',
-            unit: 'oz'
-          },
-          {
-            ingredient: 'Licor herbal francés',
-            portion: '0.25',
-            unit: 'oz'
-          },
-          {
-            ingredient: 'Bitter',
-            portion: '3',
-            unit: 'dash'
-          }
-        ],
-        steps: [
-          'Mezclar todos los ingredientes en una coctelera.',
-          'Colar en un vaso old fashioned con hielo.'
-        ]
-      },
-      {
         name: 'Bellini',
         img: 'images/mediarecetas/negroni.jpg',
         family: 'classic',
@@ -1522,40 +1495,6 @@ export default [
           'Agitar hasta enfríar.',
           'Colar en una copa de martini.',
           'Decorar con una cáscara de limón.'
-        ]
-      },
-      {
-        name: 'Harvey Wallbanger',
-        img: 'images/mediarecetas/negroni.jpg',
-        family: 'classic',
-        type: 'direct',
-        ingredients: [
-          {
-            ingredient: 'Vodka',
-            portion: '1.25',
-            unit: 'oz'
-          },
-          {
-            ingredient: 'Licor de avellana',
-            portion: '0.25',
-            unit: 'oz'
-          },
-          {
-            ingredient: 'Jugo de naranja',
-            portion: '3',
-            unit: 'oz'
-          },
-          {
-            ingredient: 'Naranja',
-            portion: '1',
-            unit: 'rodaja'
-          }
-        ],
-        steps: [
-          'En un vaso con hielos, agregar Vodka y el jugo de naranja.',
-          'Revolver.',
-          'Verter la mezcla de licor.',
-          'Adornar con una rodaja de naranja.'
         ]
       },
       {
@@ -2187,7 +2126,7 @@ export default [
 
   },
   {
-    name: 'Coctelería moderna',
+    name: 'Moderna',
     description: 'Estas recetas te harán incursionar en otros horizontes de sabor. Un mundo inexplorado te está esperando con las recetas de cocktails más recientes.',
     history: 'La coctelería moderna se basa en fundamentos saludables, novedosos y creativos de la utilización de productos naturales inspirados en el conocimiento y buen gusto del barman. Es así como se han creado diversos tipos de bebidas combinadas con frutas, hortalizas, plantas aromáticas, especies, productos lácteos, aguas minerales y demás. Hay que tener en cuenta que un buen cóctel debe ser una bebida equilibrada, armoniosa y de calidad, pudiendo producir en la persona que lo bebe sensaciones placenteras en su paladar aparte del goce en la vista, pues el cóctel debe caracterizarse, también, por su presentación agradable, alegre y sugestiva.',
     menu:
@@ -3131,7 +3070,7 @@ export default [
       ]
   },
   {
-    name: 'Coctelería de autor',
+    name: 'De autor',
     description: 'Estas recetas te harán incursionar en otros horizontes de sabor. Un mundo inexplorado te está esperando con las recetas de cocktails más recientes.',
     history: 'La coctelería moderna se basa en fundamentos saludables, novedosos y creativos de la utilización de productos naturales inspirados en el conocimiento y buen gusto del barman. Es así como se han creado diversos tipos de bebidas combinadas con frutas, hortalizas, plantas aromáticas, especies, productos lácteos, aguas minerales y demás. Hay que tener en cuenta que un buen cóctel debe ser una bebida equilibrada, armoniosa y de calidad, pudiendo producir en la persona que lo bebe sensaciones placenteras en su paladar aparte del goce en la vista, pues el cóctel debe caracterizarse, también, por su presentación agradable, alegre y sugestiva.',
     menu:
@@ -3229,7 +3168,7 @@ export default [
       ]
   },
   {
-    name: 'Coctelería Molecular',
+    name: 'Molecular',
     description: 'Estas recetas te harán incursionar en otros horizontes de sabor. Un mundo inexplorado te está esperando con las recetas de cocktails más recientes.',
     history: 'La coctelería moderna se basa en fundamentos saludables, novedosos y creativos de la utilización de productos naturales inspirados en el conocimiento y buen gusto del barman. Es así como se han creado diversos tipos de bebidas combinadas con frutas, hortalizas, plantas aromáticas, especies, productos lácteos, aguas minerales y demás. Hay que tener en cuenta que un buen cóctel debe ser una bebida equilibrada, armoniosa y de calidad, pudiendo producir en la persona que lo bebe sensaciones placenteras en su paladar aparte del goce en la vista, pues el cóctel debe caracterizarse, también, por su presentación agradable, alegre y sugestiva.',
     menu:
