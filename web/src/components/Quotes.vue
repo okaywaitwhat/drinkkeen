@@ -1,7 +1,7 @@
 <template>
     <section>
-        <div class="jumbotron jumbotron-fluid vertical-center">
-          <div class="container d-flex">
+        <div class="jumbotron-fluid">
+          <div class="container">
             <!-- pasamos quote como prop -->
             <!-- el v-if es para apenas se renderiza porque quoteActual es null -->
             <Quote :quote="quoteActual" v-if="quoteActual" />
@@ -19,7 +19,7 @@ export default {
   components: { Quote },
   data () {
     return {
-      quoteActual: null
+      quoteActual: null,
     }
   },
   mounted () {
@@ -27,7 +27,7 @@ export default {
     setInterval(() => {
       const numeroRandom = Math.floor(Math.random() * quotes.length)
       this.quoteActual = quotes[numeroRandom]
-    }, 8000)
+    }, 6000)
   }
 }
 
@@ -35,10 +35,7 @@ export default {
 
 <style scoped lang="scss">
 section {
-  height: 100%;
-  width: 100%;
   float: center;
-  background: #e9ecef;
   text-align: center;
 
 div {

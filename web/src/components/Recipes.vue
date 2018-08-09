@@ -1,11 +1,14 @@
 <template>
-    <section id="recipesSection" class="d-flex">
-      <FiltersColumn></FiltersColumn>
-        <section class="recipes-cards-cont">
-          <div class="card-columns">
-              <Recipe :recipe="recipe" v-for="recipe in menu" :key="recipe.name"></Recipe>  
-          </div>  
-          <Modal></Modal>
+    <section>
+      <FiltersBar></FiltersBar>
+        <section id="recipesSection" class="d-flex">
+        <FiltersColumn></FiltersColumn>
+          <section class="recipes-cards-cont">
+            <div class="card-columns">
+                <Recipe :recipe="recipe" v-for="recipe in menu" :key="recipe.name"></Recipe>  
+            </div>  
+            <Modal></Modal>
+          </section>
         </section>
     </section>
 </template>
@@ -13,13 +16,14 @@
 <script>
 import Recipe from './Recipe'
 import FiltersColumn from './FiltersColumn'
+import FiltersBar from './FiltersBar'
 import Modal from './Modal'
 import Cocktails from '../data/cocktails.js';
 
 export default {
   name: 'recipes',
   components: {
-    FiltersColumn, Recipe, Modal
+    FiltersBar, FiltersColumn, Recipe, Modal
   },
   data () {
     return {

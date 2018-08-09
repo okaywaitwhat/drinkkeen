@@ -53,35 +53,17 @@
                                 </dt>
                             </dl>
                         </nav>
-                <span>Bebida</span>
-                        <nav>
-                            <dl class="filters_group">
-                                <dt aria-current="page">
-                                    <label>
-                                        <span>Todo</span>
-                                        <input class="recipes-filter form-control-label" type="checkbox" name="recipes-filter" value="vermouth">
-                                    </label>
-                                </dt>
-                                <dt v-for="item in drinks" :key="item.drinks" aria-current="page">
-                                    <label>
-                                        <span>{{ item.name }}</span>
-                                        <input class="recipes-filter form-control-label" type="checkbox" name="recipes-filter" value="vermouth">
-                                    </label>
-                                </dt>
-                            </dl>
-                        </nav>
             </aside>
 </template>
 
 <script>
-import drinks from '../data/drinks.js';
 import cocktails from '../data/cocktails.js';
 
 export default {
   name: 'filterscol',
   data () {
     return {
-        drinks, cocktails,
+        cocktails,
     }
   }
 }

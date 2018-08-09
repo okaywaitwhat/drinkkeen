@@ -13,6 +13,16 @@
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
                     <b-nav-item @click="prox()">Contacto</b-nav-item>
                 </b-navbar-nav>
+
+                <b-navbar-nav class="ml-auto">
+                    <b-nav-item-dropdown right>
+                        <template slot="button-content">
+                        <a>User</a>
+                        </template>
+                        <b-dropdown-item href="#">Profile</b-dropdown-item>
+                        <b-dropdown-item href="#">Signout</b-dropdown-item>
+                    </b-nav-item-dropdown>
+                    </b-navbar-nav>
             </b-collapse>
         </b-navbar>
     </section> 
