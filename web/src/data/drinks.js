@@ -6,7 +6,7 @@ export default [
     marks: [
 
       {
-        img: 'amargo',
+        img: 'vermouth/amargo',
         name: 'Amargo Obrero',
         version: '950',
         unit: 'cc',
@@ -22,7 +22,7 @@ export default [
         ]
       },
       {
-        img: 'aperol',
+        img: 'vermouth/aperol',
         name: 'Aperol',
         version: '750',
         unit: 'cc',
@@ -38,7 +38,7 @@ export default [
         ]
       },
       {
-        img: 'campari',
+        img: 'vermouth/campari',
         name: 'Campari',
         version: '750',
         unit: 'cc',
@@ -54,7 +54,7 @@ export default [
         ]
       },
       {
-        img: 'cinzanobianco',
+        img: 'vermouth/cinzanobianco',
         name: 'Cinzano Bianco',
         version: '950',
         unit: 'cc',
@@ -70,7 +70,7 @@ export default [
         ]
       },
       {
-        img: 'cinzanorosso',
+        img: 'vermouth/cinzanorosso',
         name: 'Cinzano Rosso',
         version: '950',
         unit: 'cc',
@@ -86,7 +86,7 @@ export default [
         ]
       },
       {
-        img: 'cynar',
+        img: 'vermouth/cynar',
         name: 'Cynar',
         version: '750',
         unit: 'cc',
@@ -102,7 +102,7 @@ export default [
         ]
       },
       {
-        img: 'fernet',
+        img: 'vermouth/fernet',
         name: 'Fernet',
         version: '1000',
         unit: 'cc',
@@ -118,7 +118,7 @@ export default [
         ]
       },
       {
-        img: 'gancia',
+        img: 'vermouth/gancia',
         name: 'Gancia',
         version: '950',
         unit: 'cc',
@@ -134,7 +134,7 @@ export default [
         ]
       },
       {
-        img: 'ganciaredbitter',
+        img: 'vermouth/ganciaredbitter',
         name: 'Gancia Red Bitter',
         version: '750',
         unit: 'cc',
@@ -150,7 +150,7 @@ export default [
         ]
       },
       {
-        img: 'ganciaspritz',
+        img: 'vermouth/ganciaspritz',
         name: 'Gancia Spritz',
         version: '750',
         unit: 'cc',
@@ -166,7 +166,7 @@ export default [
         ]
       },
       {
-        img: 'jagger',
+        img: 'vermouth/jagger',
         name: 'Jäggermeister',
         version: '700',
         unit: 'cc',
@@ -182,7 +182,7 @@ export default [
         ]
       },
       {
-        img: 'martinibianco',
+        img: 'vermouth/martinibianco',
         name: 'Martini Bianco',
         version: '995',
         unit: 'cc',
@@ -198,7 +198,7 @@ export default [
         ]
       },
       {
-        img: 'martiniextradry',
+        img: 'vermouth/martiniextradry',
         name: 'Martini Extra Dry',
         version: '995',
         unit: 'cc',
@@ -214,7 +214,7 @@ export default [
         ]
       },
       {
-        img: 'martinirosso',
+        img: 'vermouth/martinirosso',
         name: 'Martini Rosso',
         version: '995',
         unit: 'cc',
@@ -230,7 +230,7 @@ export default [
         ]
       },
       {
-        img: 'pimms',
+        img: 'vermouth/pimms',
         name: 'Pimm"s',
         version: '750',
         unit: 'cc',
@@ -246,7 +246,7 @@ export default [
         ]
       },
       {
-        img: 'pineral',
+        img: 'vermouth/pineral',
         name: 'Pineral',
         version: '1000',
         unit: 'cc',
@@ -262,7 +262,7 @@ export default [
         ]
       },
       {
-        img: 'puntemes',
+        img: 'vermouth/puntemes',
         name: 'Punt e Mes',
         version: '750',
         unit: 'cc',
@@ -278,7 +278,7 @@ export default [
         ]
       },
       {
-        img: 'ramazzotti',
+        img: 'vermouth/ramazzotti',
         name: 'Ramazzotti',
         version: '750',
         unit: 'cc',
@@ -294,7 +294,7 @@ export default [
         ]
       },
       {
-        img: 'ricard',
+        img: 'vermouth/ricard',
         name: 'Ricard',
         version: '1000',
         unit: 'cc',
@@ -318,7 +318,7 @@ export default [
     history: 'Existe la suposición de que el whisky fue inventado en China a finales del siglo XIII, con la esperanza de producir un medicamento que curara la peste bubónica. La tecnología sería exportada a todo el mundo y, con los años, los escoceses perfeccionarían y refinarían el proceso hasta el punto que lo conocemos hoy cuando hay cientos de variedades de whisky disponibles. De todas formas, la cultura celta sabía cómo destilar cebada y centeno, y el brebaje obtenido era considerado un regalo de sus dioses que revivía a los muertos y calentaba durante el crudo invierno. En realidad, en gaélico, al whisky se lo llama “Uisge Beatha” o “agua de vida”. Un escrito de 1494 (aunque el whisky es mucho más antiguo que eso) describe cómo fue destilado en Escocia cuando el fraile John Cor obtuvo aproximadamente 6 fanegas de malta, lo que equivale a 1500 botellas. Inicialmente se distribuyó a la población como una medicina y, de hecho, el “agua de vida” se reservó para el rey Jacobo IV cuando fue a Inverness en septiembre de 1506; por otra parte, los primeros registros de una destilería datan de 1690 cuando se mencionó a la destilería Ferintoch de Forbes de Culloden. En España fue introducido por David Rodríguez Coco más conocido como Parrata.  En los siglos XVII y XVIII el whisky barato se usaba para preservar los cuerpos destinados a la disección. El Parlamento y la Iglesia querían controlar los hábitos de los bebedores y debido a ello en 1579 se promulgó una ley que trató de erradicar la bebida durante los domingos, pero en 1780 se incrementaron los impuestos sobre el vino, por lo que la popularidad y la demanda del whisky aumentó. Durante 1786 y 1788 impuestos adicionales se cargaron al precio del whisky escocés y, con ello, el negocio de los contrabandistas continuó y su astucia era enorme: por ejemplo, Mark Eunson, miembro de la Iglesia Presbiteriana en las islas de Orkney (Orcadas), lo guardaba en el púlpito. Finalmente, en 1823 el parlamento aprobó una ley mediante la cual se otorgó licencias a todas las destilerías. Las destilerías legítimas aumentaron y hacia 1860 el comercio ilegal se redujo a un nivel insignificante y muchos contrabandistas regresaron a sus trabajos ordinarios.  A mediados del siglo XIX los escoceses comenzaron a mezclar su whisky de malta con whisky de grano más liviano y barato. Fue Andrew Usher y Cía. quien en 1850 produjo el primer whisky de mezcla; mientras que el whisky americano fue fundado con la tecnología y el saber de los primeros colonos escoceses y hoy en día hay destilerías alrededor del mundo.',
     marks: [
       {
-        img: 'chivas',
+        img: 'whisky/chivas',
         name: 'Chivas regal',
         version: '750',
         unit: 'cc',
@@ -334,7 +334,7 @@ export default [
         ]
       },
       {
-        img: 'jackdaniels',
+        img: 'whisky/jackdaniels',
         name: 'Jack Daniels',
         version: '',
         unit: 'cc',
@@ -350,7 +350,7 @@ export default [
         ]
       },
       {
-        img: 'jameson',
+        img: 'whisky/jameson',
         name: 'Jameson',
         version: '',
         unit: 'cc',
@@ -366,7 +366,7 @@ export default [
         ]
       },
       {
-        img: 'jb',
+        img: 'whisky/jb',
         name: 'J&B',
         version: '',
         unit: 'cc',
@@ -382,7 +382,7 @@ export default [
         ]
       },
       {
-        img: 'jimbeam',
+        img: 'whisky/jimbeam',
         name: 'Jim Beam',
         version: '',
         unit: 'cc',
@@ -398,7 +398,7 @@ export default [
         ]
       },
       {
-        img: 'jwblacklabel',
+        img: 'whisky/jwblacklabel',
         name: 'Johnnie Walker Black Label',
         version: '',
         unit: 'cc',
@@ -414,7 +414,7 @@ export default [
         ]
       },
       {
-        img: 'jwbluelabel',
+        img: 'whisky/jwbluelabel',
         name: 'Johnnie Walker Blue Label',
         version: '',
         unit: 'cc',
@@ -430,7 +430,7 @@ export default [
         ]
       },
       {
-        img: 'jwdoubleblack',
+        img: 'whisky/jwdoubleblack',
         name: 'Johnnie Walker Double Black',
         version: '',
         unit: 'cc',
@@ -446,7 +446,7 @@ export default [
         ]
       },
       {
-        img: 'jwgoldlabel',
+        img: 'whisky/jwgoldlabel',
         name: 'Johnnie Walker Gold Label',
         version: '',
         unit: 'cc',
@@ -462,7 +462,7 @@ export default [
         ]
       },
       {
-        img: 'jwgreenlabel',
+        img: 'whisky/jwgreenlabel',
         name: 'Johnnie Walker Green Label',
         version: '',
         unit: 'cc',
@@ -478,7 +478,7 @@ export default [
         ]
       },
       {
-        img: 'jwplatinumlabel',
+        img: 'whisky/jwplatinumlabel',
         name: 'Johnnie Walker Platinum Label',
         version: '',
         unit: 'cc',
@@ -494,7 +494,7 @@ export default [
         ]
       },
       {
-        img: 'jwredlabel',
+        img: 'whisky/jwredlabel',
         name: 'Johnnie Walker Red Label',
         version: '',
         unit: 'cc',
@@ -510,7 +510,7 @@ export default [
         ]
       },
       {
-        img: 'jwredrye',
+        img: 'whisky/jwredrye',
         name: 'Johnnie Walker Red Rye',
         version: '',
         unit: 'cc',
@@ -526,7 +526,7 @@ export default [
         ]
       },
       {
-        img: 'theglenlivet',
+        img: 'whisky/theglenlivet',
         name: 'The Glenlivet',
         version: '',
         unit: 'cc',
@@ -550,7 +550,7 @@ export default [
     history: 'Originariamente la producción de esta bebida era a partir de los productos de agricultura locales más económicos y abundantes como el trigo, maíz, papas, caña de azúcar o la combinación de cualquiera de estos. El proceso consistía en una filtración simple y rápida del fermento de estos vegetales usando un filtro a base de carbón vegetal, en lugar de un proceso caro y prolongado de destilación. El líquido purificado era después reducido, sin añejarse (envejecerse), hasta ser potabilizado mediante la adición de agua destilada para luego embotellarlo.El resultado de este ciclo de elaboración era y sigue siendo un producto incoloro y sin olores con una graduación alcohólica elevada.Las vodkas producidas en Rusia contenían 40% de alcohol y las de Polonia alcanzaban los 45º de graduación alcohólica.Actualmente la graduación típica es de 45º, por lo que su aporte calórico al organismo por cada 100 mg (aproximadamente 100 ml) es de 315 kcal.',
     marks: [
       {
-        img: 'absolut',
+        img: 'vodka/absolut',
         name: 'Absolut',
         version: '',
         unit: 'cc',
@@ -566,7 +566,7 @@ export default [
         ]
       },
       {
-        img: 'belvedere',
+        img: 'vodka/belvedere',
         name: 'Belvedere',
         version: '',
         unit: 'cc',
@@ -582,7 +582,7 @@ export default [
         ]
       },
       {
-        img: 'blavod',
+        img: 'vodka/blavod',
         name: 'Blavod',
         version: '',
         unit: 'cc',
@@ -598,7 +598,7 @@ export default [
         ]
       },
       {
-        img: 'chambordvodka',
+        img: 'vodka/chambordvodka',
         name: 'Chambord',
         version: '',
         unit: 'cc',
@@ -614,7 +614,7 @@ export default [
         ]
       },
       {
-        img: 'chopin',
+        img: 'vodka/chopin',
         name: 'Chopin',
         version: '',
         unit: 'cc',
@@ -630,7 +630,7 @@ export default [
         ]
       },
       {
-        img: 'diva',
+        img: 'vodka/diva',
         name: 'Diva',
         version: '',
         unit: 'cc',
@@ -646,7 +646,7 @@ export default [
         ]
       },
       {
-        img: 'greygoose',
+        img: 'vodka/greygoose',
         name: 'Grey Goose',
         version: '',
         unit: 'cc',
@@ -662,7 +662,7 @@ export default [
         ]
       },
       {
-        img: 'khorytsa',
+        img: 'vodka/khorytsa',
         name: 'Khorytsa',
         version: '',
         unit: 'cc',
@@ -678,7 +678,7 @@ export default [
         ]
       },
       {
-        img: 'krupnik',
+        img: 'vodka/krupnik',
         name: 'Krupnik',
         version: '',
         unit: 'cc',
@@ -694,7 +694,7 @@ export default [
         ]
       },
       {
-        img: 'skyy',
+        img: 'vodka/skyy',
         name: 'Skyy',
         version: '',
         unit: 'cc',
@@ -710,7 +710,7 @@ export default [
         ]
       },
       {
-        img: 'smirnoff',
+        img: 'vodka/smirnoff',
         name: 'Smirnoff',
         version: '',
         unit: 'cc',
@@ -726,7 +726,7 @@ export default [
         ]
       },
       {
-        img: 'threeolives',
+        img: 'vodka/threeolives',
         name: 'Three Olives',
         version: '',
         unit: 'cc',
@@ -742,7 +742,7 @@ export default [
         ]
       },
       {
-        img: 'zubrowka',
+        img: 'vodka/zubrowka',
         name: 'Zubrowa',
         version: '',
         unit: 'cc',
@@ -932,7 +932,7 @@ export default [
     history: 'La Ginebra es la bebida nacional de Holanda por excelencia. Fue un profesor de la Universidad de Leyden, el Dr. Franciscus Sylvius de la Boe, quién la elaboró por primera vez cerca del año 1600. Buscaba un medicamento y compuso un licor estomacal elaborado con cebada, centeno, maíz y bayas de enebro al que denominó genièvre (enebrina en francés). Pronto se hizo muy popular y comenzó a comercializarse cómo un aguardiente al que los holandeses bautizaron cómo "Jenever" o "Genever". La Guerra de los países bajos cambió el curso de la historia de esta bebida, una vez retirado el ejército Inglés de Holanda, se llevaron consigo no solo la victoria sino también una profunda admiración por la bebida de los holandeses: y para facilitar su pronunciación la denominaron Gin. Así, en un principio la Ginebra y el Gin eran la misma bebida. Pronto se instalaron fábricas del preciado licor en las inmediaciones de Londres, pero los altos costos de algunas de sus materias primas, cómo también los elevados impuestos para los mismos, obligaron a los productores a cambiar su fórmula. De esta forma surgieron las nuevas Ginebras Secas Londinenses (London Dry Gin), a partir de ese momento la Ginebra y el Gin comenzaron a transitar caminos diferentes.',
     marks: [
       {
-        img: 'bombay',
+        img: 'gin/bombay',
         name: 'Bombay Shappire',
         version: '750',
         unit: 'cc',
@@ -947,7 +947,7 @@ export default [
         ]
       },
       {
-        img: 'burnetts',
+        img: 'gin/burnetts',
         name: 'Burnetts',
         version: '',
         unit: 'cc',
@@ -962,7 +962,7 @@ export default [
         ]
       },
       {
-        img: 'hendricks',
+        img: 'gin/hendricks',
         name: 'Hendrick´s',
         version: '',
         unit: 'cc',
@@ -977,7 +977,7 @@ export default [
         ]
       },
       {
-        img: 'mare',
+        img: 'gin/mare',
         name: 'Mare',
         version: '',
         unit: 'cc',
@@ -992,7 +992,7 @@ export default [
         ]
       },
       {
-        img: 'pdelosapostoles',
+        img: 'gin/pdelosapostoles',
         name: 'Príncipe de los Apostoles',
         version: '',
         unit: 'cc',
@@ -1007,7 +1007,7 @@ export default [
         ]
       },
       {
-        img: 'tanqueray',
+        img: 'gin/tanqueray',
         name: 'Tanqueray',
         version: '',
         unit: 'cc',
@@ -1022,7 +1022,7 @@ export default [
         ]
       },
       {
-        img: 'tanquerayten',
+        img: 'gin/tanquerayten',
         name: 'Tanqueray Ten',
         version: '',
         unit: 'cc',
@@ -1044,7 +1044,7 @@ export default [
     history: 'La pita, un cultivo de América Central de mas de 8000 años de antigüedad, es muy versátil. Se consume su dulce carne y a partir de sus fibras se cosen telas, alfombras, hilos, cuerdas y se fabrica papel.Sus hojas cubren tejados y sus espigas sirven como agujas de coser. La pita se usaba como planta medicinal, su jugo fermentado, fue muy importante en la religión de los aztecas como sustancia intoxicante y ofrendas. Tras la introducción de la destilación por parte de los conquistadores españoles, la pita se destiló para fabricar mezcal, posteriormente tequila. Al día de hoy ambos productos se han establecido como bebidas nacionales mexicanas y forman parte de la historia cultural del país.',
     marks: [
       {
-        img: '1800',
+        img: 'tequila/1800',
         name: '1800',
         version: '700',
         unit: 'cc',
@@ -1060,7 +1060,7 @@ export default [
         ]
       },
       {
-        img: 'agavales',
+        img: 'tequila/agavales',
         name: 'Agavales',
         version: '750',
         unit: 'cc',
@@ -1076,7 +1076,7 @@ export default [
         ]
       },
       {
-        img: 'donjulio1942',
+        img: 'tequila/donjulio1942',
         name: 'Don Julio 1942',
         version: '750',
         unit: 'cc',
@@ -1092,7 +1092,7 @@ export default [
         ]
       },
       {
-        img: 'donjulioanejo',
+        img: 'tequila/donjulioanejo',
         name: 'Don Julio Añejo',
         version: '',
         unit: 'cc',
@@ -1108,7 +1108,7 @@ export default [
         ]
       },
       {
-        img: 'donjulioblanco',
+        img: 'tequila/donjulioblanco',
         name: 'Don Julio Blanco',
         version: '750',
         unit: 'cc',
@@ -1124,7 +1124,7 @@ export default [
         ]
       },
       {
-        img: 'donjulioreposado',
+        img: 'tequila/donjulioreposado',
         name: 'Don Julio Reposado',
         version: '750',
         unit: 'cc',
@@ -1140,7 +1140,7 @@ export default [
         ]
       },
       {
-        img: 'josecuervoreposado',
+        img: 'tequila/josecuervoreposado',
         name: 'José Cuervo Reposado',
         version: '750',
         unit: 'cc',
@@ -1156,7 +1156,7 @@ export default [
         ]
       },
       {
-        img: 'josecuervosilver',
+        img: 'tequila/josecuervosilver',
         name: 'José Cuervo Silver',
         version: '750',
         unit: 'cc',
@@ -1172,7 +1172,7 @@ export default [
         ]
       },
       {
-        img: 'patronanejo',
+        img: 'tequila/patronanejo',
         name: 'Patrón Añejo',
         version: '750',
         unit: 'cc',
@@ -1188,7 +1188,7 @@ export default [
         ]
       },
       {
-        img: 'patronreposado',
+        img: 'tequila/patronreposado',
         name: 'Patrón Reposado',
         version: '750',
         unit: 'cc',
@@ -1204,7 +1204,7 @@ export default [
         ]
       },
       {
-        img: 'patronsilver',
+        img: 'tequila/patronsilver',
         name: 'Patrón Silver',
         version: '750',
         unit: 'cc',
@@ -1220,7 +1220,7 @@ export default [
         ]
       },
       {
-        img: 'sauza',
+        img: 'tequila/sauza',
         name: 'Sauza',
         version: '700',
         unit: 'cc',
@@ -1243,7 +1243,7 @@ export default [
     history: 'Excavaciones iniciadas en 1994 por antropólogos, encontraron "La ruta del mezcal" a través del cual recorrieron comunidades indígenas para identificar los lugares donde se producía el mezcal de manera artesanal; se percataron de que aún se destilaba en ollas de barro semejantes a las halladas en Nativitas y fechadas hacia el año 400 antes de Cristo. Actualmente, el mezcal cuenta con Denominación de Origen y protege la producción de esta bebida en los estados de Oaxaca, Michoacán, Guerrero, Guanajuato, Durango, Zacatecas, San Luis Potosí y Tamaulipas. Son estas las únicas regiones en el mundo que pueden producir mezcal.',
     marks: [
       {
-        img: 'amores',
+        img: 'mezcal/amores',
         name: 'Amores Espadín Joven',
         version: '',
         unit: 'cc',
@@ -1259,7 +1259,7 @@ export default [
         ]
       },
       {
-        img: 'meteoro',
+        img: 'mezcal/meteoro',
         name: 'Meteoro',
         version: '750',
         unit: 'cc',
@@ -1275,7 +1275,7 @@ export default [
         ]
       },
       {
-        img: 'orooaxaca',
+        img: 'mezcal/orooaxaca',
         name: 'Oro de Oaxaca',
         version: '750',
         unit: 'cc',
@@ -1291,7 +1291,7 @@ export default [
         ]
       },
       {
-        img: 'union',
+        img: 'mezcal/union',
         name: 'Unión Uno Joven',
         version: '700',
         unit: 'cc',
@@ -1307,7 +1307,7 @@ export default [
         ]
       },
       {
-        img: 'yuubaal',
+        img: 'mezcal/yuubaal',
         name: 'Yuu Baal Joven Tepeztate',
         version: '750',
         unit: 'cc',
@@ -1330,7 +1330,7 @@ export default [
     history: 'Se dice que inicialmente, durante la Edad Media, los monjes fueron quienes iniciaron la producción de licor a gran escala, mientras que los físicos y alquimistas los utilizaban como remedios medicinales, pócimas amorosas y afrodisíacos, hace más de 7 siglos. Motivo por el cual eran conocidos como elixires, aceites y bálsamos, antes de ser llamados popularmente, licores. Existen tres tipos de licores, aquellos compuestos por una sola hierba, los compuestos por fruta y los producidos a partir de mezcla de frutas o hierbas. Cada tipo funciona diferente para saborizar cualquier bebida. Además, por su versatilidad, se puede mezclar más de un licor en cada cocktail.',
     marks: [
       {
-        img: 'baileys',
+        img: 'licor/baileys',
         name: 'Baileys',
         version: '750',
         unit: 'cc',
@@ -1346,7 +1346,7 @@ export default [
         ]
       },
       {
-        img: 'chambordlicor',
+        img: 'licor/chambordlicor',
         name: 'Chambord',
         version: '700',
         unit: 'cc',
@@ -1362,7 +1362,7 @@ export default [
         ]
       },
       {
-        img: 'cointreau',
+        img: 'licor/cointreau',
         name: 'Cointreau',
         version: '700',
         unit: 'cc',
@@ -1378,7 +1378,7 @@ export default [
         ]
       },
       {
-        img: 'drambuie',
+        img: 'licor/drambuie',
         name: 'Drambuie',
         version: '750',
         unit: 'cc',
@@ -1394,7 +1394,7 @@ export default [
         ]
       },
       {
-        img: 'hesperidina',
+        img: 'licor/hesperidina',
         name: 'Hesperidina',
         version: '1000',
         unit: 'cc',
@@ -1410,7 +1410,7 @@ export default [
         ]
       },
       {
-        img: 'sheridans',
+        img: 'licor/sheridans',
         name: 'Sheridan"s',
         version: '700',
         unit: 'cc',
@@ -1426,7 +1426,7 @@ export default [
         ]
       },
       {
-        img: 'stgermain',
+        img: 'licor/stgermain',
         name: 'St-Germain',
         version: '750',
         unit: 'cc',
@@ -1442,7 +1442,7 @@ export default [
         ]
       },
       {
-        img: 'strega',
+        img: 'licor/strega',
         name: 'Strega',
         version: '700',
         unit: 'cc',

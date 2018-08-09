@@ -8,14 +8,9 @@
       </ol>
     </nav>
     <div class="card-deck">
-      <Drink :item="item" v-for="item in vermouth" :key="item.img"></Drink> 
-      <Drink :item="item" v-for="item in whisky" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in vodka" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in ron" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in gin" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in mezcal" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in tequila" :key="item.img"></Drink>  
-      <Drink :item="item" v-for="item in licores" :key="item.img"></Drink>  
+      <template v-for="category in drinks"> 
+      <Drink :item="item" v-for="item in category.marks" :key="item.img"></Drink>  
+      </template>
     </div>
   </div>
 </section>
@@ -30,15 +25,6 @@ export default {
   components: { Drink },
   data () {
     return {
-      vermouth: drinks[0].marks,
-      whisky: drinks[1].marks,
-      vodka: drinks[2].marks,
-      ron: drinks[3].marks,
-      gin: drinks[4].marks,
-      tequila: drinks[5].marks,
-      mezcal: drinks[6].marks,
-      tequila: drinks[7].marks,
-      licores: drinks[8].marks,
       drinks,
     }
   },

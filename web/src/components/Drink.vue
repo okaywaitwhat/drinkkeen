@@ -17,7 +17,7 @@ export default {
   ],
    computed: 
   { imgPath () { 
-    return require ('../assets/todo/' + this.item.img + '-min.png') 
+    return require ('../assets/mediabebidas/' + this.item.img + '-min.png') 
     } 
   },
 }
