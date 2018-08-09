@@ -20,7 +20,7 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="btn btn-light">Sing in</button>
+          <button type="submit" class="btn btn-light">Log in</button>
         </form> 
       </div> 
     </section>
@@ -42,10 +42,9 @@ export default {
 <style scoped lang="scss">
 
 section {
-  height: 90%;
+  height: 100%;
   width: 100%;
-  min-height: 90%;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   float: center;

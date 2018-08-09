@@ -36,7 +36,6 @@ export default {
 <style scoped lang="scss">
 section {
   float: center;
-  text-align: center;
 
 div {
   min-height: 100%;
@@ -45,5 +44,8 @@ div {
   align-items: center;
   }
 }
-
+ .container {
+   margin-left: 200px;
+   margin-right: 200px;
+ }
 </style>

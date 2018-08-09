@@ -25,4 +25,8 @@ export default {
     font-size: 30px;
   }
 }
+
+blockquote {
+  text-align: center;
+}
 </style>

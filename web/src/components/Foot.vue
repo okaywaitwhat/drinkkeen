@@ -1,5 +1,5 @@
 <template>
-    <section class="container-fluid bg-light py-3">
+    <section class="bg-light py-3">
         <footer>
             <div>
                 <img src="../assets/media/navbrand.png">
@@ -46,6 +46,7 @@ export default {
 section {
   text-align: center;
   width: 100%;
+  height: 20%;
   background: #e9ecef;
 }
 
@@ -64,10 +65,10 @@ footer {
 
 .fa {
   padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
   color: #212529;
-  margin-bottom: 20px;
 }
 
 </style>

@@ -7,7 +7,6 @@
         <li v-for="item in drinks" :key="item.name" class="breadcrumb-item"><a>{{ item.name }}</a></li> 
       </ol>
     </nav>
-
     <div class="card-deck">
       <Drink :item="item" v-for="item in vermouth" :key="item.img"></Drink> 
       <Drink :item="item" v-for="item in whisky" :key="item.img"></Drink>  

@@ -30,8 +30,8 @@ export default {
   },
   data () {
     return {
-      showQuotes: true,
-      showDrinks: false,
+      showQuotes: false,
+      showDrinks: true,
       showRecipes: false,
       showProducts: false,
       showLogin: false,
