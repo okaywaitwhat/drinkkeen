@@ -1,13 +1,13 @@
 <template>
-   <section v-if="seen">  
+   <section>  
         <b-navbar toggleable="md" class="navbar-light bg-light">
             <img :src="require(`../assets/media/navbrand.png`)">
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item>Bebidas</b-nav-item>
-                    <b-nav-item>Recetas</b-nav-item>
-                    <b-nav-item>Productos</b-nav-item>
+                    <b-nav-item @click="seleccionar('drinks')">Bebidas</b-nav-item>
+                    <b-nav-item @click="seleccionar('recipes')">Recetas</b-nav-item>
+                    <b-nav-item @click="seleccionar('products')">Productos</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
@@ -30,26 +30,23 @@
 
 <script>
 export default {
-  data () {
-    return {
-        seen: true,
-        visible: false,
-        links: [
-            {
-                link: 'Calculadora'
-            },
-            {
-                link: 'Contacto'
-            },
-        ],
-    }
-  },
   methods: {
     prox: function () {
-      alert('Próximamente')
-      }
+    alert('Próximamente')
+    },
+    seleccionar (type) {
+        const showing = this.$parent.$data.showing
+        // ["quotes", "drinks", "recipes", "products", "login"]
+        /* Object.keys(showing).forEach(prop => {
+            showing[prop] = false
+        }) */
+        for(let prop in showing) {
+            showing[prop] = false
+        }
+        showing[type] = true
     }
   }
+}
 
 </script>
 

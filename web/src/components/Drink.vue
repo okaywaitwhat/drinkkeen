@@ -8,10 +8,6 @@
 
 export default {
   name: 'drink',
-  data () {
-    return {
-    }
-  },
   props: [
     'item',
   ],
