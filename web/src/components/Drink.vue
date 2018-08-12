@@ -15,9 +15,9 @@ export default {
   props: [
     'item',
   ],
-   computed: 
-  { imgPath () { 
-    return require ('../assets/mediabebidas/' + this.item.img + '-min.png') 
+   computed: {
+    imgPath () { 
+      return require ('../assets/mediabebidas/' + this.item.img + '-min.png') 
     } 
   },
 }

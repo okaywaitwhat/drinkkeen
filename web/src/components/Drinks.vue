@@ -4,7 +4,7 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center">
-        <li v-for="item in drinks" :key="item.name" class="breadcrumb-item"><a>{{ item.name }}</a></li> 
+        <li v-for="category in drinks" :key="category.name" class="breadcrumb-item"><a>{{ category.name }}</a></li> 
       </ol>
     </nav>
     <div class="card-deck">
