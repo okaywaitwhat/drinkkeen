@@ -6,14 +6,11 @@
                     <h5 class="card-title">{{ recipe.name }}</h5>
                     <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
                       <section class="btn-group-toggle" data-toggle="button">
-                        <button v-on:click="showIngredients = !showIngredients" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Ingredientes</button>
-                        <button v-on:click="showSteps = !showSteps" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Procedimiento</button>
+                        <button v-on:click="showDetalles = !showDetalles" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Detalles</button>
                       </section>
                 </div>
-                    <ul class="list-group list-group-flush" v-if="showIngredients">
+                    <ul class="list-group list-group-flush" v-if="showDetalles">
                       <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span style="float: right;">{{ ingredient.portion }} {{ ingredient.unit }}</span></li>
-                    </ul>
-                    <ul class="list-group list-group-flush" v-if="showSteps">
                       <li v-for="step in recipe.steps" :key="step.step">{{ step }}</li>
                     </ul>
         </div>
@@ -26,17 +23,16 @@ export default {
   name: 'recipe',
   data () {
     return {
-      showIngredients: false,
-      showSteps: false,
+      showDetalles: false,
     }
   },
   props: [
     'recipe',
   ],
-   computed: 
-  { imgPath: function () { 
-    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg') 
-    } 
+   computed:
+  { imgPath: function () {
+    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
+    }
   },
 }
 </script>
