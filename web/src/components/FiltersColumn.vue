@@ -75,7 +75,6 @@ export default {
 aside {
   background: #e9ecef;
   float: left;
-  text-align: left;
 }
 
 @media screen and (max-width: 700px) {

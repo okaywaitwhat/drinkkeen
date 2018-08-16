@@ -4,7 +4,7 @@
     <Intro :legend="legend" />
     <Navbar />
     <Quotes v-if="showing.quotes"/>
-    <Drinks v-if="showing.drinks" />
+    <Beverages v-if="showing.beverages" />
     <Recipes v-if="showing.recipes" />
     <Products v-if="showing.products" />
     <Login v-if="showing.login"/>
@@ -16,7 +16,7 @@
 import Intro from './components/Intro'
 import Navbar from './components/NavBar'
 import Quotes from './components/Quotes'
-import Drinks from './components/Drinks'
+import Beverages from './components/Beverages'
 import Recipes from './components/Recipes'
 import Products from './components/Products'
 import Login from './components/Login'
@@ -25,13 +25,13 @@ import Foot from './components/Foot'
 export default {
   name: 'app',
   components: {
-    Intro, Navbar, Quotes, Drinks, Recipes, Products, Login, Foot
+    Intro, Navbar, Quotes, Beverages, Recipes, Products, Login, Foot
   },
   data () {
     return {
       showing: {
         quotes: false,
-        drinks: false,
+        beverages: false,
         recipes: false,
         products: false,
         login: false

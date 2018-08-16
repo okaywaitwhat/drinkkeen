@@ -1,11 +1,11 @@
 <template>
-   <section>  
+   <section>
         <b-navbar toggleable="md" class="navbar-light bg-light">
             <img :src="require(`../assets/media/navbrand.png`)">
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item @click="seleccionar('drinks')">Bebidas</b-nav-item>
+                    <b-nav-item @click="seleccionar('beverages')">Bebidas</b-nav-item>
                     <b-nav-item @click="seleccionar('recipes')">Recetas</b-nav-item>
                     <b-nav-item @click="seleccionar('products')">Productos</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
@@ -25,7 +25,7 @@
                     </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-    </section> 
+    </section>
 </template>
 
 <script>

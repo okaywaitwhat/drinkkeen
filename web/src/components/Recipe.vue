@@ -3,18 +3,15 @@
         <div  class="card card-shadow bg-light mb-3">
             <img class="card-img-top" :src="imgPath">
                 <div class="card-body">
-                    <h5 class="card-title">{{ recipe.name }}</h5>
+                    <h5 class="card-title">{{ recipe.name }} <i v-on:click="showDetalles = !showDetalles" class="fa fa-angle-down"></i></h5>
                     <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
-                      <section class="btn-group-toggle" data-toggle="button">
-                        <button v-on:click="showDetalles = !showDetalles" type="button" data-toggle="button" aria-pressed="false" autocomplete="off" class="btn btn-light btn-sm">Detalles</button>
-                      </section>
                 </div>
-                    <ul class="list-group list-group-flush" v-if="showDetalles">
-                      <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span style="float: right;">{{ ingredient.portion }} {{ ingredient.unit }}</span></li>
-                      <li v-for="step in recipe.steps" :key="step.step">{{ step }}</li>
-                    </ul>
-        </div>
-    </div>
+                        <ul class="list-group list-group-flush" v-if="showDetalles">
+                          <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span style="float: right;">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
+                          <li v-for="(step, index) in recipe.steps" :key="step.step" class="dark-list"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+                        </ul>
+          </div>
+      </div>
 </template>
 
 <script>
@@ -46,6 +43,10 @@ export default {
   &:hover {
       box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     }
+
+    p {
+      margin: 0;
+    }
   }
 
   .card-item {
@@ -59,6 +60,11 @@ export default {
       border-top: 1px solid rgba(0, 0, 0, 0.125);
       text-align: left;
     }
+
+
+  .dark-list {
+    background-color: #f8f9fa;
+  }
 
 </style>
 

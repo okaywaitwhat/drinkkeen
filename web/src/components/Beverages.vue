@@ -4,12 +4,12 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center">
-        <li v-for="category in drinks" :key="category.name" class="breadcrumb-item"><a>{{ category.name }}</a></li> 
+        <li v-for="category in beverages" :key="category.name" class="breadcrumb-item"><a>{{ category.name }}</a></li>
       </ol>
     </nav>
     <div class="card-deck">
-      <template v-for="category in drinks"> 
-      <Drink :item="item" v-for="item in category.marks" :key="item.img"></Drink>  
+      <template v-for="category in beverages">
+      <Beverage :item="item" v-for="item in category.marks" :key="item.img"></Beverage>
       </template>
     </div>
   </div>
@@ -17,21 +17,22 @@
 </template>
 
 <script>
-import Drink from './Drink'
-import drinks from '../data/drinks.js';
+import Beverage from './Beverage'
+import beverages from '../data/beverages.js';
 
 export default {
-  name: 'drinks',
-  components: { Drink },
+  name: 'beverages',
+  components: { Beverage },
   data () {
     return {
-      drinks,
+      beverages,
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
+
 section {
   float: center;
   background: #e9ecef;

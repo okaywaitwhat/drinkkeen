@@ -7,14 +7,14 @@
 <script>
 
 export default {
-  name: 'drink',
+  name: 'beverage',
   props: [
     'item',
   ],
    computed: {
-    imgPath () { 
-      return require ('../assets/mediabebidas/' + this.item.img + '-min.png') 
-    } 
+    imgPath () {
+      return require ('../assets/mediabebidas/' + this.item.img + '-min.png')
+    }
   },
 }
 </script>
