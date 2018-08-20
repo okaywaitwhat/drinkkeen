@@ -30,7 +30,7 @@ export default {
   data () {
     return {
       showing: {
-        quotes: false,
+        quotes: true,
         beverages: false,
         recipes: false,
         products: false,

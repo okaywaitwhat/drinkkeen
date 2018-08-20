@@ -27,7 +27,7 @@ export default {
     setInterval(() => {
       const numeroRandom = Math.floor(Math.random() * quotes.length)
       this.quoteActual = quotes[numeroRandom]
-    }, 6000)
+    }, 9000)
   }
 }
 

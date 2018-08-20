@@ -1,7 +1,7 @@
 <template>
    <section>
         <b-navbar toggleable="md" class="navbar-light bg-light">
-            <img :src="require(`../assets/media/navbrand.png`)">
+            <img :src="require(`../assets/media/navbrand.png`)" @click="seleccionar('quotes')">
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
@@ -15,13 +15,9 @@
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item-dropdown right>
-                        <template slot="button-content">
-                        <a>User</a>
-                        </template>
-                        <b-dropdown-item href="#">Profile</b-dropdown-item>
-                        <b-dropdown-item href="#">Signout</b-dropdown-item>
-                    </b-nav-item-dropdown>
+                    <b-nav-item @click="seleccionar('login')" right>
+                      Ingresar
+                    </b-nav-item>
                     </b-navbar-nav>
             </b-collapse>
         </b-navbar>

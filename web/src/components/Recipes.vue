@@ -5,8 +5,8 @@
         <FiltersColumn></FiltersColumn>
           <section class="recipes-cards-cont">
             <div class="card-columns">
-                <Recipe :recipe="recipe" v-for="recipe in menu" :key="recipe.name"></Recipe>  
-            </div>  
+                <Recipe :recipe="recipe" v-for="recipe in menu" :key="recipe.name"></Recipe>
+            </div>
             <Modal></Modal>
           </section>
         </section>
