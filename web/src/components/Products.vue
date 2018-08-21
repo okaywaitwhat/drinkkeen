@@ -1,9 +1,9 @@
 <template>
-    <section id="productsSection">
+    <section>
         <section>
             <div class="container">
                 <div class="card-columns">
-                    <Product :product="product" v-for="product in store" :key="product.name"></Product>  
+                    <Product :product="product" v-for="product in store" :key="product.name"></Product>
                 </div>
             </div>
         </section>

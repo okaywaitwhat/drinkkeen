@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-                    
+
         <nav class="navbar navbar-light bg-light justify-content-center">
             <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-glass text-dark"></span></button>
