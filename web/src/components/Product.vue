@@ -4,7 +4,7 @@
             <img class="card-img-top rounded-circle" :src="imgPath">
             <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
-                <p class="font-italic text-capitalize">{{ product.description }}</p>     
+                <p class="font-italic text-capitalize">{{ product.description }}</p>
             </div>
         </div>
     </div>
@@ -16,10 +16,10 @@ export default {
   props: [
     'product',
   ],
-  computed: 
-  { imgPath: function () { 
-    return require ('../assets/mediaproductos/' + this.product.img + '.jpg') 
-    } 
+  computed:
+  { imgPath: function () {
+    return require ('../assets/mediaproductos/' + this.product.img + '.jpg')
+    }
   },
 }
 

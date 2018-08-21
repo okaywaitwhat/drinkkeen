@@ -1,11 +1,5 @@
-[
-    {
-    description: 'Estas recetas te harán incursionar en otros horizontes de sabor. Un mundo inexplorado te está esperando con las recetas de cocktails más recientes.',
-    history: 'La coctelería moderna se basa en fundamentos saludables, novedosos y creativos de la utilización de productos naturales inspirados en el conocimiento y buen gusto del barman. Es así como se han creado diversos tipos de bebidas combinadas con frutas, hortalizas, plantas aromáticas, especies, productos lácteos, aguas minerales y demás. Hay que tener en cuenta que un buen cóctel debe ser una bebida equilibrada, armoniosa y de calidad, pudiendo producir en la persona que lo bebe sensaciones placenteras en su paladar aparte del goce en la vista, pues el cóctel debe caracterizarse, también, por su presentación agradable, alegre y sugestiva.',
-    menu:
-      [
-        {
-
+export default [
+  {
           name: 'Luque',
           img: 'luque',
           family: 'author',
@@ -93,7 +87,5 @@
             'Coronar una vaso old fashion con jarabe y praliné de almendras.',
             'Agregar dos rocas de hielo y ambos licores.'
           ]
-        }
-      ]
   }
   ]
