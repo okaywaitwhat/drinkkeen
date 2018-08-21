@@ -9,7 +9,7 @@
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item to="beverages">Bebidas</b-nav-item>
-                    <b-nav-item to="recipes">Recetas</b-nav-item>
+                    <b-nav-item to="collections">Recetas</b-nav-item>
                     <b-nav-item to="products">Productos</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item @click="prox()">Calculadora</b-nav-item>
@@ -18,7 +18,7 @@
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item @click="seleccionar('login')" right>
+                    <b-nav-item to="login" right>
                       Ingresar
                     </b-nav-item>
                     </b-navbar-nav>
