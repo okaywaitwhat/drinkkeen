@@ -1,13 +1,16 @@
 <template>
    <section>
         <b-navbar toggleable="md" class="navbar-light bg-light">
-            <img :src="require(`../assets/media/navbrand.png`)" @click="seleccionar('quotes')">
+            <!-- router-link es un componente de Vue que genera un link a una vista del router, en este caso nos lleva al default `/` -->
+            <router-link to="/">
+                <img :src="require(`../assets/media/navbrand.png`)">
+            </router-link>
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item @click="seleccionar('beverages')">Bebidas</b-nav-item>
-                    <b-nav-item @click="seleccionar('recipes')">Recetas</b-nav-item>
-                    <b-nav-item @click="seleccionar('products')">Productos</b-nav-item>
+                    <b-nav-item to="beverages">Bebidas</b-nav-item>
+                    <b-nav-item to="recipes">Recetas</b-nav-item>
+                    <b-nav-item to="products">Productos</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
@@ -27,19 +30,8 @@
 <script>
 export default {
   methods: {
-    prox: function () {
-    alert('Próximamente')
-    },
-    seleccionar (type) {
-        const showing = this.$parent.$data.showing
-        // ["quotes", "drinks", "recipes", "products", "login"]
-        /* Object.keys(showing).forEach(prop => {
-            showing[prop] = false
-        }) */
-        for(let prop in showing) {
-            showing[prop] = false
-        }
-        showing[type] = true
+    prox () {
+        alert('Próximamente')
     }
   }
 }
@@ -47,6 +39,15 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/* nav-link es la clase que le pone el <b-nav-item> a los links generados */
+.nav-link {
+    height: 100%;
+    width: 100%;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 .dropdown-item,
 .navbar-toggler {
