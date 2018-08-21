@@ -8,7 +8,6 @@
     <Recipes v-if="showing.recipes" />
     <Products v-if="showing.products" />
     <Login v-if="showing.login"/>
-    <Collections />
     <Foot />
   </div>
 </template>
@@ -22,12 +21,11 @@ import Recipes from './components/Recipes'
 import Products from './components/Products'
 import Login from './components/Login'
 import Foot from './components/Foot'
-import Collections from './components/Collections'
 
 export default {
   name: 'app',
   components: {
-    Intro, Navbar, Quotes, Beverages, Recipes, Products, Login, Foot, Collections
+    Intro, Navbar, Quotes, Beverages, Recipes, Products, Login, Foot
   },
   data () {
     return {
