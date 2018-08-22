@@ -8,43 +8,9 @@
       </div>
 
       <div class="col-md-6">
-
         <div class="row">
           <div class="row">
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
-              </div>
-            </div>
-            <div class="col-md-3">
+            <div v-for="recipe in classic.slice(0, 7)" :key="recipe.name" class="col-md-3">
               <div class="card">
                 <img class="mini-card rounded" src="../assets/mediarecetas/square.jpg">
               </div>
@@ -62,8 +28,19 @@
 </template>
 
 <script>
+import classic from '../data/classiccocktails.js';
+import modern from '../data/moderncocktails.js';
+import author from '../data/authorcocktails.js';
+import molecular from '../data/molecularcocktails.js';
+import Collection from './Collection';
 export default {
   name: 'collections',
+  components: { Collection },
+  data () {
+    return {
+      classic, modern, author, molecular,
+    }
+  },
 }
 </script>
 
