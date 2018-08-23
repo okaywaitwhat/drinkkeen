@@ -27,9 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    width: 100%;
-    padding-right: 20%;
-    padding-left: 20%;
+    padding: 1rem;
     background-color: transparent!important;
     text-align: center;
     border: 0;
