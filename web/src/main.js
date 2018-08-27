@@ -5,6 +5,7 @@ import BootstrapVue from "bootstrap-vue"
 import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './fa.js'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
