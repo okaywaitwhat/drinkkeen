@@ -8,7 +8,7 @@
       </ol>
     </nav>
     <div class="card-deck">
-      <template v-for="category in beverages">
+      <template v-for="category in beverages.slice(0, 1)">
       <Beverage :item="item" v-for="item in category.marks" :key="item.img"></Beverage>
       </template>
     </div>
@@ -34,8 +34,6 @@ export default {
 <style scoped lang="scss">
 
 section {
-  float: center;
-  background: #e9ecef;
   padding: 4rem;
   text-align: center;
   min-height: 100%;

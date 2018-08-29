@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="text-center p-5" v-for="(category, i) in categories" :key="i">
+    <div class="text-center p-4" v-for="(category, i) in categories" :key="i">
       <Collection :category="category" />
     </div>
   </section>
@@ -8,10 +8,10 @@
 
 <script>
 import Collection from './Collection';
-import classic from '../data/classiccocktails.js';
-import modern from '../data/moderncocktails.js';
-import author from '../data/authorcocktails.js';
-import molecular from '../data/molecularcocktails.js';
+import classic from '../data/recipes/classiccocktails.js';
+import modern from '../data/recipes/moderncocktails.js';
+import author from '../data/recipes/authorcocktails.js';
+import molecular from '../data/recipes/molecularcocktails.js';
 
 export default {
   name: 'collections',
@@ -24,4 +24,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  padding: 4rem;
+  min-height: 100%;
+  width: 100%;
+}
+</style>

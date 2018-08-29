@@ -1,12 +1,12 @@
 <template>
-   <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}" v-if="seen">  
+   <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}" v-if="seen">
         <div class="container">
           <a>
             <img src='../assets/media/logo.png' v-on:click="seen = !seen">
           </a>
           <!-- legend viene de prop @ App.vue -->
           <p class="subt-responsive"></p>
-        </div>    
+        </div>
     </section>
 </template>
 

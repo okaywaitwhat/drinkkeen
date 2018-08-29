@@ -52,4 +52,5 @@ export default {
     padding: 1rem !important;
   }
 }
+
 </style>

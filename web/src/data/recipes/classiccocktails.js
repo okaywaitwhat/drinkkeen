@@ -1,9 +1,10 @@
 export default {
   title: 'Clásica',
+  img: 'squarenegroni',
   data: [
     {
       name: 'Top Shelf Long Island',
-      img: 'negroni',
+      img: 'squarenegroni',
       family: 'classic',
       type: 'shaken',
       ingredients: [

@@ -1,9 +1,10 @@
 export default {
   title: 'de Autor',
+  img: 'squareluque',
   data: [
     {
       name: 'Luque',
-      img: 'luque',
+      img: 'squareluque',
       family: 'author',
       type: 'direct',
 
@@ -33,7 +34,7 @@ export default {
     {
 
       name: 'Luque',
-      img: 'luque',
+      img: 'squareluque',
       family: 'author',
       type: 'direct',
 
@@ -63,7 +64,7 @@ export default {
     {
 
       name: 'Luque',
-      img: 'luque',
+      img: 'squareluque',
       family: 'author',
       type: 'direct',
 

@@ -4,17 +4,17 @@
             <div>
                 <img src="../assets/media/navbrand.png">
             </div>
-                <a href="#">
-                    <i class="fa fa-instagram"></i>     
-                </a>  
-            
+                <a href="https://www.instagram.com/drinkkeen/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
                 <a href="https://www.facebook.com/drinkkeen">
                     <i class="fa fa-twitter"></i>
-                </a> 
-        
+                </a>
+
                 <a href="https://www.facebook.com/drinkkeen">
                     <i class="fa fa-facebook-official"></i>
-                </a> 
+                </a>
         </footer>
     </section>
 </template>
@@ -24,7 +24,7 @@ export default {
   name: 'foot',
   data () {
     return {
-      links: [ 
+      links: [
         {
           link: 'https://www.facebook.com/drinkkeen',
           icon:'fa-instagram'},
@@ -52,7 +52,7 @@ section {
 
 footer {
   img {
-    width: 200px;
+    width: 150px;
   }
   div {
     margin: 15px;
@@ -66,8 +66,8 @@ footer {
 .fa {
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
   color: #212529;
 }
 
