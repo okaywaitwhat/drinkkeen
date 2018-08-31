@@ -10,7 +10,6 @@
               <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Usuario" aria-describedby="inputGroupPrepend2" required>
             </div>
           </div>
-
           <div class="form-group">
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>

@@ -1,6 +1,6 @@
 <template>
     <section>
-            <div class="container p-5">
+            <div class="container">
                 <div class="card-columns">
                     <Product :product="product" v-for="product in store" :key="product.name"></Product>
                 </div>
@@ -28,7 +28,7 @@ export default {
 <style scoped lang="scss">
 
 section {
-  padding: 4rem;
+  padding-top: 4rem;
   min-height: 100%;
   width: 100%;
 }

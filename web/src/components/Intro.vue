@@ -21,9 +21,6 @@ export default {
       logo: '../assets/media/logo.png'
     }
   },
-  props: [
-    'legend'
-  ]
 }
 
 </script>

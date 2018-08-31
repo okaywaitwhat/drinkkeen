@@ -40,22 +40,8 @@ export default {
 
 <style scoped lang="scss">
 /* nav-link es la clase que le pone el <b-nav-item> a los links generados */
-.nav-link {
-    height: 100%;
-    width: 100%;
-    color: inherit;
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.dropdown-item,
-.navbar-toggler {
-    outline: none;
-}
 
 section {
-  float: center;
   background: #ffff;
   text-align: center;
   font-weight: 300;

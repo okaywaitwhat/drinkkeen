@@ -1,9 +1,20 @@
 .nav-link {
+    height: 100%;
+    width: 100%;
+    color: inherit;
     margin-right: 10px;
     margin-left: 10px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .nav-link.active {
+    font-weight: 400;
   }
 
   .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: transparent;
+    outline: none;
 }
