@@ -33,11 +33,6 @@ export default {
       this.dismissedIntro = true
       localStorage.setItem(introKey, true)
     }
-  },
-  beforeMount () {
-    if(!localStorage.getItem(introKey)) {
-      localStorage.setItem(introKey, false)
-    }
   }
 }
 </script>
