@@ -1,6 +1,6 @@
 <template>
   <div class="d-inline-flex flex-column justify-content-center">
-    <h4 class="ml-2 mr-auto">Coctelería {{ category.title }} <span class="badge badge-secondary">Nuevo</span></h4>
+    <h4 class="ml-2 mr-auto">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h4>
     <section class="d-flex justify-content-center">
       <figure class="big-img d-inline-block">
         <img class="rounded h-100 w-100" :src="bigImgPath">

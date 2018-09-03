@@ -1,6 +1,7 @@
 export default {
   title: 'Molecular',
   img: 'square',
+  nueva: true,
   data: [
     {
       name: 'Luque',

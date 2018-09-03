@@ -1,6 +1,7 @@
 export default {
   title: 'de Autor',
   img: 'squareluque',
+  nueva: true,
   data: [
     {
       name: 'Luque',
