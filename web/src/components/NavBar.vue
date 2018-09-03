@@ -8,9 +8,9 @@
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item to="beverages">Bebidas</b-nav-item>
-                    <b-nav-item to="collections">Recetas</b-nav-item>
-                    <b-nav-item to="products">Productos</b-nav-item>
+                    <b-nav-item to="/beverages">Bebidas</b-nav-item>
+                    <b-nav-item to="/cocteleria">Recetas</b-nav-item>
+                    <b-nav-item to="/products">Productos</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->

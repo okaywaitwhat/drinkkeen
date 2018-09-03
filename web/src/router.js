@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import Quotes from './components/Quotes'
 import Beverages from './components/Beverages'
-import Recipes from './components/Recipes'
+import Category from './components/Category'
 import Collections from './components/Collections'
 import Products from './components/Products'
 import Login from './components/Login'
@@ -15,8 +15,11 @@ const routes = [
   /* nuestra vista por defecto es quotes */
   { path: '/', component: Quotes },
   { path: '/beverages', component: Beverages },
-  { path: '/recipes', component: Recipes },
-  { path: '/collections', component: Collections },
+  { path: '/cocteleria', component: Collections },
+  { path: '/cocteleria/de-autor', name: 'author', component: Category },
+  { path: '/cocteleria/clasica', name: 'classic', component: Category },
+  { path: '/cocteleria/moderna', name: 'modern', component: Category },
+  { path: '/cocteleria/molecular', name: 'molecular', component: Category },
   { path: '/products', component: Products },
   { path: '/login', component: Login },
 ]

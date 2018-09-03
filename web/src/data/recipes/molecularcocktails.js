@@ -1,6 +1,7 @@
 export default {
   title: 'Molecular',
   img: 'square',
+  path: 'molecular',
   nueva: true,
   data: [
     {

@@ -1,36 +1,36 @@
 <template>
-    <div>
-        <div  class="card card-shadow bg-light mb-3">
-            <img class="card-img-top" :src="imgPath">
-                <div class="card-body">
-                    <h5 class="card-title">{{ recipe.name }} <i v-on:click="showDetalles = !showDetalles" class="fa fa-angle-down"></i></h5>
-                    <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
-                </div>
-                        <ul class="list-group list-group-flush" v-if="showDetalles">
-                          <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span style="float: right;">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
-                          <li v-for="(step, index) in recipe.steps" :key="step.step" class="dark-list"><strong>{{ index+1 }}.</strong> {{ step }}</li>
-                        </ul>
-          </div>
-      </div>
+  <div>
+    <div  class="card card-shadow bg-light mb-3">
+      <img class="card-img-top" :src="imgPath">
+        <div class="card-body">
+          <h5 class="card-title">{{ recipe.name }} <i v-on:click="showDetails = !showDetails" class="fa fa-angle-down"></i></h5>
+          <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
+        </div>
+        <ul class="list-group list-group-flush" v-if="showDetails">
+          <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
+          <li v-for="(step, index) in recipe.steps" :key="step.step" class="dark-list"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+        </ul>
+    </div>
+  </div>
 </template>
 
 <script>
 
 export default {
   name: 'recipe',
+  props: [ 'recipe' ],
   data () {
     return {
-      showDetalles: false,
+      // showDetalles
+      showDetails: false,
     }
   },
-  props: [
-    'recipe',
-  ],
-   computed:
-  { imgPath: function () {
-    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
+   computed: {
+    imgPath () {
+      return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
     }
   },
+
 }
 </script>
 
@@ -39,32 +39,30 @@ export default {
   overflow: hidden;
   text-align: center;
   width: 100%;
-
   &:hover {
-      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    p {
-      margin: 0;
-    }
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   }
-
-  .card-item {
-    font-size: 15px;
+  p {
+    margin: 0;
   }
-    li {
-      display: block;
-      padding: 0.75rem 1.25rem;
-      margin-bottom: -1px;
-      background-color: #fff;
-      border-top: 1px solid rgba(0, 0, 0, 0.125);
-      text-align: left;
-    }
+}
 
+.card-item {
+  font-size: 15px;
+}
 
-  .dark-list {
-    background-color: #f8f9fa;
-  }
+li {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: left;
+}
+
+.dark-list {
+  background-color: #f8f9fa;
+}
 
 </style>
 

@@ -1,6 +1,6 @@
 <template>
         <div class="p-card">
-            <img :src="imgPath">
+            <img class="pointer" :src="imgPath">
             <div class="card-body">
                 <span><h5 class="card-title">{{ product.name }}</h5></span>
                 <p class="font-italic text-capitalize">{{ product.description }}</p>
@@ -45,7 +45,6 @@ export default {
       width: 15rem;
       border-radius: 50%;
       border: 10px solid rgba(42,42,42,0.1);
-      cursor: pointer;
       &:hover {
         border: 10px solid rgba(42,42,42,0.25);
       }

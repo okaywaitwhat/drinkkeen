@@ -1,11 +1,9 @@
 <template>
     <section>
-      <FiltersBar></FiltersBar>
         <section id="recipesSection" class="d-flex">
-        <FiltersColumn></FiltersColumn>
           <section class="recipes-cards-cont">
             <div class="card-columns">
-                <Recipe :recipe="recipe" v-for="recipe in menu" :key="recipe.name"></Recipe>
+              <Recipe :recipe="recipe" v-for="recipe in menu.data" :key="recipe.name"></Recipe>
             </div>
             <Modal></Modal>
           </section>
@@ -15,21 +13,30 @@
 
 <script>
 import Recipe from './Recipe'
-import FiltersColumn from './FiltersColumn'
-import FiltersBar from './FiltersBar'
 import Modal from './Modal'
-import Cocktails from '../data/cocktails.js';
+import author from '../data/recipes/authorcocktails.js'
+import classic from '../data/recipes/classiccocktails.js'
+import modern from '../data/recipes/moderncocktails.js'
+import molecular from '../data/recipes/molecularcocktails.js'
+
+const cocktails = {
+  author,
+  classic,
+  modern,
+  molecular
+}
 
 export default {
-  name: 'recipes',
+  name: 'category',
   components: {
-    FiltersBar, FiltersColumn, Recipe, Modal
+    Recipe, Modal
   },
   data () {
     return {
-      menu: Cocktails[0].menu,
+      // oye manue: require('../data/recipes/' + this.$router.currentRoute.name + 'cocktails.js'),
+      menu: cocktails[this.$router.currentRoute.name]
     }
-  },
+  }
 }
 </script>
 

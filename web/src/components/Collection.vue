@@ -6,12 +6,14 @@
         <img class="rounded h-100 w-100" :src="bigImgPath">
       </figure>
       <div class="previews-wrapper d-none d-lg-inline-block">
-        <figure class="mini-card d-inline-block float-left" v-for="(recipe, i) in category.data.slice(0, 7)" :key="i">
+        <figure class="mini-card pointer d-inline-block float-left" v-for="(recipe, i) in category.data.slice(0, 7)" :key="i">
           <img class="recipe-img rounded h-100 w-100" :src="miniImgPath">
         </figure>
-        <figure class="mini-card d-inline-block float-left d-flex justify-content-center align-items-center">
-          <font-awesome-icon icon="chevron-right" size="4x" />
-        </figure>
+        <router-link :to="subpath">
+          <figure class="mini-card pointer d-inline-block float-left d-flex justify-content-center align-items-center">
+            <font-awesome-icon icon="chevron-right" size="4x" />
+          </figure>
+        </router-link>
       </div>
     </section>
   </div>
@@ -23,6 +25,9 @@ export default {
   name: 'collection',
   props: [ 'category' ],
   computed: {
+    subpath () {
+      return `/cocteleria/${this.category.path}`
+    },
     bigImgPath () {
       return require ('../assets/mediarecetas/' + this.category.img + '.jpg')
     },
@@ -39,6 +44,10 @@ $height: 300px;
 $lg-width: 900px;
 $space: 8px;
 
+a {
+  color: inherit;
+}
+
 section {
   width: $lg-width;
   height: $height;
@@ -49,13 +58,11 @@ section {
   width: $height;
 }
 
-.mini-card,
-.icon-wrapper {
+.mini-card {
   $size: ($height / 2) - ($space * 2);
   margin: $space;
   height: $size;
   width: $size;
-  cursor: pointer;
 }
 
 .previews-wrapper {

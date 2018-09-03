@@ -2,7 +2,7 @@
    <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}">
         <div class="container">
           <a>
-            <img src='../assets/media/logo.png'>
+            <img class="pointer" src='../assets/media/logo.png'>
           </a>
           <!-- legend viene de prop @ App.vue -->
           <p class="subt-responsive"></p>
@@ -43,10 +43,6 @@ section {
   background-size: cover;
   color: #f8f9fa;
   font-weight: 100;
-}
-
-img {
-  cursor: pointer;
 }
 
 @media screen and (min-width: 701px) {
