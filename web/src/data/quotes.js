@@ -24,7 +24,7 @@ export default [
     author: '- Benjamin Franklin'
   },
   {
-    quote: '"You know what ‘SOBER’ stands for ? It stands for ‘Son Of a Bitch, Everything’s Real!’"',
+    quote: '"You know what ‘SOBER’ stands for? It stands for ‘Son Of a Bitch, Everything’s Real!’"',
     author: '- Gary Busey'
   },
   {

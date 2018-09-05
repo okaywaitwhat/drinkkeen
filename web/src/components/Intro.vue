@@ -3,6 +3,7 @@
         <div class="container">
           <a>
             <img class="pointer" src='../assets/media/logo.png'>
+            <p>{{ legend }}</p>
           </a>
           <!-- legend viene de prop @ App.vue -->
           <p class="subt-responsive"></p>
@@ -16,8 +17,7 @@ export default {
   name: 'intro',
   data () {
     return {
-      background: '../assets/media/intro.jpg',
-      logo: '../assets/media/logo.png'
+      legend: 'Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología.',
     }
   },
 }
@@ -27,13 +27,10 @@ export default {
 <style scoped lang="scss">
 
 section {
-  height: 100%;
   width: 100%;
-  min-height: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  float: center;
   background-size: cover;
   text-align: center;
   background: no-repeat center center fixed;
@@ -42,18 +39,28 @@ section {
   -o-background-size: cover;
   background-size: cover;
   color: #f8f9fa;
-  font-weight: 100;
+  font-weight: 150;
 }
+
+.container{
+        max-width: 50rem;
+    }
 
 @media screen and (min-width: 701px) {
   img {
     width: 500px;
+  }
+  p {
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 700px) {
   img {
     width: 250px;
+  }
+  p {
+    font-size: 15px;
   }
 }
 
