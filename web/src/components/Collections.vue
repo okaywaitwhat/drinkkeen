@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="text-center p-4" v-for="(category, i) in categories" :key="i">
+    <div class="text-center" v-for="(category, i) in categories" :key="i">
       <Collection :category="category" />
     </div>
   </section>
