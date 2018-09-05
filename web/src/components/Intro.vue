@@ -42,9 +42,9 @@ section {
   font-weight: 150;
 }
 
-.container{
-        max-width: 50rem;
-    }
+.container {
+  max-width: 50rem;
+}
 
 @media screen and (min-width: 701px) {
   img {
