@@ -2,6 +2,7 @@
   <section>
     <div class="text-center" v-for="(category, i) in categories" :key="i">
       <Collection :category="category" />
+      <hr class="mt-5 mb-5">
     </div>
   </section>
 </template>
