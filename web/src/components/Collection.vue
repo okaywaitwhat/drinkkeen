@@ -5,7 +5,7 @@
       <figure class="big-img d-inline-block">
         <img class="rounded h-100 w-100" :src="bigImgPath">
       </figure>
-      <div class="previews-wrapper d-none d-lg-inline-block">
+      <div class="previews-wrapper">
         <figure class="mini-card pointer d-inline-block float-left" v-for="(recipe, i) in category.data.slice(0, 7)" :key="i">
           <img class="recipe-img rounded h-100 w-100" :src="miniImgPath">
         </figure>
@@ -66,6 +66,7 @@ section {
 }
 
 .previews-wrapper {
+  display: inline-block;
   width: calc(100% - #{$height})
 }
 
@@ -73,9 +74,12 @@ section {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: #{$lg-width + 100px}) {
   section {
     width: 100%;
+  }
+  .previews-wrapper {
+    display: none;
   }
 }
 </style>
