@@ -11,7 +11,7 @@
         </figure>
         <router-link :to="subpath">
           <figure class="mini-card pointer d-inline-block float-left d-flex justify-content-center align-items-center">
-            <font-awesome-icon icon="chevron-right" size="4x" />
+            <i class="fa fa-chevron-right"></i>
           </figure>
         </router-link>
       </div>
@@ -63,6 +63,10 @@ section {
   margin: $space;
   height: $size;
   width: $size;
+}
+
+.fa-chevron-right {
+  font-size: 4rem;
 }
 
 .previews-wrapper {
