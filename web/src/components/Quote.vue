@@ -1,16 +1,22 @@
 <template>
-  <blockquote class="blockquote mb-0">
-    <h1 class="display-4">{{ quote.quote }}</h1>
-    <p class="lead">{{ quote.author }}</p>
-  </blockquote>
+  <div>
+    <blockquote class="blockquote mb-0">
+      <h1 class="display-4">{{ quote.quote }}</h1>
+      <p class="lead">{{ quote.author }}</p>
+    </blockquote>
+    <div class="social-share" v-if="mouseOver">
+      <!-- target="_blank" es para abrir un link en una tab nueva y no en la misma -->
+      <a href="" target="_blank"><i class="fa fa-facebook text-light bg-dark pointer"></i></a>
+      <a href="" target="_blank"><i class="fa fa-twitter text-light bg-dark pointer"></i></a>
+      <a href="" target="_blank"><i class="fa fa-instagram text-light bg-dark pointer"></i></a>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'quote',
-  props: [
-    'quote'
-  ]
+  props: [ 'quote', 'mouseOver' ]
 }
 </script>
 
@@ -28,5 +34,26 @@ export default {
 
 blockquote {
   text-align: center;
+}
+
+.social-share {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  a {
+    text-decoration: none;
+    i {
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 10px;
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 </style>

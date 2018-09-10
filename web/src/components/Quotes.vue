@@ -4,7 +4,13 @@
           <div class="offset-1 col-10">
             <!-- pasamos quote como prop -->
             <!-- el v-if es para apenas se renderiza porque quoteActual es null -->
-            <Quote :quote="quoteActual" v-if="quoteActual" />
+            <Quote
+              @mouseover.native="mouseOver = true"
+              @mouseout.native="mouseOver = false"
+              :mouseOver="mouseOver"
+              :quote="quoteActual"
+              v-if="quoteActual"
+            />
           </div>
         </div>
     </section>
@@ -19,12 +25,14 @@ export default {
   components: { Quote },
   data () {
     return {
+      mouseOver: false,
       quoteActual: getRandomQuote(),
     }
   },
   mounted () {
     /* hacemos el intervalo que seleccione y cambie una quote aleatoria */
     setInterval(() => {
+      if(this.mouseOver) return
       this.quoteActual = getRandomQuote()
     }, 9000)
   }
