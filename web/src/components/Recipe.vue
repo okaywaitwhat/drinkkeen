@@ -3,7 +3,12 @@
     <div  class="card card-shadow bg-light mb-3">
       <img class="card-img-top" :src="imgPath">
         <div class="card-body">
-          <h5 class="card-title">{{ recipe.name }} <i v-on:click="showDetails = !showDetails" class="fa fa-angle-down"></i></h5>
+          <h5 class="card-title">{{ recipe.name }}
+            <i 
+              v-on:click="showDetails = !showDetails" 
+              :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
+            ></i>
+          </h5>
           <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
         </div>
         <ul class="list-group list-group-flush" v-if="showDetails">
