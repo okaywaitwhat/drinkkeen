@@ -17,7 +17,7 @@ export default {
   computed:
   {
     imgPath: function () {
-    return require ('../assets/mediaproductos/' + this.product.img + '.jpg')
+    return require ('../assets/mediaproductos/' + this.product.img + '-min.jpg')
     }
   },
 }
