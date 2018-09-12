@@ -2,9 +2,11 @@
   <div class="d-inline-flex flex-column justify-content-center">
     <h4 class="ml-2 mr-auto">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h4>
     <section class="d-flex justify-content-center">
-      <figure class="big-img d-inline-block">
-        <img class="rounded h-100 w-100" :src="bigImgPath">
-      </figure>
+      <router-link :to="subpath">
+        <figure class="big-img d-inline-block">
+          <img class="rounded h-100 w-100" :src="bigImgPath">
+        </figure>
+       </router-link>
       <div class="previews-wrapper">
         <figure class="mini-card pointer d-inline-block float-left" v-for="(recipe, i) in category.data.slice(0, 7)" :key="i">
           <img class="recipe-img rounded h-100 w-100" :src="miniImgPath">
