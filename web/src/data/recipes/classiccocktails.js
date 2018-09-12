@@ -1184,7 +1184,7 @@ export default {
       steps: [
         'En una copa fría, servir gin.',
         'Agregar hielo.',
-        'Verter sútilmente el agua tónica, esto evita que la burbuja se rompa y el cóctel sepa amargo.',
+        'Verter sútilmente el agua tónica, esto evita que las burbujas se rompan y el cóctel sepa amargo.',
         'Decorar con un twist de limón.'
       ]
     },

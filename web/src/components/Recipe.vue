@@ -4,10 +4,17 @@
       <img class="card-img-top" :src="imgPath">
         <div class="card-body">
           <h5 class="card-title">{{ recipe.name }}
-            <i 
-              v-on:click="showDetails = !showDetails" 
+            <i
+              v-on:click="showDetails = !showDetails"
               :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
             ></i>
+            <media>
+              <i
+              v-on:click="like = !like"
+              :class="{ pointer: true, fa: true, resize: true, 'fa-heart-o': !like, 'fa-heart': like }"
+              ></i>
+              <i class="fa fa-share-alt"></i>
+            </media>
           </h5>
           <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
         </div>
@@ -28,6 +35,7 @@ export default {
     return {
       // showDetalles
       showDetails: false,
+      like: false,
     }
   },
    computed: {
@@ -47,10 +55,28 @@ export default {
   &:hover {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
   }
+  h5 {
+    position: relative;
+  }
+  media {
+    position: absolute;
+    right: 0;
+  }
   p {
     margin: 0;
   }
+  i {
+    margin: 3px;
+    transition: all .09s ease;
+    &:hover {
+    transform: scale(1.2);
+    }
+  }
 }
+
+ .resize {
+  font-size: 15px;
+ }
 
 .card-item {
   font-size: 15px;

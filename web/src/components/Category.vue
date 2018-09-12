@@ -36,6 +36,18 @@ export default {
       // oye manue: require('../data/recipes/' + this.$router.currentRoute.name + 'cocktails.js'),
       menu: cocktails[this.$router.currentRoute.name]
     }
+  },
+  computed: {
+    sortedCocktails: function() {
+      function compare(a, b) {
+        if (a.name < b.name)
+          return -1;
+        if (a.name > b.name)
+          return 1;
+        return 0;
+      }
+      return this.menu.sort(compare);
+    }
   }
 }
 </script>

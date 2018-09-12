@@ -1,7 +1,7 @@
 <template>
   <div>
     <blockquote class="blockquote mb-0">
-      <h1 class="display-4">{{ quote.quote }}</h1>
+      <h1 class="display-4">"{{ quote.quote }}"</h1>
       <p class="lead">{{ quote.author }}</p>
     </blockquote>
     <div class="social-share" v-if="mouseOver">
@@ -45,14 +45,14 @@ blockquote {
   a {
     text-decoration: none;
     i {
-      font-size: 2rem;
+      font-size: 1.2rem;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
       margin: 10px;
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
     }
   }
 }

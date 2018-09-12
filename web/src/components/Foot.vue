@@ -60,6 +60,9 @@ footer {
   a {
     color: #212529;
     text-transform: uppercase;
+    i {
+      font-size: 1.2rem;
+    }
   }
 }
 
