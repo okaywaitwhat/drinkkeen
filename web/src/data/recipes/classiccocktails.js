@@ -783,7 +783,8 @@ export default {
       ],
       steps: [
         'Agitar Dry Gin, jugo de limón y Jarabe con hielo.',
-        'Colar en una flauta de champán. Verter el vino espumoso.'
+        'Colar en una flauta de champán.',
+        'Verter el vino espumoso.'
       ]
     },
     {
