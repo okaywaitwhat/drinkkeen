@@ -8,13 +8,11 @@
               v-on:click="showDetails = !showDetails"
               :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
             ></i></h5>
-
               <i
               v-on:click="like = !like"
               :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
               ></i>
-              <i class="fa fa-share-alt"></i>
-          </p>
+            <i class="fa fa-share-alt"></i>
         </div>
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
