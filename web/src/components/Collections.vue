@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="text-center" v-for="(category, i) in categories" :key="i">
+    <div class="container text-center" v-for="(category, i) in categories" :key="i">
       <Collection :category="category" />
       <hr class="mt-5 mb-5">
     </div>
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  padding: 4rem;
+  padding-top: 4rem;
   min-height: 100%;
   width: 100%;
 }

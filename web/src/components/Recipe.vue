@@ -7,16 +7,14 @@
             <i
               v-on:click="showDetails = !showDetails"
               :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
-            ></i>
-            <media>
+            ></i></h5>
+
               <i
               v-on:click="like = !like"
-              :class="{ pointer: true, fa: true, resize: true, 'fa-heart-o': !like, 'fa-heart': like }"
+              :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
               ></i>
               <i class="fa fa-share-alt"></i>
-            </media>
-          </h5>
-          <p class="font-italic text-capitalize">{{ recipe.family }} / {{ recipe.type }}</p>
+          </p>
         </div>
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
@@ -48,6 +46,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$lg-width: 900px;
+
 .card {
   overflow: hidden;
   text-align: center;
@@ -66,17 +66,12 @@ export default {
     margin: 0;
   }
   i {
-    margin: 3px;
     transition: all .09s ease;
     &:hover {
     transform: scale(1.2);
     }
   }
 }
-
- .resize {
-  font-size: 15px;
- }
 
 .card-item {
   font-size: 15px;

@@ -232,7 +232,7 @@ export default [
     author: '- Frank Zappa'
   },
   {
-    quote: 'Always be drunk ... Get drunk militantly. Just get drunk.',
+    quote: 'Always be drunk... Get drunk militantly. Just get drunk.',
     author: '- Charles Baudelaire'
   },
   {
