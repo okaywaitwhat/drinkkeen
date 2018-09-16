@@ -4,10 +4,12 @@
     color: inherit!important;
     margin-right: 10px;
     margin-left: 10px;
-    &:hover {
-      text-decoration: none;
-    }
   }
+
+  .hover-scale:hover{
+    transform: scale(1.2);
+      transition: all .09s ease;
+    }
 
   .nav-link.active {
     transform: scale(1.2);

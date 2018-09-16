@@ -8,14 +8,14 @@
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item to="/beverages">Bebidas</b-nav-item>
-                    <b-nav-item to="/cocteleria">Recetas</b-nav-item>
-                    <b-nav-item to="/products">Productos</b-nav-item>
-                    <b-nav-item to="/quotes">Quotes</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/beverages">Bebidas</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/cocteleria">Recetas</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/products">Productos</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/quotes">Quotes</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
-                    <b-nav-item @click="prox()">Calculadora</b-nav-item>
+                    <b-nav-item class="hover-scale" @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
-                    <b-nav-item @click="prox()">Contacto</b-nav-item>
+                    <b-nav-item class="hover-scale">Nosotros</b-nav-item>
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
@@ -52,6 +52,7 @@ section {
 a {
   color: inherit;
 }
+
 img {
   width: 120px !important;
   margin-top: 3px;
