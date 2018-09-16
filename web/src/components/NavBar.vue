@@ -19,8 +19,8 @@
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item to="login" right>
-                      <u>Ingresar</u> o <u>registrarse</u>
+                    <b-nav-item right>
+                       <router-link to="/login"><u>Ingresar</u></router-link> o  <router-link to="/"><u>registrarse</u></router-link>
                     </b-nav-item>
                     </b-navbar-nav>
             </b-collapse>
@@ -49,6 +49,9 @@ section {
   font-size: 15px;
 }
 
+a {
+  color: inherit;
+}
 img {
   width: 120px !important;
   margin-top: 3px;
