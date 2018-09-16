@@ -1,6 +1,6 @@
 /* ROBOTEX */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 @import 'filters';
 @import 'cards';
 @import 'dropdown';
@@ -14,7 +14,7 @@ $light-bg: #d8cca6;
 $white-bg: #ffff;
 $light-text: #f8f9fa;
 $grey-text: #52585e;
-$dark-text: #212529;
+$dark-text: #3f4347;
 $footer-bg: #ccc;
 $fill: 100%;
 $c: center;
@@ -30,6 +30,7 @@ $b: block;
 html, body, header {
   height: 100%;
   font-weight: 300;
+  color: $dark-text;
 }
 
 figure {

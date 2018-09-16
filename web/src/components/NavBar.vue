@@ -46,6 +46,7 @@ section {
   background: #ffff;
   text-align: center;
   font-weight: 300;
+  font-size: 15px;
 }
 
 img {
@@ -56,7 +57,5 @@ img {
   margin-left: 10px;
 }
 
-.navbar {
-    padding: .5rem 4rem;
-}
+
 </style>

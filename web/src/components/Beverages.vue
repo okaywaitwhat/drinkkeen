@@ -1,10 +1,9 @@
 <template>
 <section class="container d-flex">
-
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb justify-content-center bg-transparent">
-        <li v-for="category in beverages" :key="category.name" class="breadcrumb-item"><a>{{ category.name }}</a></li>
+        <li v-for="category in beverages" :key="category.name" class="breadcrumb-item lead"><a>{{ category.name }}</a></li>
       </ol>
     </nav>
     <div class="card-deck">
@@ -32,6 +31,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.breadcrumb >
+  li+li:before {
+    content: '|';
+  }
 
 section {
   padding: 4rem;
