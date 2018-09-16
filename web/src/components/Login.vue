@@ -1,7 +1,7 @@
 <template>
     <section :style="{'background-image': `url(${require('../assets/media/login.jpg')})`}">
       <div class="container form-wrapper">
-        <form class="bg-light p-4 rounded">
+        <form class="bg-light p-5 rounded">
           <div class="form-group">
               <label for="exampleInputEmail1">Usuario</label>
             <div class="input-group">
@@ -17,7 +17,7 @@
           </div>
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
           </div>
           <button type="submit" class="btn btn-dark">Ingresar</button>
         </form>
@@ -59,6 +59,7 @@ section {
   .form-control {
     margin-bottom: 1rem;
   }
+
   .input-group-text {
     margin-bottom: 1rem;
   }

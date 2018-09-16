@@ -2,7 +2,7 @@
   <section>
     <div class="container justify-content">
       <div class="intro-wrapper p-4">
-        <h1 class="display-4">La de da de da</h1>
+        <h1 class="display-4">La de da de da 🍸</h1>
         <p class="lead">Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint impedit eligendi quidem suscipit nostrum itaque nihil voluptatibus. Quos ipsum maxime, eum nesciunt, tempora dolores placeat iusto vero doloribus, sapiente totam.</p>
       </div>
       <div class="form-wrapper p-4">
