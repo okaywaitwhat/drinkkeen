@@ -1,9 +1,8 @@
 <template>
     <section :style="{'background-image': `url(${require('../assets/media/login.jpg')})`}">
       <div class="container form-wrapper">
-        <form class="bg-light p-5 rounded">
+        <form class="bg-light rounded">
           <div class="form-group">
-              <label for="exampleInputEmail1">Usuario</label>
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroupPrepend2">@</span>
@@ -12,7 +11,6 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Contraseña</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>
           <div class="form-group form-check">
@@ -65,11 +63,10 @@ section {
   }
 }
 
-.container {
-  width: 300px;
-}
 .form-wrapper {
-  width: 28rem;
+  width: 20rem;
 }
-
+ form {
+   padding: 2rem;
+ }
 </style>
