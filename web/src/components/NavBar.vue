@@ -11,6 +11,7 @@
                     <b-nav-item to="/beverages">Bebidas</b-nav-item>
                     <b-nav-item to="/cocteleria">Recetas</b-nav-item>
                     <b-nav-item to="/products">Productos</b-nav-item>
+                    <b-nav-item to="/quotes">Quotes</b-nav-item>
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
@@ -19,7 +20,7 @@
 
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item to="login" right>
-                      Ingresar
+                      <u>Ingresar</u> o <u>registrarse</u>
                     </b-nav-item>
                     </b-navbar-nav>
             </b-collapse>
@@ -55,4 +56,7 @@ img {
   margin-left: 10px;
 }
 
+.navbar {
+    padding: .5rem 4rem;
+}
 </style>

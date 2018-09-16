@@ -1,7 +1,7 @@
 <template>
     <section :style="{'background-image': `url(${require('../assets/media/login.jpg')})`}">
       <div class="container">
-        <form>
+        <form class="bg-light p-4 rounded">
           <div class="form-group">
             <div class="input-group">
               <div class="input-group-prepend">
@@ -17,7 +17,7 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="btn btn-light">Ingresar</button>
+          <button type="submit" class="btn btn-dark">Ingresar</button>
         </form>
       </div>
     </section>
@@ -53,7 +53,6 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #f8f9fa;
 
   .form-control {
     margin-bottom: 1rem;
@@ -65,6 +64,9 @@ section {
 
 .container {
   width: 300px;
+}
+.form-wrapper {
+  width: 28rem;
 }
 
 </style>

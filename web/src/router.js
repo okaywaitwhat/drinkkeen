@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Quotes from './components/Quotes'
+import Registration from './components/Registration'
 import Beverages from './components/Beverages'
 import Category from './components/Category'
 import Collections from './components/Collections'
@@ -13,7 +14,8 @@ Vue.use(VueRouter)
 /* definimos todos los paths (www.drinkkeen/path) y el componente que queremos que se muestre en esa ruta */
 const routes = [
   /* nuestra vista por defecto es quotes */
-  { path: '/', component: Quotes },
+  { path: '/', component: Registration },
+  { path: '/quotes', component: Quotes },
   { path: '/beverages', component: Beverages },
   { path: '/cocteleria', component: Collections },
   { path: '/cocteleria/de-autor', name: 'author', component: Category },

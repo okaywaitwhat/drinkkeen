@@ -10,7 +10,7 @@
 $font-stack: Roboto, sans-serif;
 $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 $border: 1px solid rgba(0, 0, 0, 0.125);
-$light-bg: #e9ecef;
+$light-bg: #d8cca6;
 $white-bg: #ffff;
 $light-text: #f8f9fa;
 $grey-text: #52585e;
@@ -30,7 +30,6 @@ $b: block;
 html, body, header {
   height: 100%;
   font-weight: 300;
-  background-color: #e9ecef;
 }
 
 figure {

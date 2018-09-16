@@ -56,7 +56,6 @@ export default {
 
 #recipesSection { //fix 2 sections
   float: center;
-  background: #e9ecef;
   padding: 4rem;
 }
 

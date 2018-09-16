@@ -3,7 +3,7 @@
 
   <div class="container">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb justify-content-center">
+      <ol class="breadcrumb justify-content-center bg-transparent">
         <li v-for="category in beverages" :key="category.name" class="breadcrumb-item"><a>{{ category.name }}</a></li>
       </ol>
     </nav>

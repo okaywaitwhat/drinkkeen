@@ -2,7 +2,7 @@
     <section>
             <div class="container">
                 <div class="card-columns">
-                    <Product :product="product" v-for="product in store" :key="product.name"></Product>
+                    <Product :product="product" v-for="product in store" :key="product.name" />
                 </div>
             </div>
     </section>
@@ -26,7 +26,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 section {
   padding-top: 4rem;
   min-height: 100%;

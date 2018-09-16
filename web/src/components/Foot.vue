@@ -47,7 +47,6 @@ section {
   text-align: center;
   width: 100%;
   height: 20%;
-  background: #e9ecef;
 }
 
 footer {

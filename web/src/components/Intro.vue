@@ -3,7 +3,6 @@
         <div class="container">
           <a>
             <img class="pointer" src='../assets/media/logo.png'>
-            <p>{{ legend }}</p>
           </a>
           <!-- legend viene de prop @ App.vue -->
           <p class="subt-responsive"></p>
