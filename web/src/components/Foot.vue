@@ -4,7 +4,7 @@
       <img src="../assets/media/navbrand.png">
     </div>
     <div class="pt-2">
-      <a v-for="link in links" :href="link.href" :key="link.href" class="p-3 text-dark text-uppercase">
+      <a v-for="link in links" :href="link.href" :key="link.href" class="p-3 text-dark text-uppercase" target="_blank">
         <i :class="`fa ${link.icon}`"></i>
       </a>
     </div>
@@ -19,15 +19,15 @@ export default {
       links: [
         {
           href: 'https://www.facebook.com/drinkkeen',
-          icon:'fa-instagram'
+          icon:'fa-facebook-official'
         },
         {
-          href: 'https://www.facebook.com/drinkkeen',
+          href: 'https://www.twitter.com/drinkkeen',
           icon:'fa-twitter'
          },
         {
-          href: 'https://www.facebook.com/drinkkeen',
-          icon:'fa-facebook-official'
+          href: 'https://www.instagram.com/drinkkeen',
+          icon:'fa-instagram'
         },
       ]
     }
