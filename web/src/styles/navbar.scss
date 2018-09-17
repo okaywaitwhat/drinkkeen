@@ -1,0 +1,54 @@
+/* nav-link es la clase que le pone el <b-nav-item> a los links generados */
+
+section {
+  height: 55px;
+  background: #ffff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 120px !important;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  height: 100%;
+  width: 100%;
+  color: inherit!important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.hover-scale:hover{
+  transform: scale(1.2);
+  transition: all .09s ease;
+}
+
+.nav-link.active {
+  transform: scale(1.2);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border-color: transparent;
+  outline: none;
+}
+
+.navbar {
+  padding: .5rem 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: .5rem 1rem;
+  }
+}
