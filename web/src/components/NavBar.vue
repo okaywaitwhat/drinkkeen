@@ -39,27 +39,4 @@ export default {
 
 </script>
 
-<style scoped lang="scss">
-/* nav-link es la clase que le pone el <b-nav-item> a los links generados */
-
-section {
-  background: #ffff;
-  text-align: center;
-  font-weight: 300;
-  font-size: 15px;
-}
-
-a {
-  color: inherit;
-}
-
-img {
-  width: 120px !important;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-</style>
+<style scoped lang="scss" src="../styles/navbar.scss"></style>
