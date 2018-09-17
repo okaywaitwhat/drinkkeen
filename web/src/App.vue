@@ -5,7 +5,7 @@
     <template v-else>
       <Navbar />
       <!-- definimos el router y adentro el mismo se encarga de mostrar lo que queremos para cada ruta -->
-      <router-view></router-view>
+      <router-view class="view"></router-view>
       <Foot />
     </template>
   </div>
@@ -41,8 +41,5 @@ export default {
 
 @import '../src/styles/main.scss';
 
-#app {
-  background-color: #eeedeb;
-}
 
 </style>

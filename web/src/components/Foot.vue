@@ -1,22 +1,14 @@
 <template>
-    <section class="bg-light py-3">
-        <footer>
-            <div>
-                <img src="../assets/media/navbrand.png">
-            </div>
-                <a href="https://www.instagram.com/drinkkeen/">
-                    <i class="fa fa-instagram"></i>
-                </a>
-
-                <a href="https://www.facebook.com/drinkkeen">
-                    <i class="fa fa-twitter"></i>
-                </a>
-
-                <a href="https://www.facebook.com/drinkkeen">
-                    <i class="fa fa-facebook-official"></i>
-                </a>
-        </footer>
-    </section>
+  <footer class="bg-light w-100 d-flex flex-column align-items-center justify-content-center">
+    <div class="m-1">
+      <img src="../assets/media/navbrand.png">
+    </div>
+    <div class="pt-2">
+      <a v-for="link in links" :href="link.href" :key="link.href" class="p-3 text-dark text-uppercase">
+        <i :class="`fa ${link.icon}`"></i>
+      </a>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -26,51 +18,35 @@ export default {
     return {
       links: [
         {
-          link: 'https://www.facebook.com/drinkkeen',
-          icon:'fa-instagram'},
+          href: 'https://www.facebook.com/drinkkeen',
+          icon:'fa-instagram'
+        },
         {
-          link: 'https://www.facebook.com/drinkkeen',
+          href: 'https://www.facebook.com/drinkkeen',
           icon:'fa-twitter'
          },
         {
-          link: 'https://www.facebook.com/drinkkeen',
-          icon:'fa-facebook-official'},
+          href: 'https://www.facebook.com/drinkkeen',
+          icon:'fa-facebook-official'
+        },
       ]
-      }
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
 
-section {
-  text-align: center;
-  width: 100%;
-  height: 20%;
-}
-
 footer {
+  height: 100px;
+  text-align: center;
   img {
     width: 150px;
   }
-  div {
-    margin: 15px;
-  }
-  a {
-    color: #212529;
-    text-transform: uppercase;
-    i {
-      font-size: 1.2rem;
-    }
-  }
 }
 
-.fa {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: #212529;
+i {
+  font-size: 1.2rem;
 }
 
 </style>

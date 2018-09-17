@@ -14,22 +14,24 @@ $white-bg: #ffff;
 $light-text: #f8f9fa;
 $grey-text: #52585e;
 $dark-text: #3f4347;
-$footer-bg: #ccc;
-$fill: 100%;
-$c: center;
-$l: left;
-$r: right;
-$n: none;
-$b: block;
 
 * {
   font-family: Roboto;
 }
 
-html, body, header {
+html, body, header, #app {
   height: 100%;
   font-weight: 300;
   color: $dark-text;
+}
+
+#app {
+  background-color: #fff;
+}
+
+.view {
+  /* TODO: julieta cambiar esto por variables en los 3 lugares */
+  min-height: calc(100% - 55px - 100px);
 }
 
 figure {
