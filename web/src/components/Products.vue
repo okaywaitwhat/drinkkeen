@@ -1,7 +1,8 @@
 <template>
     <section>
+      <ProductSheet />
             <div class="container">
-                <div class="card-columns">
+                <div class="card-columns pt-4">
                     <Product :product="product" v-for="product in store" :key="product.name" />
                 </div>
             </div>
@@ -10,12 +11,13 @@
 
 <script>
 import Product from './Product'
+import ProductSheet from './ProductSheet'
 import Products from '../data/products.js';
 
 export default {
   name: 'products',
   components: {
-    Product,
+    Product, ProductSheet,
   },
   data () {
     return {
