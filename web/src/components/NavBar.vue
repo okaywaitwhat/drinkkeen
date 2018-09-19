@@ -20,7 +20,7 @@
 
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item right>
-                       <router-link to="/login"><u>Ingresar</u></router-link> o  <router-link to="/"><u>registrarse</u></router-link>
+                       <router-link tag="a" to="/login"><u>Ingresar</u></router-link> o  <router-link to="/"><u>registrarse</u></router-link>
                     </b-nav-item>
                     </b-navbar-nav>
             </b-collapse>
