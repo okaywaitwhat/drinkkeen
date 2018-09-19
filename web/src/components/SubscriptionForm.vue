@@ -1,5 +1,5 @@
 <template>
-  <form class="form-inline">
+  <form class="form-inline mt-4">
     <div class="form-group m-0">
       <label class="sr-only">Email</label>
       <input type="text" class="form-control" placeholder="Email">

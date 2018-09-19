@@ -1,12 +1,26 @@
 <template>
-  <footer class="bg-light w-100 d-flex flex-column justify-content-center align-items-center text-align-left">
+  <footer class="bg-light w-100 d-flex flex-column justify-content-center align-items-center">
     <div class="row container m-4">
       <div class="col-lg-6">
-      <p class="text-left">Y la de da de da de day oh!</p>
+        <h5 class="text-left mt-4">La de da de</h5>
+        <p class="text-left">Sit omnis vitae reiciendis assumenda, illo inventore nostrum, quia veritatis doloribus quasi ipsum dicta non doloremque mollitia quae perferendis accusamus, delectus modi!</p>
       <SubscriptionForm />
       </div>
-      <div class="col-lg-6 bg-dark">
-        lelelele
+      <div class="col-lg-3 mt-3">
+        <h5>La de da de</h5>
+        <dl>
+          <dt>1234</dt>
+          <dt>1234</dt>
+          <dt>1234</dt>
+        </dl>
+      </div>
+      <div class="col-lg-3 mt-3">
+        <h5>La de da de</h5>
+        <dl>
+          <dt>1234</dt>
+          <dt>1234</dt>
+          <dt>1234</dt>
+        </dl>
       </div>
     </div>
 
@@ -53,15 +67,15 @@ export default {
 <style scoped lang="scss">
 
 footer {
-  height: 250px;
+  min-height: 250px;
   text-align: center;
   img {
-    width: 150px;
+    width: 140px;
   }
 }
 
 i {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 </style>

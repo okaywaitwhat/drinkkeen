@@ -9,7 +9,7 @@
 
     <div class="card-deck">
       <template v-for="category in beverages.slice(0, 1)">
-        <div :key="category.name" class="bg-white d-flex flex-column justify-content-center">
+        <div :key="category.name" class="bg-white d-flex flex-column justify-content-center pt-4 pb-4">
           <div class="row bg-light">
             <div class="col-lg-7">
               <h3>{{category.name}}</h3>
