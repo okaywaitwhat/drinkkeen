@@ -1,15 +1,17 @@
 <template>
-  <div class="row pt-4 pb-4 pt-4">
-  <div class="col-lg-4 bg-dark"></div>
-  <div class="col-lg-4 bg-light">
+  <div class="row bg-light">
+  <div class="col-lg-4">
+     <img :src="imgPath">
+  </div>
+  <div class="col-lg-4 align-self-center">
     <div>
-      <h5>Nombre Bebida</h5>
-      <p class="lead text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid earum porro aut saepe eos soluta, repellendus dolore unde necessitatibus explicabo id, ad esse vitae debitis. Nulla incidunt cumque ipsum assumenda!</p>
+      <h5>{{ beverage.name }}</h5>
+      <p class="text-justify">{{ beverage.description }}</p>
     </div>
   </div>
 
-  <div class="col-lg-4 bg-light">
-    <BeverageCard />
+  <div class="col-lg-4 align-self-center">
+    <BeverageCard :beverage="beverage"/>
   </div>
   </div>
 </template>
@@ -19,13 +21,25 @@ import BeverageCard from './BeverageCard'
 
 export default {
   name: 'BeverageSheet',
-  components: { BeverageCard,
-  },
+  components: { BeverageCard },
+  props: [ 'beverage' ],
   data () {
     return {
       BeverageCard,
     }
-  }
+  },
+  computed: {
+    imgPath () {
+      return require ('../assets/mediabebidas/' + this.beverage.img + '-min.png')
+    }
+  },
 }
 </script>
+
+<style lang="scss" scoped>
+img {
+    width: 180px;
+}
+</style>
+
 

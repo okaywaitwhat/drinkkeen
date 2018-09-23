@@ -1,6 +1,6 @@
 <template>
     <div>
-       <img :src="imgPath">
+       <img :src="imgPath" alt="name" :title="item.name">
     </div>
 </template>
 

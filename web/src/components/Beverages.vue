@@ -2,30 +2,31 @@
   <section class="container-fluid d-flex">
     <div class="container">
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center bg-transparent">
+        <ol class="breadcrumb justify-content-center bg-transparent p-0">
           <li v-for="category in beverages" :key="category.name" class="breadcrumb-item pointer"><a>{{ category.name }}</a></li>
         </ol>
       </nav>
-      <div class="card-deck">
-        <template v-for="category in beverages.slice(0, 1)">
-          <div :key="category.name" class="bg-white d-flex flex-column justify-content-center pt-4 pb-4">
-            <div class="row bg-light">
-              <div class="col-lg-7">
-                <h3>{{category.name}}</h3>
-                <p class="lead text-justify pr">{{category.description}}</p>
-              </div>
-              <div class="col-lg-5 bg-dark"></div>
-            </div>
+      <div>
+
+      <CategorySheet :category="category" v-for="category in beverages.slice(0, 1)" :key="category.name" />
+
+      <template v-for="category in beverages.slice(0, 1)">
+
+        <BeverageSheet :beverage="beverage" v-for="beverage in category.marks.slice(0,1)" :key="beverage.img"/>
+
+          <div class="card-deck" :key="category.name">
+            <figure :key="category.name" class="pointer d-inline-block float-left d-flex justify-content-center align-items-center p-0">
+              <i class="fa fa-chevron-left"></i>
+            </figure>
+
+            <Beverage :item="item" v-for="item in category.marks" :key="item.img" />
+
+            <figure :key="category.name" class="pointer d-inline-block float-left d-flex justify-content-center align-items-center p-0">
+              <i class="fa fa-chevron-right"></i>
+            </figure>
           </div>
-          <BeverageSheet :key="category.name"/>
-          <figure :key="category.name" class="pointer d-inline-block float-left d-flex justify-content-center align-items-center p-0">
-            <i class="fa fa-chevron-left"></i>
-          </figure>
-          <Beverage :item="item" v-for="item in category.marks" :key="item.img"></Beverage>
-          <figure :key="category.name" class="pointer d-inline-block float-left d-flex justify-content-center align-items-center p-0">
-            <i class="fa fa-chevron-right"></i>
-          </figure>
         </template>
+
       </div>
     </div>
   </section>
@@ -34,18 +35,20 @@
 <script>
 import Beverage from './Beverage'
 import BeverageSheet from './BeverageSheet'
+import CategorySheet from './CategorySheet'
 import beverages from '../data/beverages.js'
 
 export default {
   name: 'beverages',
-  components: { Beverage, BeverageSheet
+  components: { Beverage, CategorySheet, BeverageSheet
   },
   data () {
     return {
-      beverages, BeverageSheet, Beverage,
+      beverages, CategorySheet, BeverageSheet, Beverage,
     }
   }
 }
+
 </script>
 
 <style scoped lang="scss">
@@ -64,7 +67,7 @@ export default {
   }
 
 section {
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
   min-height: 100%;
   width: 100%;

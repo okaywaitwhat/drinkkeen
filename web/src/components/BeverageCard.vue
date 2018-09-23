@@ -4,11 +4,11 @@
     <div class="card m-0">
       <div class="card-header">Presentación</div>
         <ul class="list-group list-group-flush">
-          <li id="drinkVersion" class="list-group-item">1234</li>
+          <li id="drinkVersion" class="list-group-item">{{ beverage.version }} {{ beverage.unit }}</li>
         </ul>
       <div class="card-header">Graduación Alcoholica</div>
         <ul class="list-group list-group-flush">
-          <li id="drinkGraduation" class="list-group-item">1234</li>
+          <li id="drinkGraduation" class="list-group-item">{{ beverage.graduation }}</li>
         </ul>
       <div class="card-header">Notas de cata</div>
         <ul class="list-group list-group-flush">
@@ -24,6 +24,7 @@
 
 export default {
   name: 'beverageCard',
+  props: [ 'beverage' ],
 }
 
 </script>

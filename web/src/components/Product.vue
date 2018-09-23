@@ -47,6 +47,7 @@ export default {
       border: 10px solid rgba(42,42,42,0.1);
       &:hover {
         border: 10px solid rgba(42,42,42,0.25);
+        transition: all 1s ease;
       }
     }
     p {
