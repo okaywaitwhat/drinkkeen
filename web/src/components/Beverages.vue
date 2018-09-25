@@ -19,7 +19,10 @@
               <i class="fa fa-chevron-left"></i>
             </figure>
 
-            <Beverage :item="item" v-for="item in category.marks" :key="item.img" />
+            <Beverage :item="item" v-for="item in category.marks" :key="item.img" 
+              class="bottle-img"
+              :class="{ show: bottlesLoaded === bottlesToShow(category) }"
+              @load="bottleImageLoad()" />
 
             <figure :key="category.name" class="pointer d-inline-block float-left d-flex justify-content-center align-items-center p-0">
               <i class="fa fa-chevron-right"></i>
@@ -45,6 +48,15 @@ export default {
   data () {
     return {
       beverages, CategorySheet, BeverageSheet, Beverage,
+      bottlesLoaded: 0
+    }
+  },
+  methods: {
+    bottlesToShow (category) {
+      return category.marks.length // cambiar aca cuando querramos mostrar menos eventualmente
+    },
+    bottleImageLoad () {
+      this.bottlesLoaded++
     }
   }
 }
@@ -75,5 +87,14 @@ section {
 
 .fa-chevron-right, .fa-chevron-left {
   font-size: 2rem;
+}
+
+.bottle-img {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.show {
+  opacity: 1 !important;
 }
 </style>

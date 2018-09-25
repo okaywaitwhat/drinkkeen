@@ -1,6 +1,6 @@
 <template>
     <div>
-       <img :src="imgPath" alt="name" :title="item.name">
+      <img @load="imgLoaded()" :src="imgPath" alt="name" :title="item.name">
     </div>
 </template>
 
@@ -16,6 +16,15 @@ export default {
       return require ('../assets/mediabebidas/' + this.item.img + '-min.png')
     }
   },
+  methods: {
+    imgLoaded () {
+      /* 
+       * el padre va a "escuchar" al evento "load" y lo escucha con @load
+       * [le podemos poner cualquier nombre pero load queda lindo]
+       */
+      this.$emit('load')
+    }
+  }
 }
 </script>
 
