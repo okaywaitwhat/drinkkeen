@@ -1,7 +1,7 @@
 <template>
   <div class="row bg-light">
   <div class="col-lg-4">
-     <img :src="imgPath">
+     <progressive-img :src="imgPath" :placeholder="imgPath" class="sheet-img" />
   </div>
   <div class="col-lg-4 align-self-center">
     <div>
@@ -37,8 +37,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-    width: 180px;
+.sheet-img {
+  width: 180px;
 }
 </style>
 
