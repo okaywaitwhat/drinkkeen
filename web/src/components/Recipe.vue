@@ -4,24 +4,27 @@
       <img class="card-img-top" :src="imgPath">
         <div class="card-body">
           <h5 class="card-title">{{ recipe.name }}
-            <div class="float-right">
+            <div>
               <i
                 v-on:click="like = !like"
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
               <i class="fa fa-share-alt"></i>
+              <i
+                v-on:click="showDetails = !showDetails"
+                :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
+              ></i>
             </div>
           </h5>
-          <div v-on:click="showDetails = !showDetails" :class="{ pointer: true}">
-            Ver más <i
-              :class="{ fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
-            ></i>
-          </div>
         </div>
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li>Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
           <li class="text-capitalize">Categoría: {{ recipe.family }}</li>
-          <li class="dark-list" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">{{ ingredient.ingredient }}<span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span></li>
+          <li class="dark-list" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+            {{ ingredient.ingredient }}
+            <span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em>
+            </span>
+          </li>
           <li v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
         </ul>
     </div>

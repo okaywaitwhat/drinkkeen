@@ -1,7 +1,7 @@
 <template>
   <div class="row bg-light">
   <div class="col-lg-4">
-     <progressive-img :src="imgPath" :placeholder="imgPath" class="sheet-img" />
+     <img :src="imgPath" :placeholder="imgPath" class="sheet-img">
   </div>
   <div class="col-lg-4 align-self-center">
     <div>
