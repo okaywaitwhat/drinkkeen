@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Quotes from './components/Quotes'
+import Jobs from './components/Jobs'
 import Registration from './components/Registration'
 import Beverages from './components/Beverages'
 import Category from './components/Category'
@@ -16,6 +17,7 @@ const routes = [
   /* nuestra vista por defecto es quotes */
   { path: '/', component: Registration },
   { path: '/quotes', component: Quotes },
+  { path: '/jobs', component: Jobs },
   { path: '/beverages', component: Beverages },
   { path: '/cocteleria', component: Collections },
   { path: '/cocteleria/de-autor', name: 'author', component: Category },

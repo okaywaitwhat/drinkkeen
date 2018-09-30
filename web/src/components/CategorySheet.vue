@@ -6,7 +6,7 @@
           <template>
               <b-card no-body class="mb-1">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion1 type="button" class="btn btn-dark btn-block">Historia</button>
+                  <button block v-b-toggle.accordion1 type="button" class="btn btn-light btn-block">Historia</button>
                 </b-card-header>
                 <b-collapse id="accordion1" visible>
                   <b-card-body class="p-0">
@@ -18,7 +18,7 @@
               </b-card>
               <b-card no-body class="mb-1">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion2 type="button" class="btn btn-dark btn-block">Descripción</button>
+                  <button block v-b-toggle.accordion2 type="button" class="btn btn-light btn-block">Descripción</button>
                 </b-card-header>
                 <b-collapse id="accordion2">
                   <b-card-body class="p-0">
@@ -28,9 +28,9 @@
                   </b-card-body>
                 </b-collapse>
               </b-card>
-              <b-card no-body class="mb-1">
+              <b-card no-body class="mb-0">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion3 type="button" class="btn btn-dark btn-block">Cocktails</button>
+                  <button block v-b-toggle.accordion3 type="button" class="btn btn-light btn-block">Cocktails</button>
                 </b-card-header>
                 <b-collapse id="accordion3">
                   <b-card-body class="p-0">
@@ -65,7 +65,7 @@ export default {
 }
 
 .card {
-  border: 0;
+  border: 0px;
 }
 
 .card-header {

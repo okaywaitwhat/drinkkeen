@@ -15,7 +15,7 @@
         <small class="form-text text-muted font-weight-light">Y la de da de da de da de day oh!</small>
       </div>
       <button class="btn btn-dark mb-2">Registrarme</button>
-      <small class="form-text text-muted font-weight-light">¿Ya tenés cuenta? <u>Ingresa acá</u>.</small>
+      <small class="form-text text-muted font-weight-light">¿Ya tenés cuenta? <u>Ingresar</u>.</small>
     </div>
   </section>
 </template>

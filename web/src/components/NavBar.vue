@@ -15,7 +15,7 @@
                     <!-- el @ sirve como shorthand de `v-on:` -->
                     <b-nav-item class="hover-scale" @click="prox()">Calculadora</b-nav-item>
                     <!-- la funcion se puede pasar con `()` o sin ellos -->
-                    <b-nav-item class="hover-scale">Nosotros</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/empleo">Empleo</b-nav-item>
                 </b-navbar-nav>
 
                 <b-navbar-nav class="ml-auto">

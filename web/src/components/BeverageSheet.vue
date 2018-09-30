@@ -1,5 +1,5 @@
 <template>
-  <div class="row bg-light">
+  <div class="row">
   <div class="col-lg-4">
      <img :src="imgPath" :placeholder="imgPath" class="sheet-img">
   </div>
