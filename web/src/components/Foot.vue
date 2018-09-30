@@ -6,8 +6,8 @@
         <p class="text-left">Sit omnis vitae reiciendis assumenda, illo inventore nostrum, quia veritatis doloribus quasi ipsum dicta non doloremque mollitia quae perferendis accusamus, delectus modi!</p>
       </div>
         <div class="col-lg-3 mt-3 text-left">
-        <h5>CONTACTO</h5>
-        <ul class="font-weight-light text-uppercase">
+        <h5>Contacto</h5>
+        <ul class="font-weight-light">
           <li>hello@drinkkeen.com</li>
           <li>Teléfono: (011) 15-3863-5211</li>
           <br>
@@ -18,7 +18,7 @@
       </div>
       <div class="col-lg-3 mt-3 text-left">
         <h5>FAQ</h5>
-        <ul class="font-weight-light text-uppercase">
+        <ul class="font-weight-light">
           <li>Where do you ship from?</li>
           <li>How long do orders take to ship?</li>
           <li>Who are you?</li>
