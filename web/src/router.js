@@ -18,7 +18,11 @@ const routes = [
   { path: '/', component: Registration },
   { path: '/quotes', component: Quotes },
   { path: '/jobs', component: Jobs },
-  { path: '/beverages', component: Beverages },
+  {
+    name: 'beverages',
+    path: '/beverages/:category?',
+    component: Beverages
+  },
   { path: '/cocteleria', component: Collections },
   { path: '/cocteleria/de-autor', name: 'author', component: Category },
   { path: '/cocteleria/clasica', name: 'classic', component: Category },

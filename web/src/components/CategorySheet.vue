@@ -6,9 +6,11 @@
           <template>
               <b-card no-body class="mb-1">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion1 type="button" class="btn btn-light btn-block">Historia</button>
+                  <button v-b-toggle.history type="button" class="btn btn-light btn-block">
+                    <h3 class="tab-title">Historia</h3>
+                  </button>
                 </b-card-header>
-                <b-collapse id="accordion1" visible>
+                <b-collapse id="history" visible>
                   <b-card-body class="p-0">
                     <p class="card-text mt-4 mb-4">
                       {{category.history}}
@@ -18,9 +20,11 @@
               </b-card>
               <b-card no-body class="mb-1">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion2 type="button" class="btn btn-light btn-block">Descripción</button>
+                  <button v-b-toggle.description type="button" class="btn btn-light btn-block">
+                    <h3 class="tab-title">Descripcion</h3>
+                  </button>
                 </b-card-header>
-                <b-collapse id="accordion2">
+                <b-collapse id="description">
                   <b-card-body class="p-0">
                     <p class="card-text mt-4 mb-4">
                       {{category.description}}
@@ -30,9 +34,11 @@
               </b-card>
               <b-card no-body class="mb-0">
                 <b-card-header class="p-0" role="tab">
-                  <button block v-b-toggle.accordion3 type="button" class="btn btn-light btn-block">Cocktails</button>
+                  <button v-b-toggle.cocktails type="button" class="btn btn-light btn-block">
+                    <h3 class="tab-title">Cocktails</h3>
+                  </button>
                 </b-card-header>
-                <b-collapse id="accordion3">
+                <b-collapse id="cocktails">
                   <b-card-body class="p-0">
                     <p class="card-text mt-4 mb-4">
                       lalalalalal

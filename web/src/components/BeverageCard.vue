@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h5>Ficha técnica</h5>
+    <h3 class="tab-title">Ficha técnica</h3>
     <div class="card m-0">
       <div class="card-header">Presentación</div>
         <ul class="list-group list-group-flush">
