@@ -4,14 +4,14 @@
     <BeverageSheet :beverage="category.marks[0]" :key="category.marks[0].img" />
     <div class="card-deck" :key="category.name">
       <figure :key="category.name" class="pointer d-flex align-items-center">
-        <i class="fa fa-chevron-left"></i>
+        <i class="fa fa-chevron-left" style="display:none"></i>
       </figure>
-      <Beverage class="bottle-img" 
-        :item="item" v-for="item in category.marks" :key="item.img" 
+      <Beverage class="bottle-img"
+        :item="item" v-for="item in category.marks" :key="item.img"
         :class="{ show: bottlesLoaded === category.marks.length }"
         @load="bottleImageLoad()" />
       <figure :key="category.name" class="pointer d-flex align-items-center">
-        <i class="fa fa-chevron-right"></i>
+        <i class="fa fa-chevron-right" style="display:none"></i>
       </figure>
     </div>
   </div>

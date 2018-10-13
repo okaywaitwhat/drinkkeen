@@ -14,7 +14,7 @@
     </div>
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Descripción</label>
-      <textarea class="form-control font-weight-light" rows="3" placeholder="Ej: Estamos en al búsqueda de..."></textarea>
+      <textarea class="form-control font-weight-light" rows="3" placeholder="Ej: Estamos en la búsqueda de..."></textarea>
     </div>
     <div class="form-group">
       <label for="exampleFormControlSelect1">Género</label>

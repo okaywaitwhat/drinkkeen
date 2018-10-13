@@ -1,27 +1,27 @@
 <template>
   <footer class="bg-light w-100 d-flex flex-column justify-content-left align-items-center">
     <div class="row container m-4">
-      <div class="col-lg-6">
-        <h5 class="text-left mt-4">La de da de</h5>
-        <p class="text-left">Sit omnis vitae reiciendis assumenda, illo inventore nostrum, quia veritatis doloribus quasi ipsum dicta non doloremque mollitia quae perferendis accusamus, delectus modi!</p>
+      <div class="col-lg-5">
+        <h5 class="text-left mt-4">Siempre sirviendo responsablemente</h5>
+        <p class="text-left">Por favor no comparta contenido con personas por debajo de la edad legal para consumir alcohol. Beba responsablemente.</p>
       </div>
-        <div class="col-lg-3 mt-3 text-left">
-        <h5>Contacto</h5>
-        <ul class="font-weight-light">
-          <li>hello@drinkkeen.com</li>
-          <li>Teléfono: (011) 15-3863-5211</li>
-          <br>
-          <li>Privet Drive 4,</li>
-          <li>Alacena debajo de la escalera</li>
-          <li>Inglaterra</li>
-        </ul>
-      </div>
+      <div class="col-lg-2"></div>
       <div class="col-lg-3 mt-3 text-left">
-        <h5>FAQ</h5>
+      <h5>Contacto</h5>
+      <ul class="font-weight-light">
+        <li>hello@drinkkeen.com</li>
+        <li>Teléfono: (011) 15-3863-5211</li>
+        <br>
+        <li>© 2018 Buenos Aires, Argentina</li>
+      </ul>
+      </div>
+      <div class="col-lg-2 mt-3 text-left">
+        <h5>Otros</h5>
         <ul class="font-weight-light">
-          <li>Where do you ship from?</li>
-          <li>How long do orders take to ship?</li>
-          <li>Who are you?</li>
+          <li>Condiciones de uso</li>
+          <li>Accesibilidad</li>
+          <li>Glosario</li>
+          <li>Acerca de nosotros</li>
         </ul>
       </div>
     </div>

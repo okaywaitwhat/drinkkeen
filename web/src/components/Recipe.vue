@@ -75,6 +75,14 @@ $lg-width: 900px;
   }
 }
 
+h5 {
+  font-weight: 300;
+  span {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
 .card-item {
   font-size: 15px;
 }

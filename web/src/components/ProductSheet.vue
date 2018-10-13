@@ -3,14 +3,14 @@
     <div class="container text-center">
       <div class="row p-4">
         <div class="col-lg-6">
-          <img class="pointer" src="../assets/mediaproductos/barroll1-min.jpg">
+          <img class="pointer" src="../assets/mediaproductos/barroll3-min.jpg">
         </div>
         <div class="col-lg-6">
-          <h3>Nombre</h3>
-          <p class="text-muted mb-4">La de da de da de da de day oh!</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora harum culpa corrupti vitae minima non hic ullam suscipit amet, molestiae repellat illum ea ratione mollitia asperiores accusantium labore unde cumque!</p>
-          <h3 class="mb-4">$9.99</h3>
-          <button type="button" class="btn btn-dark">Preorder</button> <!-- unbind -->
+          <h3>Bar Roll</h3>
+          <p class="text-muted mb-4">Porta herramientas de coctelería</p>
+          <p>Estuche para coctelería ideal para transportar y guardar herramientas. Confeccionado en tropical mecánico y batista con interior impermeable.</p>
+          <h3 class="mb-4">$690</h3>
+          <button type="button" class="btn btn-dark">Reservar</button> <!-- unbind -->
         </div>
       </div>
     </div>

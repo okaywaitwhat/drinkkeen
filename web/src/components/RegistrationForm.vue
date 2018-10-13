@@ -12,7 +12,7 @@
       <div class="form-group">
         <label for="password">Contraseña</label>
         <input type="password" class="form-control font-weight-light" id="password" placeholder="Contraseña">
-        <small class="form-text text-muted font-weight-light">Y la de da de da de da de day oh!</small>
+        <small class="form-text text-muted font-weight-light">Podrás modificarla luego</small>
       </div>
       <button class="btn btn-dark mb-2">Registrarme</button>
       <small class="form-text text-muted font-weight-light">¿Ya tenés cuenta? <u>Ingresar</u>.</small>

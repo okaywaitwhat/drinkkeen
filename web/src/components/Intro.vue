@@ -5,8 +5,6 @@
             <img class="pointer" src='../assets/media/logo.png'>
           </a>
           <!-- legend viene de prop @ App.vue -->
-          <p class="subt-responsive"></p>
-          <button type="button" class="btn btn-light">Soy mayor de 18</button>
         </div>
     </section>
 </template>

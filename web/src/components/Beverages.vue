@@ -53,4 +53,10 @@ section {
   min-height: 100%;
   width: 100%;
 }
+
+a {
+  color: #3f4347;
+  text-decoration: none;
+  background-color: transparent;
+}
 </style>
