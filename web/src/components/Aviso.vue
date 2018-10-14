@@ -65,6 +65,9 @@ export default {
     }
   }
 
+.alert-dark {
+    border-color: transparent;
+}
 </style>
 
 

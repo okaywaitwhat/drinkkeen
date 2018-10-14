@@ -18,7 +18,7 @@
 <script>
 import Aviso from './Aviso'
 import Form from './OfferForm'
-import posts from '../data/posts.js';
+import posts from '../data/jobsposts.js';
 
 export default {
   name: 'empleo',

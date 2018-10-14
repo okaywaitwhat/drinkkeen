@@ -4,12 +4,12 @@
     <section class="d-flex justify-content-center">
       <router-link :to="subpath">
         <figure class="big-img d-inline-block">
-          <progressive-img class="rounded h-100 w-100" :src="bigImgPath" />
+          <progressive-img class="h-100 w-100" :src="bigImgPath" />
         </figure>
        </router-link>
       <div class="previews-wrapper">
         <figure class="mini-card pointer d-inline-block float-left" v-for="(recipe, i) in category.data.slice(0, smallImgsNumber)" :key="i">
-          <img class="recipe-img rounded h-100 w-100" 
+          <img class="recipe-img h-100 w-100"
             :src="miniImgPath"
             :class="{ show: smallImgsLoaded === smallImgsNumber }"
             @load="smallImageLoad()" />

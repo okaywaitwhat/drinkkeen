@@ -4,48 +4,34 @@
       <div class="row bg-light">
         <div class="col-lg-12 p-0 text-justify">
           <template>
-              <b-card no-body class="mb-1">
-                <b-card-header class="p-0" role="tab">
-                  <button v-b-toggle.history type="button" class="btn btn-light btn-block">
-                    <h3 class="tab-title">Historia</h3>
-                  </button>
-                </b-card-header>
-                <b-collapse id="history" visible>
-                  <b-card-body class="p-0">
-                    <p class="card-text mt-4 mb-4">
-                      {{category.history}}
-                    </p>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
-              <b-card no-body class="mb-1">
-                <b-card-header class="p-0" role="tab">
-                  <button v-b-toggle.description type="button" class="btn btn-light btn-block">
-                    <h3 class="tab-title">Descripcion</h3>
-                  </button>
-                </b-card-header>
-                <b-collapse id="description">
-                  <b-card-body class="p-0">
-                    <p class="card-text mt-4 mb-4">
-                      {{category.description}}
-                    </p>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
-              <b-card no-body class="mb-0">
-                <b-card-header class="p-0" role="tab">
-                  <button v-b-toggle.cocktails type="button" class="btn btn-light btn-block">
-                    <h3 class="tab-title">Cocktails</h3>
-                  </button>
-                </b-card-header>
-                <b-collapse id="cocktails">
-                  <b-card-body class="p-0">
-                    <p class="card-text mt-4 mb-4">
-                      lalalalalal
-                    </p>
-                  </b-card-body>
-                </b-collapse>
-              </b-card>
+            <b-card no-body class="mb-1">
+              <b-card-header class="p-0" role="tab">
+                <button v-b-toggle.history type="button" class="btn btn-light btn-block">
+                  <h3 class="tab-title">Historia</h3>
+                </button>
+              </b-card-header>
+              <b-collapse id="history" visible>
+                <b-card-body class="p-0">
+                  <p class="card-text mt-4 mb-4">
+                    {{category.history}}
+                  </p>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
+            <b-card no-body class="mb-0">
+              <b-card-header class="p-0" role="tab">
+                <button v-b-toggle.description type="button" class="btn btn-light btn-block">
+                  <h3 class="tab-title">Descripcion</h3>
+                </button>
+              </b-card-header>
+              <b-collapse id="description">
+                <b-card-body class="p-0">
+                  <p class="card-text mt-4 mb-4">
+                    {{category.description}}
+                  </p>
+                </b-card-body>
+              </b-collapse>
+            </b-card>
           </template>
         </div>
       </div>
