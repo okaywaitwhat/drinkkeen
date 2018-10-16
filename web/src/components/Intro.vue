@@ -6,6 +6,9 @@
           </a>
           <!-- legend viene de prop @ App.vue -->
         </div>
+        <div class="fixed-bottom pb-4 pointer">
+          <a class="fa fa-chevron-down"></a>
+        </div>
     </section>
 </template>
 
@@ -44,6 +47,11 @@ section {
   max-width: 50rem;
 }
 
+a {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 701px) {
   img {
     width: 500px;
@@ -61,5 +69,4 @@ section {
     font-size: 15px;
   }
 }
-
 </style>
