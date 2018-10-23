@@ -30,7 +30,7 @@
     </div>
 
     <div class="mt-4 align-items-center">
-      <img src="../assets/media/navbrand.png">
+      <img src="../assets/media/smlogo.png">
     </div>
     <div class="p-2">
       <a v-for="link in links" :href="link.href" :key="link.href" class="p-3 text-dark text-uppercase" target="_blank">

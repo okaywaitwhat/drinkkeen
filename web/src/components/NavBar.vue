@@ -3,7 +3,7 @@
         <b-navbar toggleable="md" class="navbar-light bg-light">
             <!-- router-link es un componente de Vue que genera un link a una vista del router, en este caso nos lleva al default `/` -->
             <router-link to="/">
-                <img :src="require(`../assets/media/navbrand.png`)">
+                <img :src="require(`../assets/media/smlogo.png`)">
             </router-link>
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">

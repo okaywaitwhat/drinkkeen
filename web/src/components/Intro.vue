@@ -2,7 +2,7 @@
    <section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}">
         <div class="container">
           <a>
-            <img class="pointer" src='../assets/media/logo.png'>
+            <img class="pointer" src='../assets/media/lglogo.png'>
           </a>
           <!-- legend viene de prop @ App.vue -->
         </div>
