@@ -72,6 +72,7 @@ footer {
   text-align: center;
   img {
     width: 140px;
+    padding-bottom: 1rem;
   }
 }
 
