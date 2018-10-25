@@ -31,6 +31,6 @@ export default {
 <style lang="scss" scoped>
 section {
   background: bottom left no-repeat;
-  background-size: 47rem;
+  background-size: 16rem;
 }
 </style>
