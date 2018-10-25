@@ -9,7 +9,7 @@
           Beba responsablemente.
         </p>
       </div>
-      <div class=" offset-2 col-lg-3 mt-3 text-left">
+      <div class="offset-1 col-lg-3 mt-3 text-left">
       <h5>Contacto</h5>
       <ul class="font-weight-light">
         <li>hello@drinkkeen.com</li>
@@ -18,7 +18,7 @@
         <li>© 2018 Buenos Aires, Argentina</li>
       </ul>
       </div>
-      <div class="col-lg-2 mt-3 text-left">
+      <div class="offset-1 col-lg-2 mt-3 text-left">
         <h5>Otros</h5>
         <ul class="font-weight-light">
           <li>Condiciones de uso</li>

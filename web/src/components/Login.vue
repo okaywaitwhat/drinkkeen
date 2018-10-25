@@ -2,6 +2,7 @@
     <section :style="{'background-image': `url(${require('../assets/media/login.jpg')})`}">
       <div class="container form-wrapper">
         <form class="bg-transparent rounded">
+          <h4 class="lead text-light mb-3">Iniciar sesión</h4>
           <div class="form-group">
             <div class="input-group">
               <div class="input-group-prepend">

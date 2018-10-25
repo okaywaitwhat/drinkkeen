@@ -1,6 +1,7 @@
 export default [
   {
     job: 'Bar Maid',
+    date: '25/10/2018',
     workplace: 'Palermo Soho',
     genre: 'femenino',
     age: '24 a 38 años',
@@ -26,6 +27,7 @@ export default [
   },
   {
     job: 'Jefe de cocina',
+    date: '25/10/2018',
     workplace: 'Las Cañitas',
     genre: 'masculino',
     age: '30 a 45 años',
@@ -51,6 +53,7 @@ export default [
   },
   {
     job: 'Barista',
+    date: '25/10/2018',
     workplace: 'Congreso',
     genre: 'indistinto',
     age: '20 a 30 años',

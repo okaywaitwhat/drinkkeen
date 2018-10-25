@@ -15,7 +15,9 @@
       <br>
       <strong>Requisitos:</strong>
         <li class="text-justify mt-2" v-for="item in post.requirements" :key="item.requirement">{{ item.requirement }}</li>
+        <hr>
     </div>
+    <span class="text-muted">Publicado el {{ post.date }}</span>
   </div>
 </template>
 
