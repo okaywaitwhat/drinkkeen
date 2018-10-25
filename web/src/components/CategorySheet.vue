@@ -4,7 +4,7 @@
       <div class="row bg-light">
         <div class="col-lg-12 p-0 text-justify">
           <template>
-            <b-card no-body class="mb-1">
+            <b-card no-body class="mb-0">
               <b-card-header class="p-0" role="tab">
                 <button v-b-toggle.history type="button" class="btn btn-light btn-block">
                   <h3 class="tab-title">Historia</h3>
@@ -21,7 +21,7 @@
             <b-card no-body class="mb-0">
               <b-card-header class="p-0" role="tab">
                 <button v-b-toggle.description type="button" class="btn btn-light btn-block">
-                  <h3 class="tab-title">Descripcion</h3>
+                  <h3 class="tab-title">Descripción</h3>
                 </button>
               </b-card-header>
               <b-collapse id="description">
@@ -63,6 +63,10 @@ export default {
 .card-header {
   border-bottom: 0;
   background-color: transparent;
+}
+
+.btn, .btn-block {
+  border-color: transparent;
 }
 </style>
 

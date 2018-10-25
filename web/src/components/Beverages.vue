@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <p class="lead pb-5">La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo. Desde el whisky hasta la ginebra, incia un recorrido que será el comienzo de infinitas e inovidables historias.</p>
+    <p class="lead pb-4">La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo. Desde el whisky hasta la ginebra, incia un recorrido que será el comienzo de infinitas e inovidables historias.</p>
     <div>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-center bg-transparent p-0">

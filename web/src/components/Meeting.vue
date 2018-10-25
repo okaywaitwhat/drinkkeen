@@ -6,7 +6,7 @@
       <p class="text-justify"><strong><i class="fa fa-calendar"></i></strong> {{ post.date }}</p>
       <p class="text-justify"><strong><i class="fa fa-clock-o"></i></strong>{{ post.hour }}hs</p>
       <p class="text-justify">{{ post.description }}</p>
-      <p class="text-justify">Más información en <strong>{{ post.mail }}</strong> y <strong>{{ post.phone }}</strong></p>
+      <p class="text">Más información en <strong>{{ post.mail }}</strong> y <strong>{{ post.phone }}</strong></p>
     </div>
   </div>
 </template>

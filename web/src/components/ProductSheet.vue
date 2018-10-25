@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container text-center">
+    <div class="container">
       <div class="row p-4">
         <div class="col-lg-6">
           <img class="pointer" src="../assets/mediaproductos/barroll3-min.jpg">
@@ -16,7 +16,17 @@
     </div>
     <div class="col-lg-12 gradient"></div>
     <div class="col-lg-12 gradient"></div>
-    <div class="col-lg-12 gradient"></div>
+    <div class="col-lg-12 gradient">
+      <div class="container text-center">
+        <h5 class="mt-5 mb-4">Especificaciones:</h5>
+        <p>Dolorem ab asperiores est non similique necessitatibus possimus eos. Eaque?</p>
+        <p>Officiis, reprehenderit commodi, esse nobis atque eveniet facere error vitae aspernatur quis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Dolorem ab asperiores est non similique necessitatibus possimus eos. Eaque?</p>
+        <p>Officiis, reprehenderit commodi, esse nobis atque eveniet facere error vitae aspernatur quis.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -38,13 +48,13 @@ export default {
   img {
     width: 20rem;
     border-radius: 50%;
+    margin-bottom: 3rem;
   }
 }
 
 .container {
   max-width: 900px;
 }
-
 </style>
 
 

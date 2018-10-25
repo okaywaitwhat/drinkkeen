@@ -1,7 +1,18 @@
 <template>
     <section>
+      <div class="container text-center">
+        <p class="lead pb-4">Descubre nuevas experiencias, sabores, tendencias y lo más relevante del mundo de la mixología de la mano de los que más saben en nuestro país.</p>
+      </div>
+
       <div class="container-fluid">
-        <div class="row">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center bg-transparent p-0">
+          <li class="breadcrumb-item pointer">Hoy</li>
+          <li class="breadcrumb-item pointer">Este fin de semana</li>
+          <li class="breadcrumb-item pointer">Este mes</li>
+        </ol>
+        </nav>
+        <div>
             <Meeting :post="meeting" v-for="meeting in posts" :key="meeting.title" />
         </div>
       </div>
@@ -31,4 +42,9 @@ section {
   min-height: 100%;
   width: 100%;
 }
+
+.breadcrumb >
+  li+li:before {
+    content: '|';
+  }
 </style>
