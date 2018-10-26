@@ -10,8 +10,8 @@
           </li>
         </ol>
       </nav>
-      <BeverageView v-if="categoryId" :categoryId="categoryId" />
     </div>
+    <BeverageView v-if="categoryId" :categoryId="categoryId" />
   </section>
 </template>
 

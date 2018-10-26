@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white d-flex flex-column justify-content-center">
+    <div class="container bg-white d-flex flex-column justify-content-center">
       <h1 class="display-4 pb-3 pt-3">{{category.name}}</h1>
       <div class="row bg-light">
         <div class="col-lg-12 p-0 text-justify">
@@ -12,7 +12,7 @@
               </b-card-header>
               <b-collapse id="history" visible>
                 <b-card-body class="p-0">
-                  <p class="card-text mt-4 mb-4">
+                  <p class="card-text mt-4 mb-4 p-4">
                     {{category.history}}
                   </p>
                 </b-card-body>
@@ -26,7 +26,7 @@
               </b-card-header>
               <b-collapse id="description">
                 <b-card-body class="p-0">
-                  <p class="card-text mt-4 mb-4">
+                  <p class="card-text mt-4 mb-4 p-4">
                     {{category.description}}
                   </p>
                 </b-card-body>

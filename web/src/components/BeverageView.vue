@@ -1,21 +1,23 @@
 <template>
-  <div>
-    <CategorySheet :category="category" :key="category.name" />
-    <BeverageSheet :beverage="category.marks[0]" :key="category.marks[0].img" />
-    <div class="card-deck" :key="category.name">
-      <figure :key="category.name" class="pointer d-flex align-items-center">
-        <i class="fa fa-chevron-left" style="display:none"></i>
-      </figure>
-        <Beverage class="bottle-img"
-          :item="beverage" v-for="beverage in category.marks" :key="beverage.img"
-          :class="{ show: bottlesLoaded === category.marks.length }"
-          @load="bottleImageLoad()"
-          />
-      <figure :key="category.name" class="pointer d-flex align-items-center">
-        <i class="fa fa-chevron-right" style="display:none"></i>
-      </figure>
-    </div>
-  </div>
+  <section>
+      <CategorySheet :category="category" :key="category.name" />
+      <div>
+        <BeverageSheet :beverage="category.marks[0]" :key="category.marks[0].img" />
+        <div class="card-deck" :key="category.name">
+          <figure :key="category.name" class="pointer d-flex align-items-center">
+            <i class="fa fa-chevron-left" style="display:none"></i>
+          </figure>
+            <Beverage class="bottle-img"
+              :item="beverage" v-for="beverage in category.marks" :key="beverage.img"
+              :class="{ show: bottlesLoaded === category.marks.length }"
+              @load="bottleImageLoad()"
+              />
+          <figure :key="category.name" class="pointer d-flex align-items-center">
+            <i class="fa fa-chevron-right" style="display:none"></i>
+          </figure>
+        </div>
+      </div>
+   </section>
 </template>
 
 <script>

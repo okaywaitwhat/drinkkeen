@@ -1,6 +1,6 @@
 <template>
   <section
-    :style="{'background-image': `url(${require('../assets/media/maitai.png')})`}">
+    :style="{'background-image': `url(${require('../assets/media/maitai-min.png')})`}">
     <div class="container d-flex flex-column justify-content-center pt-5">
       <div class="row">
         <div class="col-lg-7">
@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 90%;
+  height: 85%;
   background: bottom left no-repeat;
   background-size: 23rem;
 }
