@@ -1,6 +1,6 @@
 <template>
-  <section class="container">
-    <p class="lead text-center pb-4">Encontrá las recetas ideales y dejate sorprender por nuevos sabores, prepara cócteles desde tu casa y disfruta de increíbles bebidas con vodka, tequila, whisky, ron, ginebra y más. Descubre los sabores del mundo y tu cocktail ideal.</p>
+  <section class="container-fluid">
+    <p class="lead pb-4 pl-lg-5 pr-lg-5">Encontrá las recetas ideales y dejate sorprender por nuevos sabores, prepara cócteles desde tu casa y disfruta de increíbles bebidas con vodka, tequila, whisky, ron, ginebra y más. Descubre los sabores del mundo y tu cocktail ideal.</p>
     <div class="container text-center" v-for="(category, i) in categories" :key="i">
       <Collection :category="category" />
       <hr class="mt-5 mb-5">
@@ -31,5 +31,6 @@ section {
   padding-top: 4rem;
   min-height: 100%;
   width: 100%;
+  text-align: center;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="d-inline-flex flex-column justify-content-center">
-    <h3 class="ml-2 mr-auto">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h3>
+    <h3 class="ml-2 mr-auto slide">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h3>
     <section class="d-flex justify-content-center">
       <router-link :to="subpath">
         <figure class="big-img d-inline-block">
@@ -110,5 +110,41 @@ section {
   .previews-wrapper {
     display: none;
   }
+}
+
+.slide {
+  animation: slideInLeft 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
 }
 </style>

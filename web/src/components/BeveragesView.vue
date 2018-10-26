@@ -28,7 +28,7 @@ import BeverageSheet from './BeverageSheet'
 import CategorySheet from './CategorySheet'
 
 export default {
-  name: 'beverage-view',
+  name: 'beverages-view',
   components: { Beverage, CategorySheet, BeverageSheet },
   props: [ 'categoryId' ],
   data () {

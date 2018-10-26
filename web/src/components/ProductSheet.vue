@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container">
+    <div class="container text-center">
       <div class="row p-4">
         <div class="col-lg-6">
           <img class="pointer" src="../assets/mediaproductos/barroll3-min.jpg">

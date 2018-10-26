@@ -2,7 +2,7 @@
   <div class="search input-group mb-0">
     <input type="text" class="form-control" placeholder="Buscar...">
     <div class="input-group-append">
-      <span class="input-group-text"><i class="fa fa-search"></i></span>
+      <span class="input-group-text bg-light"><i class="fa fa-search"></i></span>
     </div>
   </div>
 </template>
