@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  height: 85%;
   background: bottom left no-repeat;
   background-size: 23rem;
 }
