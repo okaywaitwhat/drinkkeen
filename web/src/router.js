@@ -25,12 +25,17 @@ const routes = [
     path: '/beverages/:category?',
     component: Beverages
   },
+  {
+    name: 'products',
+    path: '/products/:product?',
+    component: Products
+  },
   { path: '/cocteleria', component: Collections },
   { path: '/cocteleria/de-autor', name: 'author', component: Category },
   { path: '/cocteleria/clasica', name: 'classic', component: Category },
   { path: '/cocteleria/moderna', name: 'modern', component: Category },
   { path: '/cocteleria/molecular', name: 'molecular', component: Category },
-  { path: '/products', component: Products },
+  //{ path: '/products', component: Products },
   { path: '/login', component: Login },
 ]
 

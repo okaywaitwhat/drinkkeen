@@ -1,6 +1,6 @@
 <template>
     <section>
-      <ProductSheet />
+      <ProductSheet v-if="productId" :productId="productId"/>
             <div class="container">
                 <div class="card-columns pt-4">
                     <Product :product="product" v-for="product in store" :key="product.name" />
@@ -13,6 +13,7 @@
 import Product from './Product'
 import ProductSheet from './ProductSheet'
 import Products from '../data/products.js';
+import products from '../data/products.js';
 
 export default {
   name: 'products',
@@ -23,6 +24,11 @@ export default {
     return {
       store: Products[0].stock,
     }
+  },
+  computed: {
+    productId () {
+      return this.$route.params.product
+    },
   }
 }
 </script>

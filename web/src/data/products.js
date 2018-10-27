@@ -4,33 +4,21 @@ export default [
     description: 'a bar roll',
     stock: [
       {
-        name: 'Black bar roll',
+        name: 'Blackbarroll',
+        id: 'blackbarroll',
         description: 'a black bar roll',
         img: 'barroll3'
       },
       {
-        name: 'Brown bar roll',
+        name: 'Brownbarroll',
+        id: 'brownbarroll',
         description: 'a brown bar roll',
         img: 'barroll4'
       },
       {
-        name: 'Black Apron',
-        description: 'a black apron',
-        img: 'barroll2'
-      },
-      {
-        name: 'Brown Apron',
-        description: 'a brown apron',
-        img: 'barroll1'
-      },
-      {
-        name: 'Big Lewis bag',
-        description: 'a big Lewis bag',
-        img: 'lewisbag3'
-      },
-      {
-        name: 'Small Lewis bag',
-        description: 'a small Lewis bag',
+        name: 'Lewisbag',
+        id: 'lewisbag',
+        description: 'a Lewis bag',
         img: 'lewisbag1'
       },
     ]

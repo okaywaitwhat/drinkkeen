@@ -6,7 +6,7 @@
           <img class="pointer slideInLeft" src="../assets/mediaproductos/barroll3-min.jpg">
         </div>
         <div class="col-lg-6">
-          <h3>Bar Roll</h3>
+          <h3>{{ productId }}</h3>
           <p class="text-muted mb-4">Porta herramientas de coctelería</p>
           <p>Estuche para coctelería ideal para transportar y guardar herramientas. Confeccionado en tropical mecánico y batista con interior impermeable.</p>
           <h3 class="mb-4">$690</h3>
@@ -14,7 +14,8 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12 gradient"></div>
+
+    <!-- <div class="col-lg-12 gradient"></div>
     <div class="col-lg-12 gradient"></div>
     <div class="col-lg-12 gradient">
       <div class="container text-center">
@@ -26,13 +27,17 @@
         <p>Officiis, reprehenderit commodi, esse nobis atque eveniet facere error vitae aspernatur quis.</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
       </div>
-    </div>
+    </div> -->
+
   </section>
 </template>
 
 <script>
 export default {
   name: 'productsheet',
+  props: [
+    'productId'
+  ],
 }
 </script>
 

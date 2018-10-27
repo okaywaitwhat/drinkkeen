@@ -1,6 +1,8 @@
 <template>
         <div class="p-card fadeIn">
+          <router-link :to="`/products/${product.id}`">
             <img class="pointer" :src="imgPath">
+          </router-link>
             <div class="card-body">
                 <span><h5 class="card-title">{{ product.name }}</h5></span>
                 <p class="font-italic text-capitalize">{{ product.description }}</p>

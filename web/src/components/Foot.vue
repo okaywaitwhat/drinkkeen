@@ -4,9 +4,8 @@
       <div class="col-lg-5">
         <h5 class="text-left mt-4">Siempre sirviendo responsablemente</h5>
         <p class="text-left">
-          Por favor no comparta contenido con personas por debajo de la edad legal para consumir alcohol.
-        <br>
-          Beba responsablemente.
+          <span>Por favor no comparta contenido con personas por debajo de la edad legal para consumir alcohol.</span>
+          <span>Beba responsablemente.</span>
         </p>
       </div>
       <div class="offset-1 col-lg-3 mt-3 text-left">
@@ -84,4 +83,9 @@ ul {
   list-style-type: none;
   padding: 0;
  }
+
+ p span
+{
+    display: block;
+}
 </style>
