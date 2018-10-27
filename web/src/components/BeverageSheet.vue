@@ -1,18 +1,18 @@
 <template>
-  <div class="row p-5 zoom">
-    <div class="col-12 p-4 col-lg-4">
-      <div class="cropped bg-light">
+  <div class="row p-3">
+    <div class="col-12 p-1 col-lg-4 p-lg-5">
+      <div class="cropped bg-light slideInUp">
       <img :src="imgPath" :placeholder="imgPath" class="sheet-img">
       </div>
     </div>
-  <div class="col-12 col-lg-5 p-4 pt-lg-5">
-    <div>
+  <div class="col-12 p-1 col-lg-5 p-lg-5">
+    <div class="slideInDown">
       <h3 class="tab-title pb-3">{{ beverage.name }}</h3>
       <p class="text-justify">{{ beverage.description }}</p>
     </div>
   </div>
-  <div class="col-12 col-lg-3 pt-lg-5 p-4 pb-lg-0">
-    <BeverageCard :beverage="beverage"/>
+  <div class="col-12 p-1 col-lg-3 p-lg-5 p-4 pb-lg-0">
+    <BeverageCard class="slideInUp" :beverage="beverage"/>
   </div>
   </div>
 </template>
@@ -48,40 +48,6 @@ export default {
   overflow: hidden;
   border-radius: 50%;
   margin-top: 4rem;
-}
-
-.zoom {
-  animation: zoomIn 2s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  animation-name: zoomIn;
 }
 </style>
 

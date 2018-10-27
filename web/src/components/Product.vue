@@ -1,5 +1,5 @@
 <template>
-        <div class="p-card">
+        <div class="p-card fadeIn">
             <img class="pointer" :src="imgPath">
             <div class="card-body">
                 <span><h5 class="card-title">{{ product.name }}</h5></span>

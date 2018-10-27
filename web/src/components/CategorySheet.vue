@@ -1,5 +1,5 @@
 <template>
-    <div class="container bg-white d-flex flex-column justify-content-center">
+    <div class="container p-0 bg-white d-flex flex-column justify-content-center">
       <h1 class="display-4 pb-3 pt-3">{{category.name}}</h1>
       <div class="row bg-light">
         <div class="col-lg-12 p-0 text-justify">

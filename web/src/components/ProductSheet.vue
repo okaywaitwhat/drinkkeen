@@ -3,7 +3,7 @@
     <div class="container text-center">
       <div class="row p-4">
         <div class="col-lg-6">
-          <img class="pointer" src="../assets/mediaproductos/barroll3-min.jpg">
+          <img class="pointer slideInLeft" src="../assets/mediaproductos/barroll3-min.jpg">
         </div>
         <div class="col-lg-6">
           <h3>Bar Roll</h3>
