@@ -39,7 +39,8 @@ export default {
 
 <style lang="scss" scoped>
 .sheet-img {
-  width: 180px;
+  width: 11rem;
+  margin-top: -2rem;
 }
 
 .cropped {

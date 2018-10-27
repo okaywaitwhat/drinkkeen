@@ -5,7 +5,7 @@
         <BeverageSheet :beverage="category.marks[0]" :key="category.marks[0].img" />
         <div class="card-deck" :key="category.name">
           <figure :key="category.name" class="pointer d-flex align-items-center">
-            <i class="fa fa-chevron-left" style="display:none"></i>
+            <i class="fa fa-chevron-left"></i>
           </figure>
             <Beverage class="bottle-img"
               :item="beverage" v-for="beverage in category.marks" :key="beverage.img"
@@ -13,7 +13,7 @@
               @load="bottleImageLoad()"
               />
           <figure :key="category.name" class="pointer d-flex align-items-center">
-            <i class="fa fa-chevron-right" style="display:none"></i>
+            <i class="fa fa-chevron-right"></i>
           </figure>
         </div>
       </div>
