@@ -7,7 +7,7 @@
           <!-- legend viene de prop @ App.vue -->
         </div>
         <div class="fixed-bottom pb-4 pointer">
-          <a class="fa fa-chevron-down"></a>
+          <a class="fa fa-chevron-down clickMe"></a>
         </div>
     </section>
 </template>
@@ -50,25 +50,6 @@ section {
 a {
   font-weight: 300;
   font-size: 2.5rem;
-}
-
-.fa {
-  animation-name: clickMe;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes clickMe {
-    from,
-  50%,
-  to {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
 }
 
 @media screen and (min-width: 701px) {

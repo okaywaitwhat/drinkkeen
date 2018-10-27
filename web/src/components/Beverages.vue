@@ -64,4 +64,9 @@ a {
 .search {
   max-width: 20rem;
 }
+
+.router-link-active {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 </style>

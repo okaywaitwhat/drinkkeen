@@ -4,7 +4,7 @@
       <h1 class="display-4">"{{ quote.quote }}"</h1>
       <p class="lead">{{ quote.author }}</p>
     </blockquote>
-    <div class="social-share" v-if="mouseOver">
+    <div class="social-share flipInX" v-if="mouseOver">
       <!-- target="_blank" es para abrir un link en una tab nueva y no en la misma -->
       <a href="" target="_blank"><i class="fa fa-facebook text-light bg-dark pointer"></i></a>
       <a href="" target="_blank"><i class="fa fa-twitter text-light bg-dark pointer"></i></a>

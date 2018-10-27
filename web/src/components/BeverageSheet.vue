@@ -50,6 +50,10 @@ export default {
   border-radius: 50%;
   margin-top: 4rem;
 }
+
+.row {
+  overflow: hidden;
+}
 </style>
 
 
