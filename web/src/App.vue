@@ -4,7 +4,7 @@
     <Intro v-if="!dismissedIntro" @dismissIntro="dismissIntro()"/>
     <template v-else>
       <Navbar />
-      <Modal v-if="!dismissedModal" />
+      <Modal v-if="!dismissedModal" @dismissModal="dismissModal()" />
       <!-- definimos el router y adentro el mismo se encarga de mostrar lo que queremos para cada ruta -->
       <router-view class="view"></router-view>
       <Foot />

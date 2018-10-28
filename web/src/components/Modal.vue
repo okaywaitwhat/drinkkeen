@@ -1,5 +1,5 @@
 <template>
-<section :style="{'background-image': `url(${require('../assets/media/intro.jpg')})`}">
+<section>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -14,9 +14,10 @@
         <p>Introduce tu fecha de nacimiento:</p>
 
         <div class="form-group form-inline">
-          <input type="text" class="form-control m-1" placeholder="dd" size="3" autocomplete='off'> /
-          <input type="text" class="form-control m-1" placeholder="mm" size="3" autocomplete='off'> /
-          <input type="text" class="form-control m-1" placeholder="aaaa" size="4" autocomplete='off'>
+          <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
+          <input type="text" v-model="day" class="form-control m-1" placeholder="dd" size="3" autocomplete='off'> /
+          <input type="text" v-model="month" class="form-control m-1" placeholder="mm" size="3" autocomplete='off'> /
+          <input type="text" v-model="year" class="form-control m-1" placeholder="aaaa" size="4" autocomplete='off'>
         </div>
 
         <div class="form-group form-check">
@@ -27,7 +28,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-dark">Acceder</button>
+        <button type="button" class="btn btn-dark" :class="{ disabled: !isValid }" @click="access()">Acceder</button>
         <button type="button" class="btn btn-dark">Cancelar</button>
       </div>
     </div>
@@ -37,19 +38,41 @@
 
 <script>
 export default {
-    name: 'Modal',
+  name: 'Modal',
+  data () {
+    return {
+      day: '',
+      month: '',
+      year: ''
+    }
+  },
+  computed: {
+    isValid () {
+      return this.day && this.month && this.year
+      // return this.day !== '' && this.month !== '' && this.year !== ''
+    }
+  },
+  methods: {
+    access () {
+      if (this.isValid) {
+        this.$emit('dismissModal')
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 section {
-  width: 100%;
-  min-height: 100vh;
+  background-color: rgba(gray, .5);
+  position: fixed;
+  z-index: 2;
+  top: 0; // distancia con el borde superior
+  left: 0; // distancia con el borde izquierdo
+  right: 0; // distancia con el borde derecho
+  bottom: 0; // distancia con el borde inferior
   display: flex;
   align-items: center;
-  background-size: cover;
-  background: no-repeat center center fixed;
-  background-size: cover;
 }
 
 img {
