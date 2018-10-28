@@ -16,7 +16,7 @@
         </figure>
         <router-link :to="subpath">
           <figure class="mini-card pointer d-inline-block float-left d-flex justify-content-center align-items-center">
-            <i class="fa fa-chevron-right"></i>
+            <i class="fa fa-chevron-right flipInX"></i>
           </figure>
         </router-link>
       </div>

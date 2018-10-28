@@ -83,9 +83,4 @@ ul {
   list-style-type: none;
   padding: 0;
  }
-
- p span
-{
-    display: block;
-}
 </style>
