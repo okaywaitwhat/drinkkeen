@@ -13,7 +13,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'intro',
   data () {
@@ -22,11 +21,9 @@ export default {
     }
   },
 }
-
 </script>
 
 <style scoped lang="scss">
-
 section {
   width: 100%;
   min-height: 100vh;

@@ -15,8 +15,13 @@
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
           </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label text-light" for="exampleCheck1">Recordarme</label>
+          <b-form-checkbox class="text-light"
+                           id="checkbox1"
+                           v-model="status"
+                           value="accepted"
+                           unchecked-value="not_accepted">
+          Recordarme
+          </b-form-checkbox>
           </div>
           <button type="submit" class="btn btn-light">Ingresar</button>
         </form>
@@ -67,7 +72,8 @@ section {
 .form-wrapper {
   width: 20rem;
 }
- form {
-   padding: 2rem;
+
+form {
+  padding: 2rem;
  }
 </style>

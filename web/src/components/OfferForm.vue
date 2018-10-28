@@ -40,6 +40,23 @@
       <label for="exampleFormControlTextarea1">Requisitos</label>
       <textarea class="form-control font-weight-light" rows="3" placeholder="Ej: Libreta Sanitaria, etc."></textarea>
     </div>
+
+    <div class="mb-3">
+      <b-form-checkbox class="mb-1"
+                       id="checkbox1"
+                       v-model="status"
+                       value="accepted"
+                       unchecked-value="not_accepted">
+        He revisado los datos ingresados.
+      </b-form-checkbox>
+      <b-form-checkbox id="checkbox2"
+                      v-model="status"
+                      value="accepted"
+                      unchecked-value="not_accepted">
+        Soy responsable por el contenido del aviso.
+      </b-form-checkbox>
+    </div>
+
     <button type="submit" class="btn btn-dark">Enviar</button>
   </form>
 </template>

@@ -2,7 +2,8 @@
   <div id="app">
     <!-- atributos con `:` (props) son para tomar lo que le paso como variable, si no tiene `:` entonces lo toma como texto plano -->
     <Intro v-if="!dismissedIntro" @click.native="dismissIntro()"/>
-    <template v-else>
+    <Modal v-if="!dismissedModal" @click.native="dismissModal()"/>
+    <template v-if="dismissedIntro, dismissedModal">
       <Navbar />
       <!-- definimos el router y adentro el mismo se encarga de mostrar lo que queremos para cada ruta -->
       <router-view class="view"></router-view>
@@ -15,24 +16,31 @@
 import Intro from './components/Intro'
 import Foot from './components/Foot'
 import Navbar from './components/NavBar'
+import Modal from './components/Modal'
 
 const introKey = 'dismissedIntro'
+const modalKey = 'dismissedModal'
 
 export default {
   name: 'app',
   components: {
-    Intro, Navbar, Foot
+    Intro, Navbar, Foot, Modal,
   },
   data () {
     return {
-      dismissedIntro: localStorage.getItem(introKey)
+      dismissedIntro: localStorage.getItem(introKey),
+      dismissedModal: localStorage.getItem(modalKey),
     }
   },
   methods: {
     dismissIntro () {
       this.dismissedIntro = true
       localStorage.setItem(introKey, true)
-    }
+    },
+    dismissModal () {
+      this.dismissedModal = true
+      localStorage.setItem(modalKey, true)
+    },
   }
 }
 </script>
