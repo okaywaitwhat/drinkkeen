@@ -15,15 +15,9 @@
 
         <div class="form-group form-inline">
           <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
-          <input type="text" v-model="day" class="form-control m-1" placeholder="dd" size="3" autocomplete='off'> /
-          <input type="text" v-model="month" class="form-control m-1" placeholder="mm" size="3" autocomplete='off'> /
-          <input type="text" v-model="year" class="form-control m-1" placeholder="aaaa" size="4" autocomplete='off'>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recordarme en este dispositivo</label>
-            <small class="form-text text-muted font-weight-light">Al entrar aceptas nuestro aviso sobre política y cookies.</small>
+          <input type="text" v-model.number="day" class="form-control m-1" placeholder="dd" size="3" autocomplete='off'> /
+          <input type="text" v-model.number="month" class="form-control m-1" placeholder="mm" size="3" autocomplete='off'> /
+          <input type="text" v-model.number="year" class="form-control m-1" placeholder="aaaa" size="4" autocomplete='off'>
         </div>
       </div>
 
@@ -48,6 +42,9 @@ export default {
   },
   computed: {
     isValid () {
+      if (this.day > 31) return false
+      if (this.month > 12) return false
+      if (this.year > 2000 || this.year < 1900) return false
       return this.day && this.month && this.year
       // return this.day !== '' && this.month !== '' && this.year !== ''
     }
