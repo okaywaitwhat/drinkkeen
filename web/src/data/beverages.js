@@ -324,7 +324,7 @@ export default [
         name: 'Chivas regal',
         version: '750',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'La alusión al año 1801 que figura en la etiqueta del whisky corresponde a la creación de un negocio de vinos y ultramar en la ciudad de Aberdeen, cuyo propietario era William Edward, quien se asocia con James Chivas en 1837. Edward muere en 1841. A pesar de la desaparición de Edward el negocio prosperó gracias a su aristocrática clientela, entre las que se encontraba la Reina Victoria. Para impulsar el negocio James necesitaba ayuda y para ello convoco a su hermano John. A partir de ese momento los hermanos Chivas ganaron fama y reputación por su mezcla de whiskies. Cuando John murió, James involucro en el negocio a su hijo y esposa, quienes continuaron con el legado, que no se interrumpió ni siquiera cuando el linaje Chivas se extinguió en 1893.',
         legacy: '',
         cata: [
@@ -338,31 +338,31 @@ export default [
       {
         img: 'whisky/jackdaniels',
         name: 'Jack Daniels',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'El whiskey americano más conocido y de mayor venta es Jack Daniels, el cual se elabora dentro del estado de Tennessee. Se elabora a partir de una mezcla de cereales como el maíz, el centeno y la cebada, de la cual se obtiene un destilado que, previo ingreso a la barrica, se filtra en carbón de arce dulce. Este es un trabajoso y costoso método que le confiere mayor elegancia diferenciándolo del típico Bourbon Whiskey.',
         legacy: '',
         cata: [
           {
-            vista: '',
-            aroma: '',
-            gusto: ''
+            vista: 'Ligero, suave y limpio',
+            aroma: 'Notas dulces, matices a frutos secos, y a especias',
+            gusto: 'Plátano, caramelo, crema, roble y cereal.'
           }
         ]
       },
       {
         img: 'whisky/jameson',
         name: 'Jameson',
-        version: '',
+        version: '750',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Es producido con una mezcla de cebadas irlandesas malteadas y sin maltear. Las ventas anuales superan los 22 millones de botellas, haciendo de Jameson el whiskey irlandés más vendido del mundo. La compañía fue fundada por el escocés John Jameson emparentado con la familia Haig, destiladores de Whisky escocés. Su hijo se emparentó con la familia Stein, uno de los mayores destiladores de Escocia y propietarios de la destilería de Bow Street en Dublín. John Jameson adquirió la destilería de Bow Street en 1780. La nueva Middleton distillery construida por Irish Distillers produce hoy en día la mayoría del whiskey irlandés que se vende en Irlanda. Posee la destilería más grande de Irlanda y un amplio portfolio: un estándar, un 12 años, suave con muchas notas frutales en el que se destaca la manzana.',
         legacy: '',
         cata: [
           {
             vista: '',
-            aroma: '',
+            aroma: 'Notas especiadas, de nuez y vainilla con toques dulces de jerez.',
             gusto: ''
           }
         ]
@@ -370,7 +370,7 @@ export default [
       {
         img: 'whisky/jb',
         name: 'J&B',
-        version: '',
+        version: '750',
         unit: 'cc',
         graduation: '',
         description: 'A través de la combinación de maltas, J&B obtiene un característico color claro y brillante, resultado de la maduración de las maltas dentro de las barricas. Delicadas notas sabor manzana y pera se pueden percibir al degustar uno de los whiskies más aclamados a nivel mundial. Su origen se remonta al siglo XVIII, cuando el mercader italiano, Giacomo Justerini, perseguía a una cantante de ópera de Boloña a Londres. Aunque nunca ganó su corazón, el italiano inició un negocio en la capital inglesa en 1749. Años más tarde, el rico londinense, Alfred Brookes, se hizo cargo del negocio, cambió su nombre a Justerini & Brooks, y emprendió la labor de combinar whiskies.',
@@ -386,7 +386,7 @@ export default [
       {
         img: 'whisky/jimbeam',
         name: 'Jim Beam',
-        version: '',
+        version: '750',
         unit: 'cc',
         graduation: '',
         description: 'Es el bourbon típico más vendido en los Estados Unidos. El Etiqueta Blanca, de 4 años, es un whiskey muy joven, dulce e intenso. El Etiqueta Negra, de 8 años, es mucho más elegante y complejo. Una herencia de siete generaciones ha hecho de éste el bourbon más vendido en el mundo.  Comenzó su historia como muchos otros, de la mano de un individuo en busca de fortuna en aquel recién independizado Estados Unidos.  En 1788 Jacob Beam, proveniente de la familia alemana Boehm, emprendió camino a Kentucky, entre otras cosas, cargado con un alambique de cobre.  Como muchos otros se dedicaba principalmente a la granja, y dados los grandes excedentes de grano de maíz en aquella época, había que buscar una solución rentable para la misma.',
@@ -402,9 +402,9 @@ export default [
       {
         img: 'whisky/jwblacklabel',
         name: 'Johnnie Walker Black Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Es uno de los whiskies deluxe más vendidos en el mundo, una mezcla de complejidad y profundidad. Para apreciar su increíble sabor, sírvelo neat o con un poco de agua mineral, para descubrir sus capas, de vainilla, frutos frescos y secos, seguidos por un terminado sofisticado ahumado. Disfrútalo con alguna de las recetas que The Bar te ofrece. Sólo whiskies excepcionales, con por lo menos 12 años de maduración, fueron incluidos en este blend para conseguir un balance perfecto de los cuatro rincones de Escocia. Pero Johnnie Walker Black Label es más que un whisky, es un ícono cultural que ha sido disfrutado en todo el mundo por más de 100 años. Su inconfundible perfil profundo, suave y complejo, expresa notas de vainilla dulce y cáscara de naranja, que son acompañadas de aromas a especias, finalizando con un toque de humo, turba y malta.',
         legacy: '',
         cata: [
@@ -418,9 +418,9 @@ export default [
       {
         img: 'whisky/jwbluelabel',
         name: 'Johnnie Walker Blue Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Solo 1 de cada 10,000 barricas tiene las cualidades para reproducir el sabor excepcional de este gran whisky que ofrece toques ahumados con recuerdos a jerez, miel, vainilla y chocolate negro. Sírvelo derecho en vaso old fashioned acompañado de una copa de agua muy fría para disfrutar de su exquisito sabor. Con más de 190 años de historia en el arte de mezclar whiskies, el maestro mezclador Jim Beveridge crea Johnnie Walker Blue Label con algunos de los whiskys más exclusivos, provenientes de los 4 rincones de Escocia. Artesanía excepcional para recrear el sabor de los whiskies del siglo XIX. Al disfrutar de Johnnie Walker Blue Label sabrás porque el mejor blended de la Casa Walker, simplemente no tiene comparación.',
         legacy: '',
         cata: [
@@ -434,9 +434,9 @@ export default [
       {
         img: 'whisky/jwdoubleblack',
         name: 'Johnnie Walker Double Black',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Su inigualable sabor ahumado deriva de whiskies maduros, ahumados naturalmente y reposados en barricas de roble en la costa oeste e islas de Escocia. Las notas de humo de turba, pasas, manzanas, peras y cítricos, le brindan un toque dulce, que transita a cálidos y persistentes sabores amaderados de roble y humo. Johnnie Walker Double Black está inspirado en las notas icónicas de Johnnie Walker Black Label, acentuándolas para crear una mezcla con una intensidad sin precedentes. Desde su lanzamiento, en 2009, Johnnie Walker Double Black ha sido reconocido en todo el mundo como uno de los whiskies más exclusivos y únicos. Un whisky ideal para disfrutar de un momento único al lado de familia y amigos.',
         legacy: '',
         cata: [
@@ -450,9 +450,9 @@ export default [
       {
         img: 'whisky/jwgoldlabel',
         name: 'Johnnie Walker Gold Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'El tono profundamente dorado y su brillo intenso lo convierten en un blend exclusivo creado para celebrar el primer centenario de la casa Walker en el arte de mezclar whiskies. Al probarlo sentirás sucesivas capas de sabores; la miel, la naranja confitada y flores, dan paso a una cremosidad única. Finalmente envuelve al paladar en tonos acaramelados, antes de terminar con un acento a madera y un ligero ahumado. Uno de los Whiskies más especiales de la casa Johnnie Walker. Disfruta Johnnie Walker Gold Label Reserve, bien frío en una copa de champaña, acompañado de un chocolate amargo. Compártelo con tus amigos cuando quieras resaltar una celebración, en cualquiera de tus fiestas o eventos.',
         legacy: '',
         cata: [
@@ -466,9 +466,9 @@ export default [
       {
         img: 'whisky/jwgreenlabel',
         name: 'Johnnie Walker Green Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '43',
         description: 'Es elaborado a partir de la mezcla de single malts, añejados en barrica por lo menos durante 15 años, y provenientes de las regiones de: Speyside, Highland, Lowland e Island. Es la perfecta ocasión para disfrutar de una experiencia de whisky de malta única y diferente. La increíble labor artesanal del maestro mezclador, quien cuidadosamente selecciona las maltas, genera un sabor profundo con un perfil perfectamente balanceado. En Johnnie Walker Green Label se pueden sentir intensos aromas herbales y frutales, madera ahumada, pimienta, y delicadas notas de vainilla, con la profundidad que no se puede conseguir en una sola malta. El sabor único de Green Label es el resultado de un cuidadoso balance de las mejores maltas que solo Johnnie Walker puede lograr.',
         legacy: '',
         cata: [
@@ -482,9 +482,9 @@ export default [
       {
         img: 'whisky/jwplatinumlabel',
         name: 'Johnnie Walker Platinum Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Es una mezcla de whiskies añejados en barrica de roble durante mínimo 18 años. Siguiendo la antigua tradición de los private blend, el maestro mezclador siguió la receta de los whiskies que eran únicamente accesible para los clientes y los amigos íntimos de la familia Walker. Las notas clásicas de Johnnie Walker se mezclan con sabores de malta, caramelo y notas de almendras y vainilla. Finalmente, un sutil perfil ahumado envuelve a toda la mezcla y le da cuerpo a este inigualable whisky reconocido en todo el mundo.',
         legacy: '',
         cata: [
@@ -498,9 +498,9 @@ export default [
       {
         img: 'whisky/jwredlabel',
         name: 'Johnnie Walker Red Label',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Un blend versátil, de carácter acentuado que mantiene su intensidad de sus notas de especias aromáticas y sabor ahumado incluso al ser combinado. En 1909, la etiqueta roja con la que se identificaba la característica botella rectangular, fue adoptada con el nombre del whisky, anteriormente conocido como Special Old Highland Whisky. Para la década de 1920, Johnnie Walker Red Label se expandía en 120 mercados de todo el mundo. Johnnie Walker Red Label es una mezcla de 35 whiskies de grano y maltas, una combinación ligera y elegante de whiskies de la Costa Este Escocesa, con los sabores fragantes y ahumados de la Costa Oeste. Johnnie Walker Red Label contiene un perfil dinámico de especias aromáticas -canela y pimienta-, una dulzura frutal -manzana fresca o pera- y notas de vainilla.',
         legacy: '',
         cata: [
@@ -514,9 +514,9 @@ export default [
       {
         img: 'whisky/jwredrye',
         name: 'Johnnie Walker Red Rye',
-        version: '',
+        version: '1000',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Johnnie Walker Blender’s Batch Red Rye Finish es un whisky pensado para las nuevas generaciones amantes del whisky, se trata del resultado de más de 50 experimentos que contemplaron 203 muestras de maltas y whiskies de grano. El sabor de JWRRF combina la dulzura del roble americano con la profundidad y sutileza de un whisky cuidadosamente elaborado. Desde 1820, los maestros mezcladores de Johnnie Walker han buscado revolucionar el mundo del whisky, la filosofía de romper esquemas permanece en el ADN de la marca hasta ahora y sigue en la búsqueda constante de conquistar paladares alrededor del mundo, de ahí la inquietud por traer nuevos productos a sus consumidores.',
         legacy: '',
         cata: [
@@ -530,9 +530,9 @@ export default [
       {
         img: 'whisky/theglenlivet',
         name: 'The Glenlivet',
-        version: '',
+        version: '750',
         unit: 'cc',
-        graduation: '',
+        graduation: '40',
         description: 'Su origen se remonta a 1824, pero sus altos niveles de calidad y sabor lo vuelven una bebida atemporal y trascendente entre el whisky de más alto rango. Dos siglos de arte, ciencia y oficio en cada botella. Originario de Escocia. Cebada, agua y levadura es todo lo que hace falta para hacer un single malt, pero es la mano experta del artesano la que le aporta los exquisitos sabores y las cualidades únicas de The Glenlivet. Llevan perfeccionando sus técnicas desde 1824 y casi 200 años después, su proceso de seis etapas sigue reflejando el pensamiento original de su fundador, George Smith.',
         legacy: '',
         cata: [
