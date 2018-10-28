@@ -6,7 +6,7 @@
           </a>
           <!-- legend viene de prop @ App.vue -->
         </div>
-        <div class="fixed-bottom pb-4 pointer">
+        <div class="fixed-bottom pb-4 pointer" @click="dismissIntro()">
           <a class="fa fa-chevron-down clickMe"></a>
         </div>
     </section>
@@ -20,6 +20,11 @@ export default {
       legend: 'Descubre nuevas experiencias y sabores con nuestras recetas, artículos, tendencias y lo más relevante del mundo de la mixología.',
     }
   },
+  methods: {
+    dismissIntro () {
+      this.$emit('dismissIntro')
+    }
+  }
 }
 </script>
 

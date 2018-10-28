@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <!-- atributos con `:` (props) son para tomar lo que le paso como variable, si no tiene `:` entonces lo toma como texto plano -->
-    <Intro v-if="!dismissedIntro" @click.native="dismissIntro()"/>
-    <Modal v-if="!dismissedModal" @click.native="dismissModal()"/>
-    <template v-if="dismissedIntro, dismissedModal">
+    <Intro v-if="!dismissedIntro" @dismissIntro="dismissIntro()"/>
+    <template v-else>
       <Navbar />
+      <Modal v-if="!dismissedModal" />
       <!-- definimos el router y adentro el mismo se encarga de mostrar lo que queremos para cada ruta -->
       <router-view class="view"></router-view>
       <Foot />
