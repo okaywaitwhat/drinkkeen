@@ -4,9 +4,6 @@
     <div class="modal-content">
       <div class="modal-header">
         <img src="../assets/media/smlogo.png">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
 
       <div class="modal-body">
@@ -23,7 +20,7 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" :class="{ disabled: !isValid }" @click="access()">Acceder</button>
-        <button type="button" class="btn btn-dark">Cancelar</button>
+        <button type="button" class="btn btn-dark" @click="backToIntro()">Cancelar</button>
       </div>
     </div>
   </div>
@@ -54,7 +51,10 @@ export default {
       if (this.isValid) {
         this.$emit('dismissModal')
       }
-    }
+    },
+    backToIntro () {
+        this.$emit('dontDismissIntro')
+    },
   }
 }
 </script>
@@ -73,7 +73,7 @@ section {
 }
 
 img {
-  width: 140px;
+  width: 100px;
 }
 </style>
 

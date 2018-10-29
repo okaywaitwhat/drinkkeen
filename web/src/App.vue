@@ -4,7 +4,7 @@
     <Intro v-if="!dismissedIntro" @dismissIntro="dismissIntro()"/>
     <template v-else>
       <Navbar />
-      <Modal v-if="!dismissedModal" @dismissModal="dismissModal()" />
+      <Modal v-if="!dismissedModal" @dontDismissIntro="dontDismissIntro()" @dismissModal="dismissModal()" />
       <!-- definimos el router y adentro el mismo se encarga de mostrar lo que queremos para cada ruta -->
       <router-view class="view"></router-view>
       <Foot />
@@ -41,6 +41,10 @@ export default {
       this.dismissedModal = true
       localStorage.setItem(modalKey, true)
     },
+    dontDismissIntro () {
+      this.dismissedIntro = false
+      localStorage.removeItem(introKey, true)
+    },
   }
 }
 </script>
@@ -48,6 +52,5 @@ export default {
 <style lang="scss">
 
 @import '../src/styles/main.scss';
-
 
 </style>
