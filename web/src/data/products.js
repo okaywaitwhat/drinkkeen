@@ -6,19 +6,25 @@ export default [
       {
         name: 'Blackbarroll',
         id: 'blackbarroll',
-        description: 'a black bar roll',
+        title: 'Porta herramientas de coctelería',
+        price: '$690',
+        description: 'Estuche para coctelería ideal para transportar y guardar herramientas. Confeccionado en tropical mecánico y batista con interior impermeable.',
         img: 'barroll3'
       },
       {
         name: 'Brownbarroll',
         id: 'brownbarroll',
-        description: 'a brown bar roll',
+        title: 'Julieta',
+        price: '$450',
+        description: 'A brown bar roll',
         img: 'barroll4'
       },
       {
         name: 'Lewisbag',
         id: 'lewisbag',
-        description: 'a Lewis bag',
+        title: 'Julieta es muy linda',
+        price: '$880',
+        description: 'A Lewis bag',
         img: 'lewisbag1'
       },
     ]

@@ -5,7 +5,7 @@
           </router-link>
             <div class="card-body">
                 <span><h5 class="card-title">{{ product.name }}</h5></span>
-                <p class="font-italic text-capitalize">{{ product.description }}</p>
+                <p class="font-italic text-capitalize">{{ product.title }}</p>
             </div>
         </div>
 </template>

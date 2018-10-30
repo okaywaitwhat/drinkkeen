@@ -1,12 +1,12 @@
 <template>
-    <section>
-      <ProductSheet v-if="productId" :productId="productId"/>
-            <div class="container">
-                <div class="card-columns pt-4">
-                    <Product :product="product" v-for="product in store" :key="product.name" />
-                </div>
-            </div>
-    </section>
+  <section>
+    <ProductSheet v-if="selectedProduct" :product="selectedProduct"/>
+    <div class="container">
+      <div class="card-columns pt-4">
+        <Product :product="product" v-for="product in stock" :key="product.name" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -22,13 +22,13 @@ export default {
   },
   data () {
     return {
-      store: Products[0].stock,
+      stock: Products[0].stock,
     }
   },
   computed: {
-    productId () {
-      return this.$route.params.product
-    },
+    selectedProduct () {
+      return this.stock.find(product => product.id === this.$route.params.productId)
+    }
   }
 }
 </script>
@@ -40,4 +40,3 @@ section {
   width: 100%;
 }
 </style>
-

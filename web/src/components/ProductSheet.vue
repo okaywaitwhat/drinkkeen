@@ -3,14 +3,14 @@
     <div class="container text-center">
       <div class="row p-4">
         <div class="col-lg-6">
-          <img class="pointer slideInLeft" src="../assets/mediaproductos/barroll3-min.jpg">
+          <img class="pointer slideInLeft" :src="productImg">
         </div>
         <div class="col-lg-6">
-          <h3>{{ productId }}</h3>
-          <p class="text-muted mb-4">Porta herramientas de coctelería</p>
-          <p>Estuche para coctelería ideal para transportar y guardar herramientas. Confeccionado en tropical mecánico y batista con interior impermeable.</p>
-          <h3 class="mb-4">$690</h3>
-          <button type="button" class="btn btn-dark">Reservar</button> <!-- unbind -->
+          <h3>{{ product.name }}</h3>
+          <p class="text-muted mb-4">{{ product.title }}</p>
+          <p>{{ product.description }}</p>
+          <h3 class="mb-4">{{ product.price }}</h3>
+          <button type="button" class="btn btn-dark">Reservar</button>
         </div>
       </div>
     </div>
@@ -36,8 +36,13 @@
 export default {
   name: 'productsheet',
   props: [
-    'productId'
+    'product'
   ],
+  computed: {
+    productImg () {
+      return require(`../assets/mediaproductos/${this.product.img}-min.jpg`)
+    }
+  }
 }
 </script>
 

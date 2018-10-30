@@ -27,7 +27,7 @@ const routes = [
   },
   {
     name: 'products',
-    path: '/products/:product?',
+    path: '/products/:productId?',
     component: Products
   },
   { path: '/cocteleria', component: Collections },
@@ -35,7 +35,6 @@ const routes = [
   { path: '/cocteleria/clasica', name: 'classic', component: Category },
   { path: '/cocteleria/moderna', name: 'modern', component: Category },
   { path: '/cocteleria/molecular', name: 'molecular', component: Category },
-  //{ path: '/products', component: Products },
   { path: '/login', component: Login },
 ]
 
