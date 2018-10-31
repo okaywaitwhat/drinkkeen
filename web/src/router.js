@@ -22,7 +22,7 @@ const routes = [
   { path: '/social', component: Social },
   {
     name: 'beverages',
-    path: '/beverages/:category?',
+    path: '/beverages/:category?/:beverage?',
     component: Beverages
   },
   {

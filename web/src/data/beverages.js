@@ -9,6 +9,7 @@ export default [
       {
         img: 'vermouth/amargo',
         name: 'Amargo Obrero',
+        id:"amargoobrero",
         version: '950',
         unit: 'cc',
         graduation: '19.9',
@@ -25,6 +26,7 @@ export default [
       {
         img: 'vermouth/aperol',
         name: 'Aperol',
+        id:"aperol",
         version: '750',
         unit: 'cc',
         graduation: '11',
@@ -41,6 +43,7 @@ export default [
       {
         img: 'vermouth/campari',
         name: 'Campari',
+        id:"campari",
         version: '750',
         unit: 'cc',
         graduation: '28.5',
@@ -57,6 +60,7 @@ export default [
       {
         img: 'vermouth/cinzanobianco',
         name: 'Cinzano Bianco',
+        id:"cinzanobianco",
         version: '950',
         unit: 'cc',
         graduation: '15',
@@ -73,6 +77,7 @@ export default [
       {
         img: 'vermouth/cinzanorosso',
         name: 'Cinzano Rosso',
+        id:"cinzanorosso",
         version: '950',
         unit: 'cc',
         graduation: '15',
@@ -89,6 +94,7 @@ export default [
       {
         img: 'vermouth/cynar',
         name: 'Cynar',
+        id:"cynar",
         version: '750',
         unit: 'cc',
         graduation: '16.5',
@@ -105,6 +111,7 @@ export default [
       {
         img: 'vermouth/fernet',
         name: 'Fernet',
+        id:"fernet",
         version: '1000',
         unit: 'cc',
         graduation: '45',
@@ -121,6 +128,7 @@ export default [
       {
         img: 'vermouth/gancia',
         name: 'Gancia',
+        id:"gancia",
         version: '950',
         unit: 'cc',
         graduation: '14.8',
@@ -137,6 +145,7 @@ export default [
       {
         img: 'vermouth/ganciaredbitter',
         name: 'Gancia Red Bitter',
+        id:"ganciaredbitter",
         version: '750',
         unit: 'cc',
         graduation: '30',
@@ -153,6 +162,7 @@ export default [
       {
         img: 'vermouth/ganciaspritz',
         name: 'Gancia Spritz',
+        id:"ganciaspritz",
         version: '750',
         unit: 'cc',
         graduation: '11',
@@ -169,6 +179,7 @@ export default [
       {
         img: 'vermouth/jagger',
         name: 'Jäggermeister',
+        id:"jaggermeister",
         version: '700',
         unit: 'cc',
         graduation: '35',
@@ -185,6 +196,7 @@ export default [
       {
         img: 'vermouth/martinibianco',
         name: 'Martini Bianco',
+        id:"martinibianco",
         version: '995',
         unit: 'cc',
         graduation: '15',
@@ -201,6 +213,7 @@ export default [
       {
         img: 'vermouth/martiniextradry',
         name: 'Martini Extra Dry',
+        id:"martiniextradry",
         version: '995',
         unit: 'cc',
         graduation: '15',
@@ -217,6 +230,7 @@ export default [
       {
         img: 'vermouth/martinirosso',
         name: 'Martini Rosso',
+        id:"martinirosso",
         version: '995',
         unit: 'cc',
         graduation: '15',
@@ -232,7 +246,8 @@ export default [
       },
       {
         img: 'vermouth/pimms',
-        name: 'Pimm"s',
+        name: "Pimm's",
+        id:"pimms",
         version: '750',
         unit: 'cc',
         graduation: '25',
@@ -249,6 +264,7 @@ export default [
       {
         img: 'vermouth/pineral',
         name: 'Pineral',
+        id:"pineral",
         version: '1000',
         unit: 'cc',
         graduation: '29.5',
@@ -265,6 +281,7 @@ export default [
       {
         img: 'vermouth/puntemes',
         name: 'Punt e Mes',
+        id:"puntemes",
         version: '750',
         unit: 'cc',
         graduation: '16',
@@ -281,6 +298,7 @@ export default [
       {
         img: 'vermouth/ramazzotti',
         name: 'Ramazzotti',
+        id:"ramazzotti",
         version: '750',
         unit: 'cc',
         graduation: '15',
@@ -297,6 +315,7 @@ export default [
       {
         img: 'vermouth/ricard',
         name: 'Ricard',
+        id:"ricard",
         version: '1000',
         unit: 'cc',
         graduation: '45',
@@ -322,6 +341,7 @@ export default [
       {
         img: 'whisky/chivas',
         name: 'Chivas regal',
+        id:"chivasregal",
         version: '750',
         unit: 'cc',
         graduation: '40',
@@ -338,6 +358,7 @@ export default [
       {
         img: 'whisky/jackdaniels',
         name: 'Jack Daniels',
+        id:"jackdaniels",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -354,6 +375,7 @@ export default [
       {
         img: 'whisky/jameson',
         name: 'Jameson',
+        id:"jameson",
         version: '750',
         unit: 'cc',
         graduation: '40',
@@ -370,6 +392,7 @@ export default [
       {
         img: 'whisky/jb',
         name: 'J&B',
+        id:"jb",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -386,6 +409,7 @@ export default [
       {
         img: 'whisky/jimbeam',
         name: 'Jim Beam',
+        id:"jimbeam",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -402,6 +426,7 @@ export default [
       {
         img: 'whisky/jwblacklabel',
         name: 'Johnnie Walker Black Label',
+        id:"jwblacklabel",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -418,6 +443,7 @@ export default [
       {
         img: 'whisky/jwbluelabel',
         name: 'Johnnie Walker Blue Label',
+        id:"jwbluelabel",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -434,6 +460,7 @@ export default [
       {
         img: 'whisky/jwdoubleblack',
         name: 'Johnnie Walker Double Black',
+        id:"jbdoubleblack",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -450,6 +477,7 @@ export default [
       {
         img: 'whisky/jwgoldlabel',
         name: 'Johnnie Walker Gold Label',
+        id:"jwgoldlabel",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -466,6 +494,7 @@ export default [
       {
         img: 'whisky/jwgreenlabel',
         name: 'Johnnie Walker Green Label',
+        id:"jwgreenlabel",
         version: '1000',
         unit: 'cc',
         graduation: '43',
@@ -482,6 +511,7 @@ export default [
       {
         img: 'whisky/jwplatinumlabel',
         name: 'Johnnie Walker Platinum Label',
+        id:"jwplatinumlabel",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -498,6 +528,7 @@ export default [
       {
         img: 'whisky/jwredlabel',
         name: 'Johnnie Walker Red Label',
+        id:"jwredlabel",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -514,6 +545,7 @@ export default [
       {
         img: 'whisky/jwredrye',
         name: 'Johnnie Walker Red Rye',
+        id:"jwredrye",
         version: '1000',
         unit: 'cc',
         graduation: '40',
@@ -530,6 +562,7 @@ export default [
       {
         img: 'whisky/theglenlivet',
         name: 'The Glenlivet',
+        id:"theglenlivet",
         version: '750',
         unit: 'cc',
         graduation: '40',
@@ -555,6 +588,7 @@ export default [
       {
         img: 'vodka/absolut',
         name: 'Absolut',
+        id:"absolut",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -571,6 +605,7 @@ export default [
       {
         img: 'vodka/belvedere',
         name: 'Belvedere',
+        id:"belvedere",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -587,6 +622,7 @@ export default [
       {
         img: 'vodka/blavod',
         name: 'Blavod',
+        id:"blavod",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -603,6 +639,7 @@ export default [
       {
         img: 'vodka/chambordvodka',
         name: 'Chambord',
+        id:"chambord",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -619,6 +656,7 @@ export default [
       {
         img: 'vodka/chopin',
         name: 'Chopin',
+        id:"chopin",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -635,6 +673,7 @@ export default [
       {
         img: 'vodka/diva',
         name: 'Diva',
+        id:"diva",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -651,6 +690,7 @@ export default [
       {
         img: 'vodka/greygoose',
         name: 'Grey Goose',
+        id:"greygoose",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -667,6 +707,7 @@ export default [
       {
         img: 'vodka/khorytsa',
         name: 'Khorytsa',
+        id:"khorytsa",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -683,6 +724,7 @@ export default [
       {
         img: 'vodka/krupnik',
         name: 'Krupnik',
+        id:"krupnik",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -699,6 +741,7 @@ export default [
       {
         img: 'vodka/skyy',
         name: 'Skyy',
+        id:"skky",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -715,6 +758,7 @@ export default [
       {
         img: 'vodka/smirnoff',
         name: 'Smirnoff',
+        id:"smirnoff",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -731,6 +775,7 @@ export default [
       {
         img: 'vodka/threeolives',
         name: 'Three Olives',
+        id:"threeolives",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -747,6 +792,7 @@ export default [
       {
         img: 'vodka/zubrowka',
         name: 'Zubrowa',
+        id:"zubrowa",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -771,6 +817,7 @@ export default [
       {
         img: 'ron/bacardianejo',
         name: 'Bacardí Añejo',
+        id:"bacardianejo",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -787,6 +834,7 @@ export default [
       {
         img: 'ron/bacardicartablanca',
         name: 'Bacardí White',
+        id:"bacardiwhite",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -803,6 +851,7 @@ export default [
       {
         img: 'ron/bacardigold',
         name: 'Bacardí Gold',
+        id:"bacardigold",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -819,6 +868,7 @@ export default [
       {
         img: 'ron/botran',
         name: 'Botran',
+        id:"botran",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -835,6 +885,7 @@ export default [
       {
         img: 'ron/captainmorgan',
         name: 'Captain Morgan White',
+        id:"captainmorganwhite",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -851,6 +902,7 @@ export default [
       {
         img: 'ron/captainmorgangold',
         name: 'Captain Morgan Spiced',
+        id:"captainmorganspiced",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -867,6 +919,7 @@ export default [
       {
         img: 'ron/flordecana',
         name: 'Flor de Caña',
+        id:"flordecana",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -883,6 +936,7 @@ export default [
       {
         img: 'ron/pampero',
         name: 'Pampero',
+        id:"pampero",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -899,6 +953,7 @@ export default [
       {
         img: 'ron/santateresa',
         name: 'Santa Teresa',
+        id:"santateresa",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -915,6 +970,7 @@ export default [
       {
         img: 'ron/zacapa',
         name: 'Zacapa',
+        id:"zacapa",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -939,6 +995,7 @@ export default [
       {
         img: 'gin/bombay',
         name: 'Bombay Shappire',
+        id:"bombay",
         version: '750',
         unit: 'cc',
         description: 'Creada por Michel Roux en 1987 basándose en la receta secreta de Thomas Dakin (1761), pero mejorada con dos exóticos ingredientes botánicos. Se trata de una London Dry Gin que sigue un proceso de elaboración único denominado ¨Infusión de Vapor¨. A diferencia de muchas otras ginebras, que hierven los ingredientes botánicos directamente en el destilado para conseguir su sabor, los 10 ingredientes botánicos de Bombay Sapphire se mantienen separados del líquido en una cesta de cobre perforada. El vapor del destilado atraviesa la cesta donde se impregna delicadamente con el aroma de los ingredientes botánicos. Este proceso proporciona un sabor suave, delicadamente equilibrado y fresco. Tiene un proceso productivo tipo ¨single fold¨, lo que significa que tras la destilación no se añaden aditivos, aromatizantes o alcohol. Sólo se añade agua para obtener la concentración deseada antes de embotellar el producto.',
@@ -954,6 +1011,7 @@ export default [
       {
         img: 'gin/burnetts',
         name: 'Burnetts',
+        id:"burnetts",
         version: '',
         unit: 'cc',
         description: 'Con carácter británico excepcional, Burnett es una ginebra llena de sabor que ofrece un refrescante sabor crujiente. Explora el mundo de la ginebra de Burnett con recetas que son aventureras y relajadas. Burnett’s Gin es un verdadero London Dry Gin producido de acuerdo con la receta original establecida en 1770 por Sir Robert Burnett. Licores y productos botánicos seleccionados se destilan en conjunto para entregar un sabor distintivo. En su distintiva botella verde esmeralda.',
@@ -969,6 +1027,7 @@ export default [
       {
         img: 'gin/hendricks',
         name: 'Hendrick´s',
+        id:"hendricks",
         version: '',
         unit: 'cc',
         description: 'La ginebra Hendrick´s es una de las ginebras premium más populares. Está fabricada por Williams Grant & Sons en el suroeste de Escocia y fue lanzada al mundo en 1999. Pero aunque parezca poco tiempo, que podría serlo para una marca, hay que detenerse en un detalle importante, que lo encontramos en los alambiques donde se destila: uno construido a partir de un Carter-Head fabricado en 1948, de los que hay muy pocos en el mundo, y un Bennett de 1860. Tras ser restaurados en 1960 a finales del pasado siglo se utilizaron para destilar esta ginebra, que pronto alcanzó la fama en todo el mundo, donde además pasó a conocerse como "la ginebra del pepino". Se trata de una ginebra con un 44% de grado alcohólico, que se obtiene en remesas de 400 litros destilados en estos dos alambiques, más pequeños de lo habitual. Además esta destilación no se lleva a cabo sumergiendo los botánicos en alcohol, sino que se hace pasar el vapor a través de ellos para conseguir extraer mejor los aromas.',
@@ -984,6 +1043,7 @@ export default [
       {
         img: 'gin/mare',
         name: 'Mare',
+        id:"mare",
         version: '',
         unit: 'cc',
         description: 'Ginebra Mediterránea Super Premium con botánicos auténticamente mediterráneos. Destilería ubicada en una antigua ermita del siglo XVIII en un pequeño pueblo de pescadores situado entre la costa Brava y Costa Dorada. 3ª Generación de una familia con gran tradición en destilados. Se realizan pequeñas producciones en un alambique florentino. Cada botánico está macerado y destilado separadamente.',
@@ -999,6 +1059,7 @@ export default [
       {
         img: 'gin/pdelosapostoles',
         name: 'Príncipe de los Apostoles',
+        id:"apostoles",
         version: '',
         unit: 'cc',
         description: 'Fina destilacion de hierbas tipicas argentinas, seleccionadas y cuidadosamente combinadas para lograr un gin unico, aromatico y elegante. Principe de los Apostoles Gin, se destila en Sol de los Andes, en Mendoza, siguiendo una receta que Tato estuvo probando y modificando por largo tiempo, hasta encontrar el equilibrio. Elaborado con enebro y más botánicos. Pero lo que lo diferencia del resto, y le da su firma bien autóctona y única, es que en su composición incluye yerba mate, eucalipto (un guiño a los bosques del Pinamar natal de Tato), además de peperina y piel de pomelo rosado. Un gin especial, donde el eucalipto y peperina comandan el perfil, para probar en los tragos clásicos: con tónica, en un Negroni, en un Collins, en un Martini, pero también para jugar y aprender a sacarle todo su provecho.',
@@ -1014,6 +1075,7 @@ export default [
       {
         img: 'gin/tanqueray',
         name: 'Tanqueray',
+        id:"tanqueray",
         version: '',
         unit: 'cc',
         description: 'La ginebra Tanqueray London Dry es una gin que personifica el sabor cítrico y refrescante que todos buscamos en una ginebra. De su receta no podemos hablar, ya que es secreta, pero el enebro y el limón resaltan como principales representantes de los elementos botánicos que incorpora, aunque, como ya os contaremos, no emplea limón en su elaboración, también interpretamos toques de cilantro en el final especiado y seco. La historia de la ginebra Tanqueray arranca en 1830 con el lanzamiento de una destilería ubicada en Bloomsbury por parte de Charles Tanqueray. La receta actual de su London Dry data de 1838, se cree que es anterior, pero se han perdido los primeros archivos de la compañía.',
@@ -1029,6 +1091,7 @@ export default [
       {
         img: 'gin/tanquerayten',
         name: 'Tanqueray Ten',
+        id:"tanquerayten",
         version: '',
         unit: 'cc',
         description: 'La ginebra Tanqueray Ten es una ginebra de la reconocida marca Tanqueray, más refinada que la ginebra Tanqueray Original London Dry. La Tanqueray Ten está destilada 4 veces, lo que la hace mucho más suave que su hermana mayor. En las tres primeras destilaciones se destila el grano y en la cuarta se destila el licor neutro y los cítricos con flores de manzanilla. Esta ginebra recibe el nombre TEN por el número del alambique dónde se lleva a cabo su cuarta destilación. Entre los botánicos de esta ginebra podemos encontrar el clásico enebro y toques de cilantro.',
@@ -1052,6 +1115,7 @@ export default [
       {
         img: 'tequila/1800',
         name: '1800',
+        id:"1800",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1068,6 +1132,7 @@ export default [
       {
         img: 'tequila/agavales',
         name: 'Agavales',
+        id:"agavales",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1084,6 +1149,7 @@ export default [
       {
         img: 'tequila/donjulio1942',
         name: 'Don Julio 1942',
+        id:"donjulio1942",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1100,6 +1166,7 @@ export default [
       {
         img: 'tequila/donjulioanejo',
         name: 'Don Julio Añejo',
+        id:"donjulioanejo",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -1116,6 +1183,7 @@ export default [
       {
         img: 'tequila/donjulioblanco',
         name: 'Don Julio Blanco',
+        id:"donjulioblanco",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1132,6 +1200,7 @@ export default [
       {
         img: 'tequila/donjulioreposado',
         name: 'Don Julio Reposado',
+        id:"donjulioreposado",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1148,6 +1217,7 @@ export default [
       {
         img: 'tequila/josecuervoreposado',
         name: 'José Cuervo Reposado',
+        id:"josecuervoreposado",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1164,6 +1234,7 @@ export default [
       {
         img: 'tequila/josecuervosilver',
         name: 'José Cuervo Silver',
+        id:"josecuervosilver",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1180,6 +1251,7 @@ export default [
       {
         img: 'tequila/patronanejo',
         name: 'Patrón Añejo',
+        id:"patronanejo",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1196,6 +1268,7 @@ export default [
       {
         img: 'tequila/patronreposado',
         name: 'Patrón Reposado',
+        id:"patronreposado",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1212,6 +1285,7 @@ export default [
       {
         img: 'tequila/patronsilver',
         name: 'Patrón Silver',
+        id:"patronsilver",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1228,6 +1302,7 @@ export default [
       {
         img: 'tequila/sauza',
         name: 'Sauza',
+        id:"sauza",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1252,6 +1327,7 @@ export default [
       {
         img: 'mezcal/amores',
         name: 'Amores Espadín Joven',
+        id:"amores",
         version: '',
         unit: 'cc',
         graduation: '',
@@ -1268,6 +1344,7 @@ export default [
       {
         img: 'mezcal/meteoro',
         name: 'Meteoro',
+        id:"meteoro",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1284,6 +1361,7 @@ export default [
       {
         img: 'mezcal/orooaxaca',
         name: 'Oro de Oaxaca',
+        id:"orodeoaxaca",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1300,6 +1378,7 @@ export default [
       {
         img: 'mezcal/union',
         name: 'Unión Uno Joven',
+        id:"unionuno",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1316,6 +1395,7 @@ export default [
       {
         img: 'mezcal/yuubaal',
         name: 'Yuu Baal Joven Tepeztate',
+        id:"yuubaal",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1340,6 +1420,7 @@ export default [
       {
         img: 'licor/baileys',
         name: 'Baileys',
+        id:"baileys",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1356,6 +1437,7 @@ export default [
       {
         img: 'licor/chambordlicor',
         name: 'Chambord',
+        id:"chambord",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1372,6 +1454,7 @@ export default [
       {
         img: 'licor/cointreau',
         name: 'Cointreau',
+        id:"cointreau",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1388,6 +1471,7 @@ export default [
       {
         img: 'licor/drambuie',
         name: 'Drambuie',
+        id:"drambuie",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1404,6 +1488,7 @@ export default [
       {
         img: 'licor/hesperidina',
         name: 'Hesperidina',
+        id:"hesperidina",
         version: '1000',
         unit: 'cc',
         graduation: '',
@@ -1419,7 +1504,8 @@ export default [
       },
       {
         img: 'licor/sheridans',
-        name: 'Sheridan"s',
+        name: "Sheridan's",
+        id:"sheridans",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1436,6 +1522,7 @@ export default [
       {
         img: 'licor/stgermain',
         name: 'St-Germain',
+        id:"stgermain",
         version: '750',
         unit: 'cc',
         graduation: '',
@@ -1452,6 +1539,7 @@ export default [
       {
         img: 'licor/strega',
         name: 'Strega',
+        id:"strega",
         version: '700',
         unit: 'cc',
         graduation: '',
@@ -1467,13 +1555,4 @@ export default [
       }
     ]
   },
-  {
-    id: 'cerveza',
-    name: 'Cerveza',
-    description: 'La cerveza es una de las bebidas más antiguas del mundo. Obtenida por fermentación alcohólica del mosto de cebada germinada, o de su mezcla con otros cereales (malteados o no) que contienen almidón, con el agregado de lúpulo, levadura y agua desmineralizada; la cerveza puede ser rubia u oscura, dulce o amarga, liviana o fuerte.Descubierta en la antigüedad, la cerveza fue bebida por los egipcios, griegos y romanos. Su fabricación evolucionó mucho, y desde el siglo XVI, en adelante pasó a ser regida por la tecnología. El "maestro cervecero" (en general ingeniero, químico o bacteriólogo) cuenta hoy con todos los recursos para elaborar dentro de las compañías cerveceras, un producto técnicamente perfecto.',
-    history: 'Según Anderson y Hull, «el lúpulo da a la cerveza ese sabor límpido y amargo, sin el que malamente puede llamarse cerveza».3​ En la Baja Edad Media se originó la costumbre de cocer el mosto con flores de lúpulo.4​ A partir de entonces nació la bebida que hoy identificamos como cerveza, distinta del vino de malta.5​ Tal costumbre se originó en Alemania hace unos mil años. El lúpulo sustituyó a los aromatizantes hasta entonces utilizados, dando a la cebada fermentada alcohólicamente su amargor característico. El lúpulo contribuye también decisivamente a su conservación. Además obra como eficaz antiséptico y estabilizador. También sirve para detener la fermentación acética y clarificar el líquido, causando la precipitación de las sustancias albuminosas. Los primeros testimonios que tenemos sobre el uso del lúpulo se remontan a la Alemania del siglo XI, con motivo de los impuestos por el uso del allí llamado grut, que en inglés llaman gruit —el conjunto de yerbas utilizadas en la elaboración de la cerveza— que fue sustituido por el lúpulo. Sin el uso del lúpulo, el fermentado proveniente de la cebada no pasa de ser un vino de malta —que no lleva lúpulo y, si lo lleva, no puede ser fresco—, que recuerda por su sabor más al vino que a la cerveza. Cuanto menos lúpulo se usa, la bebida resulta más vinosa. Si la malta está muy tostada no hace falta usar tanto lúpulo para evitar el sabor vinoso. En francés el vino de malta es llamado vin d’orge, en inglés barley wine, en alemán Gerstenwein y Maltonwein y en italiano vino d’orzo. Sabe a vino, se sirve en copa de vino, tiene una graduación similar a la del vino y los mismos usos que el vino. Se distinguen incluso vinos de malta de mesa y de postre. No se los considera cerveza, aunque los famosos vinos de malta de Bélgica —aderezados con frutas— suelen ser incluidos al tratar de las cervezas, en calidad de «cervezas especiales». Tritton señala en su manual que, para elaborar cerveza en vez de vino de malta, basta añadir lúpulo y un fermento de los usados para elaborar cerveza. En el caso del vino de malta, se suprime el lúpulo y se utiliza fermento de vino en vez de fermento de cerveza.6​ El lúpulo identifica tanto o más la individualidad de la cerveza, que la cebada u otros cereales. Tampoco tienen la consideración de cerveza, ni se llama cerveza, pues carece de lúpulo, el fermentado alcohólico, de unos 7 % vol. del que se extrae por destilación el whisky. Además del vino de malta, existen otras bebidas alcohólicas con características o apariencia diferentes pero fabricadas también a base de almidón fermentado que, cuando no tienen un nombre específico —como es el caso del sake—, son asimiladas a cervezas. En este último caso se añade un complemento al nombre de «cerveza» a fin de evitar malentendidos —por ejemplo, cerveza de banana—. La cerveza sin alcohol es un caso especial ya que su contenido alcohólico es despreciable o nulo, aunque comparte las mismas características de base que el resto de las cervezas porque se ha desalcoholizado durante la elaboración. Se podría clasificar el sake como cerveza de arroz —aunque hay varias diferencias— si se adoptase un criterio analógico. La cerveza es para los europeos lo que el sake para los japoneses. En sentido analógico, la cerveza también puede ser clasificada como un sake. Las clasificaciones analógicas suelen rechazarse científicamente por poco rigurosas, pues no distinguen adecuadamente el género de la especie. Si denominamos a todos los mamíferos «vacas», posteriormente hay que distinguir entre vacas «propiamente dichas» y otros animales que sólo son vacas por asimilación. No existe una palabra para designar a todas las bebidas provenientes de cereales alcohólicamente fermentados. Para el inglés, Harold J. Grossman ha propuesto brews y malt beverages. En Japón la cerveza, tal y como se conoce en Occidente, fue inicialmente un producto importado. Hoy en día existen fábricas de cerveza japonesas y para designar dicha bebida se adaptó la locución bier a dicho idioma como biiru (ビール). Aunque para hacer cerveza se utiliza muchas veces arroz, no sólo la elaboración es distinta, sino también la fermentación. En la tradición oriental, en la fermentación alcohólica del arroz, el sorgo o el mijo, el fermento utilizado proviene de esos mismos cereales, y está basado en las esporas del Aspergillus Orizae, un hongo asexuado. Produce la enzima llamada takadiastasa. Ese fermento se llama koji. Es palabra de origen japonés, pero que se utiliza en cualquier idioma, si se quiere designar ese fermento. El koji no incluye sólo el Aspergillus Orizae, relativo al arroz, sino también otros como el A. sojae relativo a la soja. Tiene la virtud de hacer fermentar en alcohol no sólo la sacarosa, sino también la lactosa. En la obtención de esas bebidas no se tuesta el cereal. También es distinta en consecuencia la preparación del wort. En una cultura cervecera en la que se efectúan clasificaciones tan sutiles como la distinción entre ale y beer sería muy difícil clasificar el sake como una ale o como una beer. A diferencia de las bebidas obtenidas a partir de zumos de frutas fermentados, como los vinos, en la cerveza el cereal de base no contiene originalmente ni agua ni azúcar, caracterizando ambas carencias el proceso de elaboración. Para conseguir azúcar a partir del almidón del cereal, es necesario primero modificarlo mediante el malteado y sumergirlo en agua a la temperatura adecuada a fin de completar la conversión. El líquido resultante, compuesto de azúcares, proteínas y residuos procedentes del cereal, se filtra, se hierve vigorosamente y se le añade el lúpulo en caliente, aunque también existe la costumbre de lupular en frío —dry hopping, «en seco», en inglés—, operación que consiste en añadir las flores al mosto ya frío, bien en las cubas de fermentación, bien en las cubas de almacenamiento. Una vez enfriado a una temperatura que permita el desarrollo de las levaduras, se añaden éstas y se inicia la fermentación que producirá el alcohol y el dióxido de carbono (CO2).',
-    marks: [
-    ]
-
-  }
 ]

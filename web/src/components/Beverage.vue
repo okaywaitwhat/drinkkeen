@@ -1,6 +1,8 @@
 <template>
     <div>
-      <img @load="imgLoaded()" :src="imgPath" alt="name" :title="item.name">
+      <router-link :to="`/beverages/${categoryId}/${beverage.id}`">
+      <img @load="imgLoaded()" :src="imgPath" alt="name" :title="beverage.id">
+</router-link>
     </div>
 </template>
 
@@ -9,16 +11,16 @@
 export default {
   name: 'beverage',
   props: [
-    'item',
+    'beverage', 'categoryId'
   ],
    computed: {
     imgPath () {
-      return require ('../assets/mediabebidas/' + this.item.img + '-min.png')
+      return require ('../assets/mediabebidas/' + this.beverage.img + '-min.png')
     }
   },
   methods: {
     imgLoaded () {
-      /* 
+      /*
        * el padre va a "escuchar" al evento "load" y lo escucha con @load
        * [le podemos poner cualquier nombre pero load queda lindo]
        */
