@@ -12,15 +12,18 @@
 
         <div class="form-group form-inline">
           <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
-          <input type="text" v-model.number="day" class="form-control m-1" placeholder="dd" size="3" autocomplete='off'> /
-          <input type="text" v-model.number="month" class="form-control m-1" placeholder="mm" size="3" autocomplete='off'> /
-          <input type="text" v-model.number="year" class="form-control m-1" placeholder="aaaa" size="4" autocomplete='off'>
+          <input type="text" v-model.number="day" class="form-control m-1" placeholder="DD" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" v-model.number="month" class="form-control m-1" placeholder="MM" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" v-model.number="year" class="form-control m-1" placeholder="AAAA" size="4" autocomplete='off' @keyup.enter="access()">
         </div>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-dark" :class="{ disabled: !isValid }" @click="access()">Acceder</button>
-        <button type="button" class="btn btn-dark" @click="backToIntro()">Cancelar</button>
+        <button type="button" class="btn btn-dark"
+        :class="{ disabled: !isValid }"
+        @click="access()">Acceder</button>
+        <button type="button" class="btn btn-dark"
+        @click="backToIntro()">Cancelar</button>
       </div>
     </div>
   </div>
@@ -55,6 +58,13 @@ export default {
     backToIntro () {
         this.$emit('dontDismissIntro')
     },
+  },
+  mounted() {
+    window.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13) {
+        this.access();
+      }
+    });
   }
 }
 </script>

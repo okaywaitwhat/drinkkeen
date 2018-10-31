@@ -5,7 +5,7 @@
           </router-link>
             <div class="card-body">
                 <span><h5 class="card-title">{{ product.name }}</h5></span>
-                <p class="font-italic text-capitalize">{{ product.title }}</p>
+                <p class="font-italic text-capitalize">{{ product.price }}</p>
             </div>
         </div>
 </template>
@@ -61,7 +61,6 @@ export default {
       border-bottom: 2px solid rgb(0, 0, 0);
       line-height: 30px;
     }
-
     div {
       display: inline-block;
     }

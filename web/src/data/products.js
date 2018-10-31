@@ -4,7 +4,7 @@ export default [
     description: 'a bar roll',
     stock: [
       {
-        name: 'Blackbarroll',
+        name: 'Black Bar Roll',
         id: 'blackbarroll',
         title: 'Porta herramientas de coctelería',
         price: '$690',
@@ -12,19 +12,19 @@ export default [
         img: 'barroll3'
       },
       {
-        name: 'Brownbarroll',
+        name: 'Brown Bar Roll',
         id: 'brownbarroll',
-        title: 'Julieta',
-        price: '$450',
-        description: 'A brown bar roll',
+        title: 'Porta herramientas de coctelería',
+        price: '$690',
+        description: 'Estuche para coctelería ideal para transportar y guardar herramientas. Confeccionado en tropical mecánico y batista con interior impermeable.',
         img: 'barroll4'
       },
       {
-        name: 'Lewisbag',
+        name: 'Lewis Bag',
         id: 'lewisbag',
-        title: 'Julieta es muy linda',
-        price: '$880',
-        description: 'A Lewis bag',
+        title: 'Bolsa para picar hielo',
+        price: '$150',
+        description: 'Bolsa para picar hielo confeccionada en lienzo natural con costuras reforzadas y lazo para colgar detrás de la barra.',
         img: 'lewisbag1'
       },
     ]
