@@ -15,7 +15,7 @@ export default {
   props: [ 'category' ],
   computed: {
     imgPath () {
-      return require ('../assets/mediabebidas/categorias/' + this.category.id + '.png')
+      return require ('../assets/mediabebidas/categorias/' + this.category.id + '-min.png')
     }
   },
 }
