@@ -1,15 +1,9 @@
 <template>
   <section class="container-fluid">
-    <p class="lead pb-4 pl-lg-5 pr-lg-5"><span>La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo.</span><span>Desde el whisky hasta la ginebra, inicia un recorrido que será el comienzo de infinitas e inovidables historias.</span></p>
-    <div>
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb justify-content-center bg-transparent p-0">
-          <li v-for="category in beverages" :key="category.name" class="breadcrumb-item pointer">
-            <router-link :to="`/beverages/${category.id}`">{{ category.name }}</router-link>
-          </li>
-        </ol>
-      </nav>
-    </div>
+    <transition name="fade">
+    <p v-if="!categoryId" class="lead pb-4 pt-5 pl-lg-5 pr-lg-5"><span>La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo.</span><span>Desde el whisky hasta la ginebra, inicia un recorrido que será el comienzo de infinitas e inovidables historias.</span></p>
+    </transition>
+    <CategoryImage v-if="!categoryId" v-for="category in beverages" :key="category.name" :category="category"/>
     <BeveragesView v-if="categoryId" :categoryId="categoryId" />
   </section>
 </template>
@@ -17,56 +11,47 @@
 <script>
 import beverages from '../data/beverages.js'
 import BeveragesView from './BeveragesView.vue'
+import CategoryImage from './CategoryImage'
 
 export default {
   name: 'beverages',
-  components: { BeveragesView },
+  components: { BeveragesView, CategoryImage, },
   data () {
-    return { beverages }
+    return { beverages,
+    showTitle: true,
+    }
   },
   computed: {
     categoryId () {
       return this.$route.params.category
+    }
+  },
+  methods: {
+    removeTitle () {
+      this.showTitle = false;
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-/*
-  > == "hijo directo"
-  + == "hermano"
-  :before |
-          |-> pseudoelementos
-  :after  |
-*/
-
-.breadcrumb >
-  li+li:before {
-    content: '|';
-  }
-
 section {
-  padding-top: 4rem;
+  padding-top: 1rem;
   text-align: center;
   min-height: 100%;
   width: 100%;
   text-align: center;
 }
 
-a {
-  color: #3f4347;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.search {
-  max-width: 20rem;
-}
-
 .router-link-active {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>

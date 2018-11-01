@@ -12,10 +12,10 @@
       <div class="form-group">
         <label for="password">Contraseña</label>
         <input type="password" class="form-control font-weight-light" id="password" placeholder="Contraseña">
-        <small class="form-text text-muted font-weight-light">Recordá que podrás modificarla luego</small>
+        <small class="form-text text-muted font-weight-light">Recordá que podrás modificarla luego.</small>
       </div>
       <button class="btn btn-dark mb-2">Registrarme</button>
-      <small class="form-text text-muted font-weight-light">¿Ya tenés cuenta? <u>Ingresar</u>.</small>
+      <p class="form-text text-muted font-weight-light">¿Ya tenés cuenta? <router-link tag="a" to="/login"><u>Ingresar</u></router-link>.</p>
     </div>
   </section>
 </template>
@@ -27,4 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: inherit;
+}
 </style>

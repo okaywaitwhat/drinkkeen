@@ -1,5 +1,6 @@
 <template>
   <section>
+      <BeveragesNav />
       <CategorySheet :category="category" :key="category.name" />
       <div>
         <BeverageSheet
@@ -29,10 +30,11 @@ import beverages from '../data/beverages.js'
 import Beverage from './Beverage'
 import BeverageSheet from './BeverageSheet'
 import CategorySheet from './CategorySheet'
+import BeveragesNav from './BeveragesNav'
 
 export default {
   name: 'beverages-view',
-  components: { Beverage, CategorySheet, BeverageSheet },
+  components: { Beverage, CategorySheet, BeverageSheet, BeveragesNav },
   props: [ 'categoryId' ],
   data () {
     return {
