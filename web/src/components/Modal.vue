@@ -12,9 +12,9 @@
 
         <div class="form-group form-inline">
           <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
-          <input type="text" v-model.number="day" class="form-control m-1" placeholder="DD" size="3" autocomplete='off' @keyup.enter="access()"> /
-          <input type="text" v-model.number="month" class="form-control m-1" placeholder="MM" size="3" autocomplete='off' @keyup.enter="access()"> /
-          <input type="text" v-model.number="year" class="form-control m-1" placeholder="AAAA" size="4" autocomplete='off' @keyup.enter="access()">
+          <input type="text" v-model.number="day" class="form-control m-1" placeholder="Día" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" v-model.number="month" class="form-control m-1" placeholder="Mes" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" v-model.number="year" class="form-control m-1" placeholder="Año" size="4" autocomplete='off' @keyup.enter="access()">
         </div>
       </div>
 
@@ -84,6 +84,11 @@ section {
 
 img {
   width: 100px;
+}
+
+.form-inline {
+  flex-flow: row nowrap;
+  width: 15rem;
 }
 </style>
 
