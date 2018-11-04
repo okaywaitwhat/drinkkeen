@@ -7,7 +7,7 @@
       </div>
 
       <div class="modal-body">
-        <p>Pedirte que te identifiques forma parte de nuestro compromiso con el consumo responsable.</p>
+        <p>Pedirte que te identifiques como mayor de edad forma parte de nuestro compromiso con el consumo responsable.</p>
         <p>Introduce tu fecha de nacimiento:</p>
 
         <div class="form-group form-inline">
@@ -16,11 +16,15 @@
           <input type="text" v-model.number="month" class="form-control m-1" placeholder="Mes" size="3" autocomplete='off' @keyup.enter="access()"> /
           <input type="text" v-model.number="year" class="form-control m-1" placeholder="Año" size="4" autocomplete='off' @keyup.enter="access()">
         </div>
+
+        <p v-if="errors.length">
+          <span class="text-muted" v-for="error in errors" :key="error">{{ error }}</span>
+        </p>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-dark"
-        :class="{ disabled: !isValid }"
+        :class="{ disabled: !isValid, hasErrors }"
         @click="access()">Acceder</button>
         <button type="button" class="btn btn-dark"
         @click="backToIntro()">Cancelar</button>
@@ -35,6 +39,7 @@ export default {
   name: 'Modal',
   data () {
     return {
+      errors: [],
       day: '',
       month: '',
       year: ''
@@ -47,6 +52,18 @@ export default {
       if (this.year > 2000 || this.year < 1900) return false
       return this.day && this.month && this.year
       // return this.day !== '' && this.month !== '' && this.year !== ''
+    },
+    hasErrors () {
+      this.errors = [];
+      if (this.day > 31) {
+        this.errors.push('El día ingresado no es válido.')
+      }
+      if (this.month > 12) {
+        this.errors.push('El mes ingresado no es válido.')
+      }
+      if (this.year > 2000) {
+        this.errors.push('El año ingresado no es válido.')
+      }
     }
   },
   methods: {
