@@ -12,21 +12,20 @@
 
         <div class="form-group form-inline">
           <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
-          <input type="text" v-model.number="day.val" class="form-control m-1" :class="{ error: day.error }" placeholder="Día" size="3" autocomplete='off' @keyup="validate()" @keyup.enter="access()"> /
-          <input type="text" v-model.number="month.val" class="form-control m-1" :class="{ error: month.error }" placeholder="Mes" size="3" autocomplete='off' @keyup="validate()" @keyup.enter="access()"> /
-          <input type="text" v-model.number="year.val" class="form-control m-1" :class="{ error: year.error }" placeholder="Año" size="4" autocomplete='off' @keyup="validate()" @keyup.enter="access()">
+          <input type="text" ref="day" v-model.number="day" class="form-control m-1" placeholder="Día" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" ref="month" v-model.number="month" class="form-control m-1" placeholder="Mes" size="3" autocomplete='off' @keyup.enter="access()"> /
+          <input type="text" ref="year" v-model.number="year" class="form-control m-1" placeholder="Año" size="4" autocomplete='off' @keyup.enter="access()">
         </div>
 
-        <p v-if="hasErrors">
-          <span class="error" v-show="day.error">{{ day.error }}</span>
-          <span class="error" v-show="month.error">{{ month.error }}</span>
-          <span class="error" v-show="year.error">{{ year.error }}</span>
+        <p v-if="errors.length">
+          <span class="error" v-for="error in errors" :key="error">{{ error }}</span>
         </p>
       </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-dark"
-        @click="access()" :class="{ disabled: !isComplete || hasErrors }">Acceder</button>
+        :class="{ disabled: !isValid, hasErrors }"
+        @click="access()">Acceder</button>
         <button type="button" class="btn btn-dark"
         @click="backToIntro()">Cancelar</button>
       </div>
@@ -40,57 +39,50 @@ export default {
   name: 'Modal',
   data () {
     return {
-      day: {
-        val: '',
-        error: ''
-      },
-      month: {
-        val: '',
-        error: ''
-      },
-      year: {
-        val: '',
-        error: ''
-      }
+      errors: [],
+      day: '',
+      month: '',
+      year: ''
     }
   },
   computed: {
-    isComplete () {
-      return this.day.val && this.month.val && this.year.val
+    isValid () {
+      if (this.day > 31) return false
+      if (this.month > 12) return false
+      if (this.year > 2000 || this.year < 1900) return false
+      return this.day && this.month && this.year
+      // return this.day !== '' && this.month !== '' && this.year !== ''
     },
     hasErrors () {
-      return this.day.error || this.month.error || this.year.error
+      this.errors = [];
+      if (this.day > 31) {
+        this.errors.push('El día ingresado no es válido.')
+        //this.$refs.day.style.color = 'rgb(165, 37, 37)';
+      }
+      if (this.month > 12) {
+        this.errors.push('El mes ingresado no es válido.')
+      }
+      if (this.year > 2000) {
+        this.errors.push('El año ingresado no es válido.')
+      }
     },
   },
   methods: {
-    validate () {
-      // day
-      if (this.day.val && this.day.val > 31) {
-        this.day.error = 'El día ingresado no es válido.'
-      } else {
-        this.day.error = ''
-      }
-      // month
-      if (this.month.val && this.month.val > 12) {
-        this.month.error = 'El mes ingresado no es válido.'
-      } else {
-        this.month.error = ''
-      }
-      // year
-      if (this.year.val && (this.year.val > 2000 || this.year.val < 1900)) {
-        this.year.error = 'El año ingresado no es válido.'
-      } else {
-        this.year.error = ''
-      }
-    },
     access () {
-      if (this.isComplete && !this.hasErrors) {
+      if (this.isValid) {
         this.$emit('dismissModal')
       }
     },
     backToIntro () {
-      this.$emit('dontDismissIntro')
-    }
+        this.$emit('dontDismissIntro')
+    },
+  },
+  mounted() {
+    window.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13) {
+        this.access();
+      }
+    });
   }
 }
 </script>
