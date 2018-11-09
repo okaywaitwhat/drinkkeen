@@ -50,7 +50,7 @@ figure {
   line-height: 1.2;
 }
 
-p span
+p span // check this, we could use a div instead of a span if display block is needed
 {
     display: block;
 }

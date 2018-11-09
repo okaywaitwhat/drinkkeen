@@ -20,10 +20,10 @@
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li>Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
           <li class="text-capitalize">Categoría: {{ recipe.family }}</li>
-          <li class="dark-list" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
-            {{ ingredient.ingredient }}
-            <span class="float-right">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em>
-            </span>
+          <li class="dark-list d-flex" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+            <span class="mr-auto pr-1">{{ ingredient.ingredient }}</span>
+            <span class="flex-grow-1 mx-auto border-dotted-separator"></span>
+            <span class="ml-auto pl-1">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
           </li>
           <li v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
         </ul>
@@ -98,6 +98,12 @@ li {
 
 .dark-list {
   background-color: #f8f9fa;
+}
+
+.border-dotted-separator {
+  position: relative;
+  top: -6px; // pixel perfect
+  border-bottom: dotted .1rem gray;
 }
 
 </style>
