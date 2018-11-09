@@ -5,7 +5,6 @@
             <div class="card-columns">
               <Recipe :recipe="recipe" v-for="recipe in menu.data" :key="recipe.name"></Recipe>
             </div>
-            <Modal></Modal>
           </section>
         </section>
     </section>
@@ -13,7 +12,6 @@
 
 <script>
 import Recipe from './Recipe'
-import Modal from './Modal'
 import author from '../data/recipes/authorcocktails.js'
 import classic from '../data/recipes/classiccocktails.js'
 import modern from '../data/recipes/moderncocktails.js'
@@ -29,7 +27,7 @@ const cocktails = {
 export default {
   name: 'category',
   components: {
-    Recipe, Modal
+    Recipe
   },
   data () {
     return {
