@@ -20,7 +20,7 @@
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li>Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
           <li class="text-capitalize">Categoría: {{ recipe.family }}</li>
-          <li class="dark-list d-flex" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+          <li class="ingredient dark-list d-flex border-0" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
             <span class="mr-auto pr-1">{{ ingredient.ingredient }}</span>
             <span class="flex-grow-1 mx-auto border-dotted-separator"></span>
             <span class="ml-auto pl-1">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
@@ -54,6 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 $lg-width: 900px;
+$border-color: rgba(0, 0, 0, 0.125);
 
 .card {
   overflow: hidden;
@@ -92,7 +93,7 @@ li {
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid $border-color;
   text-align: left;
 }
 
@@ -106,6 +107,8 @@ li {
   border-bottom: dotted .1rem gray;
 }
 
+.list-group > li:nth-child(3) { // hardcoded 3 because of current order
+  border-top: 1px solid $border-color !important;
+}
+
 </style>
-
-
