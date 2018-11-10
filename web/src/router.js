@@ -31,7 +31,7 @@ const routes = [
     component: Products
   },
   { path: '/cocteleria', component: Collections },
-  { path: '/cocteleria/de-autor', name: 'author', component: Category },
+  { path: '/cocteleria/de-autor/', name: 'author', component: Category},
   { path: '/cocteleria/clasica', name: 'classic', component: Category },
   { path: '/cocteleria/moderna', name: 'modern', component: Category },
   { path: '/cocteleria/molecular', name: 'molecular', component: Category },

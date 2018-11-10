@@ -35,8 +35,12 @@ export default {
 
 <style scoped lang="scss">
 section {
+  padding-top: 1rem;
   min-height: 100%;
-  display: flex;
   align-items: center;
+}
+
+.center {
+ display: flex;
 }
 </style>

@@ -3,27 +3,28 @@
     <div  class="card card-shadow bg-light mb-3">
       <img class="card-img-top" :src="imgPath">
         <div class="card-body">
-          <h5 class="card-title">{{ recipe.name }}
+          <h5 class="card-title">{{ recipe.name }}</h5>
             <div>
-              <i
+<!--               <i
                 v-on:click="like = !like"
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
-              <i class="fa fa-share-alt"></i>
+              <i class="fa fa-share-alt"></i> -->
+              <a v-on:click="showDetails = !showDetails" class="pointer">ver receta
               <i
-                v-on:click="showDetails = !showDetails"
+
                 :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
               ></i>
+              </a>
             </div>
-          </h5>
         </div>
         <ul class="list-group list-group-flush" v-if="showDetails">
           <li>Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
           <li class="text-capitalize">Categoría: {{ recipe.family }}</li>
           <li class="ingredient dark-list d-flex border-0" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
-            <span class="mr-auto pr-1">{{ ingredient.ingredient }}</span>
-            <span class="flex-grow-1 mx-auto border-dotted-separator"></span>
-            <span class="ml-auto pl-1">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
+            <span class="mr-auto pr-1 ingredient">{{ ingredient.ingredient }}</span>
+            <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
+            <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
           </li>
           <li v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
         </ul>
@@ -67,8 +68,8 @@ $border-color: rgba(0, 0, 0, 0.125);
     margin: 0;
   }
   i {
-    margin: 3px;
-    font-size: 15px;
+    margin: 5px;
+    font-size: 18px;
     transition: all .09s ease;
     &:hover {
     transform: scale(1.2);
@@ -76,12 +77,23 @@ $border-color: rgba(0, 0, 0, 0.125);
   }
 }
 
-h5 {
-  font-weight: 300;
-  span {
-    font-size: 15px;
-    font-weight: 300;
+div  a {
+    font-size: 18px;
   }
+
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+span {
+  font-weight: 300;
+}
+
+.ingredient {
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
 }
 
 .card-item {

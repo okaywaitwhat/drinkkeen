@@ -22,7 +22,7 @@ export default {
     return {
       categories: { classic, modern, author, molecular }
     }
-  }
+  },
 }
 </script>
 
