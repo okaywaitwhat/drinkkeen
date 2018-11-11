@@ -47,7 +47,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .gradient {
   height: 400px;
   background-image: linear-gradient(to bottom, #ffff, #f8f9fa);

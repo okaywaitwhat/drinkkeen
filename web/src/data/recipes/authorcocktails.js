@@ -7,8 +7,8 @@ export default {
     {
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'de autor',
+      type: 'directo',
 
       ingredients: [
         {
@@ -37,8 +37,8 @@ export default {
 
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'de autor',
+      type: 'directo',
 
       ingredients: [
         {
@@ -67,8 +67,8 @@ export default {
 
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'de autor',
+      type: 'directo',
 
       ingredients: [
         {

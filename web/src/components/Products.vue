@@ -13,7 +13,6 @@
 import Product from './Product'
 import ProductSheet from './ProductSheet'
 import Products from '../data/products.js';
-import products from '../data/products.js';
 
 export default {
   name: 'products',
@@ -35,12 +34,8 @@ export default {
 
 <style scoped lang="scss">
 section {
-  padding-top: 1rem;
+  padding-top: 4rem;
   min-height: 100%;
   align-items: center;
-}
-
-.center {
- display: flex;
 }
 </style>

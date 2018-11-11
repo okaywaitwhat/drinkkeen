@@ -6,8 +6,8 @@ export default {
     {
       name: 'Scotch & Ginger',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Whisky',
@@ -36,8 +36,8 @@ export default {
     {
       name: 'Caipiroska',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -71,8 +71,8 @@ export default {
     {
       name: 'Vodka, Albahaca & Limón',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -110,8 +110,8 @@ export default {
 
       name: 'Kamikaze',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.25', unit: 'oz' },
@@ -132,8 +132,8 @@ export default {
 
       name: 'Ron & Cola',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Ron', portion: '1.5', unit: 'oz' },
@@ -154,8 +154,8 @@ export default {
 
       name: 'Ron & Gaseosa Lima-Limón',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Ron', portion: '1.5', unit: 'oz' },
@@ -174,8 +174,8 @@ export default {
 
       name: 'Mixed Whisky',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '2', unit: 'oz' },
@@ -195,8 +195,8 @@ export default {
 
       name: 'Gin Rickey',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -216,8 +216,8 @@ export default {
 
       name: 'Ginebra & Ginger Ale',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -237,7 +237,7 @@ export default {
 
       name: 'Whisky Piña',
       img: 'mojito',
-      family: 'modern',
+      family: 'moderna',
       type: 'frozen',
 
       ingredients: [
@@ -262,7 +262,7 @@ export default {
 
       name: 'Vodka Pink',
       img: 'mojito',
-      family: 'modern',
+      family: 'moderna',
       type: 'frozen',
 
       ingredients: [
@@ -286,8 +286,8 @@ export default {
 
       name: 'Citrus Flush',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -309,8 +309,8 @@ export default {
 
       name: 'Gin Toddy',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -332,8 +332,8 @@ export default {
 
       name: 'Whisky con Miel y Ginger Ale',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
@@ -357,8 +357,8 @@ export default {
 
       name: 'Whisky, piña y jugo de arándano',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
@@ -378,8 +378,8 @@ export default {
 
       name: 'Scotch & Cola',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
@@ -399,8 +399,8 @@ export default {
 
       name: 'Tequila & Ginger',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Tequila', portion: '1.5', unit: 'oz' },
@@ -423,8 +423,8 @@ export default {
 
       name: 'Luxury Margarita',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Tequila', portion: '1.5', unit: 'oz' },
@@ -445,8 +445,8 @@ export default {
 
       name: 'Gin Breeze',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -469,8 +469,8 @@ export default {
 
       name: 'The Tom Nichol',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -494,8 +494,8 @@ export default {
 
       name: 'Vodka & Tonic',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -516,8 +516,8 @@ export default {
 
       name: 'Gin & Juice',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -538,8 +538,8 @@ export default {
 
       name: 'Vodka Minted',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -564,8 +564,8 @@ export default {
 
       name: 'Death of a Scotsman',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '1', unit: 'oz' },
@@ -588,8 +588,8 @@ export default {
 
       name: 'Scotch & Soda',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
@@ -610,8 +610,8 @@ export default {
 
       name: 'Ponche Corsario',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vino tinto', portion: '2', unit: 'oz' },
@@ -636,8 +636,8 @@ export default {
 
       name: 'Espresso Martini',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -659,8 +659,8 @@ export default {
 
       name: 'TLC',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -685,8 +685,8 @@ export default {
 
       name: 'Ron Bloody Madras',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Ron', portion: '1.25', unit: 'oz' },
@@ -707,8 +707,8 @@ export default {
 
       name: 'Limonada con Bourbon',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Bourbon', portion: '1.5', unit: 'oz' },
@@ -728,8 +728,8 @@ export default {
 
       name: 'Cuban T&T',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Gin', portion: '1.25', unit: 'oz' },
@@ -752,8 +752,8 @@ export default {
 
       name: 'Vodka & Arándano',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -775,8 +775,8 @@ export default {
 
       name: 'Paloma Rusa',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
@@ -802,8 +802,8 @@ export default {
 
       name: 'Vodka Greyhound',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Vodka', portion: '1', unit: 'oz' },
@@ -824,8 +824,8 @@ export default {
 
       name: 'Ginebra Platinum',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Licor de naranja', portion: '0.25', unit: 'oz' },
@@ -848,8 +848,8 @@ export default {
 
       name: 'Chocolate Caliente con Crema Irlandesa',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         { ingredient: 'Crema irlandesa', portion: '1.5', unit: 'oz' },
@@ -870,8 +870,8 @@ export default {
 
       name: 'Shrunken Head',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         {
@@ -912,8 +912,8 @@ export default {
 
       name: 'Spiced Barrel',
       img: 'mojito',
-      family: 'modern',
-      type: 'direct',
+      family: 'moderna',
+      type: 'directo',
 
       ingredients: [
         {

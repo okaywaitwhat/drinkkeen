@@ -16,7 +16,7 @@
 <script>
 export default {
   name: 'quote',
-  props: [ 'quote', 'mouseOver' ]
+  props: [ 'quote', 'mouseOver' ],
 }
 </script>
 

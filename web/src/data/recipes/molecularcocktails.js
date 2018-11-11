@@ -7,8 +7,8 @@ export default {
     {
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'molecular',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Licor cerezas al marraschino',
@@ -35,8 +35,8 @@ export default {
 
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'molecular',
+      type: 'directo',
 
       ingredients: [
         {
@@ -63,8 +63,8 @@ export default {
     {
       name: 'Luque',
       img: 'luque',
-      family: 'author',
-      type: 'direct',
+      family: 'molecular',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Licor de cerezas al marraschino',

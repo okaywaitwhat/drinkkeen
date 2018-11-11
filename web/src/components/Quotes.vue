@@ -13,6 +13,11 @@
             />
           </div>
         </div>
+        <ul>
+          <li v-for="item in quotes" :key='item.quote'>
+            {{ item.author }}
+          </li>
+        </ul>
     </section>
 </template>
 
@@ -25,9 +30,17 @@ export default {
   components: { Quote },
   data () {
     return {
+      quotes: [],
       mouseOver: false,
       quoteActual: getRandomQuote(),
     }
+  },
+  created () {
+  fetch('https://api.myjson.com/bins/1fbkj6')
+    .then(response => response.json())
+    .then(json => {
+      this.quotes = json.quotes;
+    })
   },
   mounted () {
     /* hacemos el intervalo que seleccione y cambie una quote aleatoria */

@@ -3,30 +3,33 @@
     <div  class="card card-shadow bg-light mb-3">
       <img class="card-img-top" :src="imgPath">
         <div class="card-body">
-          <h5 class="card-title">{{ recipe.name }}</h5>
+          <h4 class="card-title">{{ recipe.name }}</h4>
             <div>
 <!--               <i
                 v-on:click="like = !like"
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
               <i class="fa fa-share-alt"></i> -->
-              <a v-on:click="showDetails = !showDetails" class="pointer">ver receta
+              <a v-on:click="showDetails = !showDetails, difficult" class="pointer">
+                <span v-if="!showDetails">Ver receta</span>
+                <span v-if="showDetails">Ocultar receta</span>
               <i
-
                 :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
               ></i>
               </a>
             </div>
         </div>
-        <ul class="list-group list-group-flush" v-if="showDetails">
-          <li>Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
-          <li class="text-capitalize">Categoría: {{ recipe.family }}</li>
-          <li class="ingredient dark-list d-flex border-0" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+        <ul class="list-group list-group-flush border-0" v-if="showDetails">
+          <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
+          <li class="text-capitalize border-0" v-for="level in levels" :key="level">Complejidad: {{ level }}</li>
+          <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
+          <h5 class="dark-list mt-3">Ingredientes</h5>
+          <li class="ingredient dark-list d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
             <span class="mr-auto pr-1 ingredient">{{ ingredient.ingredient }}</span>
             <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
             <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
           </li>
-          <li v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+          <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
         </ul>
     </div>
   </div>
@@ -35,20 +38,32 @@
 <script>
 
 export default {
-  name: 'recipe',
-  props: [ 'recipe' ],
-  data () {
-    return {
-      // showDetalles
-      showDetails: false,
-      like: false,
-    }
+name: 'recipe',
+props: [ 'recipe' ],
+data () {
+  return {
+    // showDetalles
+    showDetails: false,
+    like: false,
+    levels: [],
+  }
+},
+computed: {
+  imgPath () {
+    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
   },
-   computed: {
-    imgPath () {
-      return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
+  difficult () {
+    if (this.recipe.steps.length > 0 && this.recipe.steps.length <=2) {
+      this.levels.push('Simple')
     }
-  },
+    if (this.recipe.steps.length > 2 && this.recipe.steps.length <=4) {
+      this.levels.push('Moderada')
+    }
+    if (this.recipe.steps.length > 4) {
+      this.levels.push('Alta')
+    }
+  }
+},
 
 }
 </script>
@@ -81,10 +96,16 @@ div  a {
     font-size: 18px;
   }
 
-h5 {
+h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 300;
   font-size: 27px;
+}
+
+h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 span {
@@ -92,7 +113,7 @@ span {
 }
 
 .ingredient {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Playfair Display', serif;
 }
 
@@ -119,7 +140,7 @@ li {
   border-bottom: dotted .1rem gray;
 }
 
-.list-group > li:nth-child(3) { // hardcoded 3 because of current order
+.list-group > li:nth-child(4) { // hardcoded 3 because of current order
   border-top: 1px solid $border-color !important;
 }
 

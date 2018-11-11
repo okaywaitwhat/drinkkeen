@@ -6,8 +6,8 @@ export default {
     {
       name: 'Top Shelf Long Island',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
 
         {
@@ -54,8 +54,8 @@ export default {
     {
       name: 'Dirty Martini',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -82,8 +82,8 @@ export default {
     {
       name: 'Extra Dry Martini',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -116,8 +116,8 @@ export default {
     {
       name: 'Mint Julep',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Bourbon',
@@ -152,8 +152,8 @@ export default {
     {
       name: 'Harvey Wallbanger',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -186,8 +186,8 @@ export default {
     {
       name: 'Classic Singapore Sling',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -240,8 +240,8 @@ export default {
     {
       name: 'Cuba Libre',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Ron blanco',
@@ -268,8 +268,8 @@ export default {
     {
       name: 'Moscow Mule',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -290,8 +290,8 @@ export default {
     {
       name: 'Mai Tai',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Ron especiado',
@@ -333,7 +333,7 @@ export default {
     {
       name: 'Piña Colada',
       img: 'negroni',
-      family: 'classic',
+      family: 'clásica',
       type: 'frozen',
       ingredients: [
         {
@@ -368,8 +368,8 @@ export default {
     {
       name: 'Black Russian',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -391,8 +391,8 @@ export default {
     {
       name: 'Martini',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -420,8 +420,8 @@ export default {
     {
       name: 'Bloody Mary',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -470,8 +470,8 @@ export default {
     {
       name: 'Tom Collins',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -509,8 +509,8 @@ export default {
     {
       name: 'Riviera Margarita',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Tequila',
@@ -549,8 +549,8 @@ export default {
     {
       name: 'Bramble #10',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -588,8 +588,8 @@ export default {
     {
       name: "Horse's Neck",
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Bourbon',
@@ -620,8 +620,8 @@ export default {
     {
       name: 'Sex on the Beach',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -658,8 +658,8 @@ export default {
     {
       name: 'Southside',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -693,8 +693,8 @@ export default {
     {
       name: 'Whisky Sour',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Scotch Whisky',
@@ -728,8 +728,8 @@ export default {
     {
       name: 'Vodka Martini',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -757,8 +757,8 @@ export default {
     {
       name: 'French 75',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -790,8 +790,8 @@ export default {
     {
       name: 'Sazerac',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Scotch Whisky',
@@ -822,8 +822,8 @@ export default {
     {
       name: 'Between the Sheets',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Ron especiado',
@@ -859,8 +859,8 @@ export default {
     {
       name: 'Manhattan',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Vermouth dulce',
@@ -892,8 +892,8 @@ export default {
     {
       name: 'Martinez',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -931,8 +931,8 @@ export default {
     {
       name: 'White Russian',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -958,8 +958,8 @@ export default {
     {
       name: 'Whisky Old Fashioned',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Whisky',
@@ -996,8 +996,8 @@ export default {
     {
       name: 'Bloody Mary Vodka',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -1024,8 +1024,8 @@ export default {
     {
       name: 'Blood & Sand',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Whisky',
@@ -1057,8 +1057,8 @@ export default {
     {
       name: 'Irish Coffee',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Whisky',
@@ -1090,8 +1090,8 @@ export default {
     {
       name: 'Old Fashioned',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Bourbon',
@@ -1129,8 +1129,8 @@ export default {
     {
       name: 'Bellini',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Pulpa de durazno',
@@ -1163,8 +1163,8 @@ export default {
     {
       name: 'Gin Tonic',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1192,8 +1192,8 @@ export default {
     {
       name: 'White Lady',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1224,8 +1224,8 @@ export default {
     {
       name: 'Rossini',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1263,8 +1263,8 @@ export default {
     {
       name: 'Raspberry Caipiroska',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -1304,8 +1304,8 @@ export default {
     {
       name: 'Rob Roy',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Vermouth dulce',
@@ -1338,8 +1338,8 @@ export default {
     {
       name: 'Martini Vodka',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -1365,8 +1365,8 @@ export default {
     {
       name: 'Negroni',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1398,8 +1398,8 @@ export default {
     {
       name: 'Rickey',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1437,8 +1437,8 @@ export default {
     {
       name: 'Rusty Nail',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Scotch Whisky',
@@ -1458,8 +1458,8 @@ export default {
     {
       name: 'Vesper',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1493,8 +1493,8 @@ export default {
     {
       name: 'Clover Club',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1526,8 +1526,8 @@ export default {
     {
       name: 'Stinger',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1553,8 +1553,8 @@ export default {
     {
       name: 'Sidecar',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Cognac',
@@ -1587,8 +1587,8 @@ export default {
     {
       name: 'Alexander',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Brandy',
@@ -1626,8 +1626,8 @@ export default {
     {
       name: 'Dry Martini',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -1660,8 +1660,8 @@ export default {
     {
       name: 'John Collins',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1683,7 +1683,7 @@ export default {
         }
       ],
       steps: [
-        'Servir todos los ingredientes directo en un vaso highball con hielo.',
+        'Servir todos los ingredientes directoo en un vaso highball con hielo.',
         'Mezclar.',
         'Decorar con cereza al marraschino y una rodaja de limón.',
         'Agregar un dash de bitter Angostura.'
@@ -1692,8 +1692,8 @@ export default {
     {
       name: 'Gin Fizz',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1724,8 +1724,8 @@ export default {
     {
       name: 'Derby',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1753,8 +1753,8 @@ export default {
     {
       name: 'Casino',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1785,8 +1785,8 @@ export default {
     {
       name: 'Bacardi',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Bacardi Carta Blanca',
@@ -1812,8 +1812,8 @@ export default {
     {
       name: 'Americano',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Campari',
@@ -1832,7 +1832,7 @@ export default {
         }
       ],
       steps: [
-        'Mezclar todos los ingredientes directamente en un vaso old fashion con cubos de hielo.',
+        'Mezclar todos los ingredientes directoamente en un vaso old fashion con cubos de hielo.',
         'Agregar un splash de soda.',
         'Decorar con media rodaja de naranja.'
       ]
@@ -1840,8 +1840,8 @@ export default {
     {
       name: 'Mary Pickford',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Ron blanco',
@@ -1869,8 +1869,8 @@ export default {
     {
       name: 'Monkey Gland',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1900,8 +1900,8 @@ export default {
     {
       name: 'Paradise',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -1926,8 +1926,8 @@ export default {
     {
       name: "Planter's Punch",
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Ron',
@@ -1975,8 +1975,8 @@ export default {
     {
       name: 'Porto Flip',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Brandy',
@@ -2002,8 +2002,8 @@ export default {
     {
       name: 'Ramos Fizz',
       img: 'negroni',
-      family: 'classic',
-      type: 'shaken',
+      family: 'clásica',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Gin',
@@ -2057,8 +2057,8 @@ export default {
     {
       name: 'Screwdriver',
       img: 'negroni',
-      family: 'classic',
-      type: 'direct',
+      family: 'clásica',
+      type: 'directo',
       ingredients: [
         {
           ingredient: 'Vodka',
@@ -2080,8 +2080,8 @@ export default {
     {
       name: 'Tuxedo',
       img: 'negroni',
-      family: 'classic',
-      type: 'mixed',
+      family: 'clásica',
+      type: 'mezclado',
       ingredients: [
         {
           ingredient: 'Gin',
