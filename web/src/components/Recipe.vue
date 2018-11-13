@@ -10,7 +10,7 @@
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
               <i class="fa fa-share-alt"></i> -->
-              <a v-on:click="showDetails = !showDetails, difficult" class="pointer">
+              <a v-on:click="showDetails = !showDetails" class="pointer">
                 <span v-if="!showDetails">Ver receta</span>
                 <span v-if="showDetails">Ocultar receta</span>
               <i
@@ -21,7 +21,7 @@
         </div>
         <ul class="list-group list-group-flush border-0" v-if="showDetails">
           <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
-          <li class="text-capitalize border-0" v-for="level in levels" :key="level">Complejidad: {{ level }}</li>
+          <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
           <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
           <h5 class="dark-list mt-3">Ingredientes</h5>
           <li class="ingredient dark-list d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
@@ -38,33 +38,32 @@
 <script>
 
 export default {
-name: 'recipe',
-props: [ 'recipe' ],
-data () {
-  return {
-    // showDetalles
-    showDetails: false,
-    like: false,
-    levels: [],
-  }
-},
-computed: {
-  imgPath () {
-    return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
+  name: 'recipe',
+  props: [ 'recipe' ],
+  data: () => {
+    return {
+      // showDetalles
+      showDetails: false,
+      like: false,
+      level: '',
+    }
   },
-  difficult () {
+  computed: {
+    imgPath () {
+      return require ('../assets/mediarecetas/' + this.recipe.img + '.jpg')
+    }
+  },
+  mounted () {
     if (this.recipe.steps.length > 0 && this.recipe.steps.length <=2) {
-      this.levels.push('Simple')
+      this.level = 'Simple'
     }
-    if (this.recipe.steps.length > 2 && this.recipe.steps.length <=4) {
-      this.levels.push('Moderada')
+    else if (this.recipe.steps.length > 2 && this.recipe.steps.length <= 4) {
+      this.level = 'Moderada'
     }
-    if (this.recipe.steps.length > 4) {
-      this.levels.push('Alta')
+    else if (this.recipe.steps.length > 4) {
+      this.level = 'Alta'
     }
   }
-},
-
 }
 </script>
 
