@@ -10,7 +10,7 @@
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
               <i class="fa fa-share-alt"></i> -->
-              <a v-on:click="showDetails = !showDetails" class="pointer">
+              <a v-on:click="showDetails = !showDetails, edit()" class="pointer">
                 <span v-if="!showDetails">Ver receta</span>
                 <span v-if="showDetails">Ocultar receta</span>
               <i
@@ -63,8 +63,35 @@ export default {
     else if (this.recipe.steps.length > 4) {
       this.level = 'Alta'
     }
+    //portions stuff
+    this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'dash' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'dashes')
+      }
+    });
+    this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'pieza' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'piezas')
+      }
+    });
+    this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'cucharada' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'cucharadas')
+      }
+    });
+     this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'hoja' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'hojas')
+      }
+    });
+    this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'gota' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'gotas')
+      }
+    });
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

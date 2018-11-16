@@ -6,6 +6,7 @@ import App from './App'
 import router from './router'
 import VueProgressiveImage from 'vue-progressive-image'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import store from './store'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue)
@@ -16,6 +17,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

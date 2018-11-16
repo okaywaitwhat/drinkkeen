@@ -70,7 +70,7 @@ export default {
         {
           ingredient: 'Aceituna',
           portion: '1',
-          unit: 'u'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -103,7 +103,7 @@ export default {
         {
           ingredient: 'Aceituna',
           portion: '2',
-          unit: 'u'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -127,12 +127,12 @@ export default {
         {
           ingredient: 'Menta',
           portion: '8',
-          unit: 'hojas'
+          unit: 'hoja'
         },
         {
           ingredient: 'Azúcar',
           portion: '2',
-          unit: 'cucharadas'
+          unit: 'cucharada'
         },
         {
           ingredient: 'Bitter Angostura',
@@ -141,7 +141,7 @@ export default {
         }
       ],
       steps: [
-        'Activar las hojas de hierbabuena con una palmada y dejarlas caer en el vaso preenfriado.',
+        'Activar las hoja de hierbabuena con una palmada y dejarlas caer en el vaso preenfriado.',
         'Agregar azúcar y Bitter.',
         'Macerar.',
         'Agregar hielo frappe o triturado hasta 3/4 del vaso.',
@@ -227,7 +227,7 @@ export default {
         {
           ingredient: 'Naranja valencia',
           portion: '1',
-          unit: 'oz'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -407,7 +407,7 @@ export default {
         {
           ingredient: 'Aceituna',
           portion: '1',
-          unit: 'u'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -575,7 +575,7 @@ export default {
         {
           ingredient: 'Moras frescas',
           portion: '5',
-          unit: 'piezas'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -679,7 +679,7 @@ export default {
         {
           ingredient: 'Menta',
           portion: '4',
-          unit: 'hojas'
+          unit: 'hoja'
         }
       ],
       steps: [
@@ -841,11 +841,13 @@ export default {
         },
         {
           ingredient: 'Jugo de limón',
-          portion: '0.75'
+          portion: '0.75',
+          unit: 'oz'
         },
         {
           ingredient: 'Twist de limón',
-          portion: '1'
+          portion: '1',
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -1508,11 +1510,13 @@ export default {
         },
         {
           ingredient: 'Jarabe de frambuesa',
-          portion: '0.75'
+          portion: '0.75',
+          unit: 'oz'
         },
         {
           ingredient: 'Jugo de limón',
-          portion: '0.5'
+          portion: '0.5',
+          unit: 'oz'
         }
       ],
       steps: [
@@ -1647,7 +1651,7 @@ export default {
         {
           ingredient: 'Aceitunas',
           portion: '2',
-          unit: 'u'
+          unit: 'pieza'
         }
       ],
       steps: [
@@ -1740,14 +1744,14 @@ export default {
         {
           ingredient: 'Menta',
           portion: '2',
-          unit: 'hojas'
+          unit: 'hoja'
         }
       ],
       steps: [
         'Servir todos los ingredientes en un vaso mezclador con hielo.',
         'Mezclar.',
         'Servir en una copa martini.',
-        'Decorar con hojas de menta.'
+        'Decorar con hoja de menta.'
       ]
     },
     {
