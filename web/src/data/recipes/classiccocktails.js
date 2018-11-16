@@ -1295,8 +1295,8 @@ export default {
         }
       ],
       steps: [
-        'Cortar los limones en rodajas.',
-        'Servir en un vaso Highball, las rodajas de limón, Jarabe, azúcar mascabado y las frambuesas enteras.',
+        'Cortar los limones en rodaja.',
+        'Servir en un vaso Highball, las rodaja de limón, Jarabe, azúcar mascabado y las frambuesas enteras.',
         'Macerar los ingredientes.',
         'Añadir hielo frappé y servir el vodka.',
         'Revolver.',

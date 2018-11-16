@@ -13,11 +13,6 @@
             />
           </div>
         </div>
-        <ul>
-          <li v-for="item in quotes" :key='item.quote'>
-            {{ item.author }}
-          </li>
-        </ul>
     </section>
 </template>
 
@@ -32,28 +27,29 @@ export default {
     return {
       quotes: [],
       mouseOver: false,
-      quoteActual: getRandomQuote(),
+      quoteActual: 'Carganding',
     }
   },
   created () {
-  fetch('https://api.myjson.com/bins/1fbkj6')
-    .then(response => response.json())
-    .then(json => {
-      this.quotes = json.quotes;
-    })
+    fetch('https://api.myjson.com/bins/1fbkj6')
+      .then(response => response.json())
+      .then(json => {
+        this.quotes = json.quotes;
+      })
   },
   mounted () {
     /* hacemos el intervalo que seleccione y cambie una quote aleatoria */
     setInterval(() => {
       if(this.mouseOver) return
-      this.quoteActual = getRandomQuote()
+      this.quoteActual = this.getRandomQuote()
     }, 9000)
+  },
+  methods: {
+    getRandomQuote() {
+      const numeroRandom = Math.floor(Math.random() * this.quotes.length)
+      return this.quotes[numeroRandom]
+    }
   }
-}
-
-function getRandomQuote() {
-  const numeroRandom = Math.floor(Math.random() * quotes.length)
-  return quotes[numeroRandom]
 }
 
 </script>

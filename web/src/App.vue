@@ -18,8 +18,11 @@ import Foot from './components/Foot'
 import Navbar from './components/NavBar'
 import Modal from './components/Modal'
 
-const introKey = 'dismissedIntro'
-const modalKey = 'dismissedModal'
+// variables para el localStorage
+const lsKeys = {
+  intro: 'hiddenIntro',
+  modal: 'hiddenModal'
+}
 
 export default {
   name: 'app',
@@ -28,22 +31,28 @@ export default {
   },
   data () {
     return {
-      dismissedIntro: localStorage.getItem(introKey),
-      dismissedModal: localStorage.getItem(modalKey),
+      // 1. se carga la pagina y buscamos los valores en localStoage
+      //   a. si el valor no esta, entonces `dismissedIntro: undefined`
+      //   b. si el valor esta, entonces `dismissedIntro: 'true'`
+      dismissedIntro: localStorage.getItem(lsKeys.intro),
+      dismissedModal: localStorage.getItem(lsKeys.modal),
     }
   },
   methods: {
     dismissIntro () {
+      // cuando dismiseamos, actualizamos los valores en ambos lados
+      // 1. this.dismissedIntro, porque actualizamos Vue
+      // 2. localStorage.setItem, porque actualizamos el localStorage
       this.dismissedIntro = true
-      localStorage.setItem(introKey, true)
+      localStorage.setItem(lsKeys.intro, true)
     },
     dismissModal () {
       this.dismissedModal = true
-      localStorage.setItem(modalKey, true)
+      localStorage.setItem(lsKeys.modal, true)
     },
     dontDismissIntro () {
       this.dismissedIntro = false
-      localStorage.removeItem(introKey, true)
+      localStorage.removeItem(lsKeys.intro)
     },
   }
 }

@@ -89,6 +89,11 @@ export default {
         this.$set(ingredient, 'unit', 'gotas')
       }
     });
+    this.recipe.ingredients.forEach((ingredient) => {
+      if (ingredient.unit === 'rodaja' && ingredient.portion > 1) {
+        this.$set(ingredient, 'unit', 'rodajas')
+      }
+    });
   }
 }
 
