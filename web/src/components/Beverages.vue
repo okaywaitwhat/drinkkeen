@@ -25,11 +25,6 @@ export default {
     categoryId () {
       return this.$route.params.category
     }
-  },
-  methods: {
-    removeTitle () {
-      this.showTitle = false;
-    }
   }
 }
 </script>

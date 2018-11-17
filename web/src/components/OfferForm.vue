@@ -63,7 +63,12 @@
 
 <script>
 export default {
-  name: 'offerform'
+  name: 'offerform',
+  data () {
+    return {
+      status: ''
+    }
+  }
 }
 </script>
 

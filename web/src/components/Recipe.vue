@@ -10,7 +10,7 @@
                 :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
                 ></i>
               <i class="fa fa-share-alt"></i> -->
-              <a v-on:click="showDetails = !showDetails, edit()" class="pointer">
+              <a v-on:click="showDetails = !showDetails" class="pointer">
                 <span v-if="!showDetails">Ver receta</span>
                 <span v-if="showDetails">Ocultar receta</span>
               <i
@@ -66,32 +66,32 @@ export default {
     //portions stuff
     this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'dash' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'dashes')
+        ingredient.unit = 'dashes'
       }
     });
     this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'pieza' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'piezas')
+        ingredient.unit = 'piezas'
       }
     });
     this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'cucharada' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'cucharadas')
+        ingredient.unit = 'cucharadas'
       }
     });
      this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'hoja' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'hojas')
+        ingredient.unit = 'hojas'
       }
     });
     this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'gota' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'gotas')
+        ingredient.unit = 'gotas'
       }
     });
     this.recipe.ingredients.forEach((ingredient) => {
       if (ingredient.unit === 'rodaja' && ingredient.portion > 1) {
-        this.$set(ingredient, 'unit', 'rodajas')
+        ingredient.unit = 'rodajas'
       }
     });
   }
