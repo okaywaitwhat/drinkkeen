@@ -7,8 +7,8 @@
     </div>
   <div class="col-12 p-1 col-lg-5 p-lg-5">
     <div class="slideInDown">
-      <h3 class="tab-title pb-3">{{ beverage.name }}</h3>
-      <p class="text-justify">{{ beverage.description }}</p>
+      <h3 class="tab-title pb-3 second-font">{{ beverage.name }}</h3>
+      <p class="text-justify second-font">{{ beverage.description }}</p>
     </div>
   </div>
   <div class="col-12 p-1 col-lg-3 p-lg-5 p-4 pb-lg-0">

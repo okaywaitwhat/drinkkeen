@@ -1,6 +1,6 @@
 <template>
   <div class="d-inline-flex flex-column justify-content-center">
-    <h3 class="ml-2 mr-auto slideInLeft">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h3>
+    <h3 class="ml-2 mr-auto slideInLeft second-font">Coctelería {{ category.title }} <span v-if="category.nueva" class="badge badge-secondary">Nuevo</span></h3>
     <section class="d-flex justify-content-center">
       <router-link :to="subpath">
         <figure class="big-img d-inline-block">

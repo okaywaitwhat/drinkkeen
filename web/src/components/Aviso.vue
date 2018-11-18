@@ -1,7 +1,7 @@
 <template>
   <div class="post-card">
     <div class="card-body p-0">
-      <span><h4 class="card-title">{{ post.job }}</h4></span>
+      <span><h4 class="card-title second-font">{{ post.job }}</h4></span>
       <p class="text-capitalize lead"><i class="fa fa-map-marker"></i> {{ post.workplace }}</p>
       <p class="text-justify"><strong><i class="fa fa-user"></i></strong> sexo {{ post.genre }} - {{ post.age }}</p>
       <p class="text-justify"><strong><i class="fa fa-clock-o"></i></strong> {{ post.availability }}</p>

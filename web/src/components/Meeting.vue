@@ -1,7 +1,7 @@
 <template>
   <div class="post-card">
     <div class="card-body p-4 rounded bg-light">
-      <span><h4 class="card-title">{{ post.event }}</h4></span>
+      <span><h4 class="card-title second-font">{{ post.event }}</h4></span>
       <p class="text-capitalize lead"><i class="fa fa-map-marker"></i> {{ post.place }}</p>
       <p class="text-justify"><strong><i class="fa fa-calendar"></i></strong> {{ post.date }}</p>
       <p class="text-justify"><strong><i class="fa fa-clock-o"></i></strong> {{ post.hour }}hs</p>

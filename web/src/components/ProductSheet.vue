@@ -6,7 +6,7 @@
           <img class="pointer slideInLeft" :src="productImg">
         </div>
         <div class="col-lg-6">
-          <h3>{{ product.name }}</h3>
+          <h3 class="second-font">{{ product.name }}</h3>
           <p class="text-muted mb-4">{{ product.title }}</p>
           <p>{{ product.description }}</p>
           <h3 class="mb-4">{{ product.price }}</h3>

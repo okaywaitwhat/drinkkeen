@@ -4,8 +4,8 @@
       <img class="pointer" :src="imgPath">
     </router-link>
       <div class="card-body">
-          <span><h5 class="card-title">{{ product.name }}</h5></span>
-          <p class="font-italic text-capitalize">{{ product.price }}</p>
+        <span><h5 class="card-title second-font">{{ product.name }}</h5></span>
+        <p class="font-italic text-capitalize">{{ product.price }}</p>
       </div>
   </div>
 </template>

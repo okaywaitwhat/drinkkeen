@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div  class="card card-shadow bg-light mb-3">
-      <img class="card-img-top" :src="imgPath">
+    <div  class="card mb-3">
+      <img :src="imgPath">
         <div class="card-body">
-          <h4 class="card-title">{{ recipe.name }}</h4>
+          <h5 class="card-title second-font">{{ recipe.name }}</h5>
             <div>
 <!--               <i
                 v-on:click="like = !like"
@@ -19,18 +19,20 @@
               </a>
             </div>
         </div>
+        <div class="p-0 bg-light">
         <ul class="list-group list-group-flush border-0" v-if="showDetails">
           <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
           <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
           <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
-          <h5 class="dark-list mt-3">Ingredientes</h5>
-          <li class="ingredient dark-list d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
-            <span class="mr-auto pr-1 ingredient">{{ ingredient.ingredient }}</span>
+          <h5 class="mt-3 second-font">Ingredientes</h5>
+          <li class="ingredient bg-light d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+            <span class="mr-auto pr-1 ingredient second-font">{{ ingredient.ingredient }}</span>
             <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
             <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
           </li>
           <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
         </ul>
+        </div>
     </div>
   </div>
 </template>
@@ -107,9 +109,8 @@ $border-color: rgba(0, 0, 0, 0.125);
   overflow: hidden;
   text-align: center;
   width: 100%;
-  &:hover {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  }
+  border: 0;
+  border-radius: 0;
   p {
     margin: 0;
   }
@@ -123,29 +124,12 @@ $border-color: rgba(0, 0, 0, 0.125);
   }
 }
 
-div  a {
-    font-size: 18px;
-  }
-
-h4 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  font-size: 27px;
-}
-
-h5 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  font-size: 20px;
-}
-
-span {
-  font-weight: 300;
+.card-body {
+  background-color: transparent;
 }
 
 .ingredient {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
 }
 
 .card-item {
@@ -161,8 +145,8 @@ li {
   text-align: left;
 }
 
-.dark-list {
-  background-color: #f8f9fa;
+img {
+  width: 100%;
 }
 
 .border-dotted-separator {

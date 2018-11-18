@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <section id="recipesSection" class="d-flex">
+    <section class="p-lg-5">
+        <section class="d-flex">
           <section class="recipes-cards-cont">
             <div class="card-columns">
               <Recipe :recipe="recipe" v-for="recipe in menu.data" :key="recipe.name"></Recipe>
@@ -51,11 +51,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
-#recipesSection { //fix 2 sections
-  float: center;
-  padding: 4rem;
-}
 
 .recipes-cards-cont {
   background-color: #fff;

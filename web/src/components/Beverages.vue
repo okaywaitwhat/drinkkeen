@@ -1,10 +1,16 @@
 <template>
   <section class="container-fluid">
     <transition name="fade">
-    <p v-if="!categoryId" class="lead pb-4 pt-5 pl-lg-5 pr-lg-5"><span>La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo.</span><span>Desde el whisky hasta la ginebra, inicia un recorrido que será el comienzo de infinitas e inovidables historias.</span></p>
+    <p v-if="!categoryId" class="lead pb-4 pt-5 pl-lg-5 pr-lg-5"><span class="second-font">La esencia de las bebidas se mezclan para adentrarte a un nuevo mundo.</span><span class="second-font">Desde el whisky hasta la ginebra, inicia un recorrido que será el comienzo de infinitas e inovidables historias.</span></p>
     </transition>
-    <CategoryImage v-if="!categoryId" v-for="category in beverages" :key="category.name" :category="category"/>
-    <BeveragesView v-if="categoryId" :categoryId="categoryId" />
+    <CategoryImage
+      v-if="!categoryId"
+      v-for="category in beverages"
+      :key="category.name"
+      :category="category"/>
+    <BeveragesView
+      v-if="categoryId"
+      :categoryId="categoryId" />
   </section>
 </template>
 
@@ -17,8 +23,9 @@ export default {
   name: 'beverages',
   components: { BeveragesView, CategoryImage, },
   data () {
-    return { beverages,
-    showTitle: true,
+    return {
+      beverages,
+      showTitle: true,
     }
   },
   computed: {
@@ -39,6 +46,7 @@ section {
 }
 
 .router-link-active {
+  font-size: 19px;
   margin-left: 1rem;
   margin-right: 1rem;
 }

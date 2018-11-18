@@ -1,7 +1,7 @@
 <template>
     <section>
       <div class="container text-center">
-        <p class="lead pb-4">Descubre nuevas experiencias, sabores, tendencias y lo más relevante del mundo de la mixología de la mano de los que más saben en nuestro país.</p>
+        <p class="lead pb-4 second-font">Descubre nuevas experiencias, sabores, tendencias y lo más relevante del mundo de la mixología de la mano de los que más saben en nuestro país.</p>
       </div>
 
       <div class="container-fluid">
