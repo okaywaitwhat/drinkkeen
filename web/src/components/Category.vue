@@ -3,7 +3,7 @@
         <section class="d-flex">
           <section class="recipes-cards-cont">
             <div class="card-columns">
-              <Recipe :recipe="recipe" v-for="recipe in menu.data" :key="recipe.name"></Recipe>
+              <Recipe :recipe="recipe" v-for="recipe in category.data" :key="recipe.name"></Recipe>
             </div>
           </section>
         </section>
@@ -12,29 +12,13 @@
 
 <script>
 import Recipe from './Recipe'
-import author from '../data/recipes/authorcocktails.js'
-import classic from '../data/recipes/classiccocktails.js'
-import modern from '../data/recipes/moderncocktails.js'
-import molecular from '../data/recipes/molecularcocktails.js'
-
-const cocktails = {
-  author,
-  classic,
-  modern,
-  molecular
-}
 
 export default {
   name: 'category',
   components: {
     Recipe
   },
-  data () {
-    return {
-      // oye manue: require('../data/recipes/' + this.$router.currentRoute.name + 'cocktails.js'),
-      menu: cocktails[this.$router.currentRoute.name]
-    }
-  },
+  props: [ 'category' ],
   computed: {
     sortedCocktails: function() {
       function compare(a, b) {
@@ -44,7 +28,7 @@ export default {
           return 1;
         return 0;
       }
-      return this.menu.sort(compare);
+      return this.category.sort(compare);
     }
   }
 }
