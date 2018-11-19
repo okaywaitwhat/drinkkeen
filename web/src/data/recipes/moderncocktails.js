@@ -1,7 +1,7 @@
 export default {
   title: 'Moderna',
   img: 'square',
-  path: 'moderna',
+  path: 'modern',
   data: [
     {
       name: 'Scotch & Ginger',

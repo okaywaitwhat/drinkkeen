@@ -1,6 +1,6 @@
 export default {
   title: 'Clásica',
-  path: 'clasica',
+  path: 'classic',
   img: 'squarenegroni',
   data: [
     {
