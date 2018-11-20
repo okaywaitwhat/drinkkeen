@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     subpath () {
-      return `/cocteleria/${this.category.path}`
+      return `/cocktails/${this.category.path}`
     },
     bigImgPath () {
       return require ('../assets/mediarecetas/' + this.category.img + '.jpg')

@@ -30,8 +30,8 @@ const routes = [
     component: Products
   },
   {
-    path: '/cocteleria/:category?/:recipe?',
-    name: 'cocteleria',
+    path: '/cocktails/:category?/:recipe?',
+    name: 'cocktails',
     component: CocktailsView
   },
   { path: '/login', component: Login },
