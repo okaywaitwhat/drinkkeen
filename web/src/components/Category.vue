@@ -3,6 +3,7 @@
         <section class="d-flex">
           <section class="recipes-cards-cont">
             <div class="card-columns">
+              <!-- cambiar Recipe por un elemento con imagen y un link -->
               <Recipe :recipe="recipe" v-for="recipe in category.data" :key="recipe.name"></Recipe>
             </div>
           </section>

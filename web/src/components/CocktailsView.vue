@@ -1,7 +1,10 @@
 <template>
   <div>
     <section v-if="category">
-      <div v-if="recipe">Mi recetita {{ recipe.name }}</div>
+      <!-- TODO: sacar el style -->
+      <div v-if="recipe" style="padding: 5% 25%;">
+        <Recipe :recipe="recipe" />
+      </div>
       <Category v-else :category="category" />
     </section>
     <section v-else class="collections container-fluid">
@@ -15,6 +18,7 @@
 </template>
 
 <script>
+import Recipe from './Recipe.vue'
 import Category from './Category.vue'
 import Collection from './Collection.vue'
 import author from '../data/recipes/authorcocktails.js'
@@ -31,7 +35,7 @@ const cocktails = {
 
 export default {
   name: 'cocktailsview',
-  components: { Collection, Category },
+  components: { Collection, Category, Recipe },
   data () {
     return {
       categories: { classic, modern, author, molecular }
