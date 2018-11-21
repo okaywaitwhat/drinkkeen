@@ -4,7 +4,7 @@
           <section class="recipes-cards-cont">
             <div class="card-columns">
               <!-- cambiar Recipe por un elemento con imagen y un link -->
-              <Recipe :recipe="recipe" v-for="recipe in category.data" :key="recipe.name"></Recipe>
+            <Cocktail :recipe="recipe" :category="category" v-for="recipe in category.data" :key="recipe.name"/>
             </div>
           </section>
         </section>
@@ -13,11 +13,12 @@
 
 <script>
 import Recipe from './Recipe'
+import Cocktail from './Cocktail'
 
 export default {
   name: 'category',
   components: {
-    Recipe
+    Recipe, Cocktail
   },
   props: [ 'category' ],
   computed: {

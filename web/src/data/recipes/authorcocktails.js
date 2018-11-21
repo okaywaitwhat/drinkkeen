@@ -6,6 +6,7 @@ export default {
   data: [
     {
       name: 'Luque',
+      id: 'luque',
       img: 'luque',
       family: 'de autor',
       type: 'directo',
@@ -36,6 +37,7 @@ export default {
     {
 
       name: 'Luque',
+      id: 'luque',
       img: 'luque',
       family: 'de autor',
       type: 'directo',
@@ -66,6 +68,7 @@ export default {
     {
 
       name: 'Luque',
+      id: 'luque',
       img: 'luque',
       family: 'de autor',
       type: 'directo',

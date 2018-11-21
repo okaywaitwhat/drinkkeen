@@ -5,6 +5,7 @@ export default {
   data: [
     {
       name: 'Scotch & Ginger',
+      id: 'scotch-and-ginger',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -35,6 +36,7 @@ export default {
 
     {
       name: 'Caipiroska',
+      id: 'caipiroska',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -70,6 +72,7 @@ export default {
 
     {
       name: 'Vodka, Albahaca & Limón',
+      id: 'vodka-albahaca-limon',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -109,6 +112,7 @@ export default {
     {
 
       name: 'Kamikaze',
+      id: 'kamikaze',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -131,6 +135,7 @@ export default {
     {
 
       name: 'Ron & Cola',
+      id: 'ron-and-cola',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -152,27 +157,8 @@ export default {
 
     {
 
-      name: 'Ron & Gaseosa Lima-Limón',
-      img: 'mojito',
-      family: 'moderna',
-      type: 'directo',
-
-      ingredients: [
-        { ingredient: 'Ron', portion: '1.5', unit: 'oz' },
-        { ingredient: 'Gaseosa de lima-limón', portion: '5', unit: 'oz' }
-      ],
-
-      steps: [
-        'Llenar un vaso con hielo y añadir Captain Morgan White Ron y el Gaseosa de lima-limón.',
-        'Revolver bien.'
-
-      ]
-
-    },
-
-    {
-
       name: 'Mixed Whisky',
+      id: 'mixed-whisky',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -194,6 +180,7 @@ export default {
     {
 
       name: 'Gin Rickey',
+      id: 'gin-rickey',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -215,6 +202,7 @@ export default {
     {
 
       name: 'Ginebra & Ginger Ale',
+      id: 'gin-and-ginger-ale',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -236,6 +224,7 @@ export default {
     {
 
       name: 'Whisky Piña',
+      id: 'whisky-pineapple',
       img: 'mojito',
       family: 'moderna',
       type: 'frozen',
@@ -261,6 +250,7 @@ export default {
     {
 
       name: 'Vodka Pink',
+      id: 'vodka-pink',
       img: 'mojito',
       family: 'moderna',
       type: 'frozen',
@@ -285,6 +275,7 @@ export default {
     {
 
       name: 'Citrus Flush',
+      id: 'citrus-flush',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -308,6 +299,7 @@ export default {
     {
 
       name: 'Gin Toddy',
+      id: 'gin-toddy',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -330,53 +322,8 @@ export default {
 
     {
 
-      name: 'Whisky con Miel y Ginger Ale',
-      img: 'mojito',
-      family: 'moderna',
-      type: 'directo',
-
-      ingredients: [
-        { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
-        { ingredient: 'Jugo de limón', portion: '1', unit: 'oz' },
-        { ingredient: 'Miel', portion: '0.5', unit: 'oz' },
-        { ingredient: 'Ginger ale', portion: '1', unit: 'oz' }
-      ],
-
-      steps: [
-        'en una coctelera agregar el whisky, jugo de limón amarillo y miel de abeja.',
-        'Agregar hielos y agitar, vigorosamente, hasta mezclar perfectamente.',
-        'Servir en un vaso alto con hielo cubo.',
-        'Completar con ginger ale e integrar con ayuda de la cuchara de bar.',
-        'Decorar con una cuña de limón verde y una cuña de limón amarillo.'
-
-      ]
-
-    },
-
-    {
-
-      name: 'Whisky, piña y jugo de arándano',
-      img: 'mojito',
-      family: 'moderna',
-      type: 'directo',
-
-      ingredients: [
-        { ingredient: 'Whisky', portion: '1.5', unit: 'oz' },
-        { ingredient: 'Jugo de piña', portion: '3', unit: 'oz' },
-        { ingredient: 'Jugo de arándano', portion: '3', unit: 'oz' }
-      ],
-
-      steps: [
-        'Añadir whisky en un vaso con hielo.',
-        'Agregar jugo de piña y jugo de arándano.'
-
-      ]
-
-    },
-
-    {
-
       name: 'Scotch & Cola',
+      id: 'scotch-and-cola',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -398,6 +345,7 @@ export default {
     {
 
       name: 'Tequila & Ginger',
+      id: 'tequila-and-ginger',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -422,6 +370,7 @@ export default {
     {
 
       name: 'Luxury Margarita',
+      id: 'luxury-margarita',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -444,6 +393,7 @@ export default {
     {
 
       name: 'Gin Breeze',
+      id: 'gin-breeze',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -468,6 +418,7 @@ export default {
     {
 
       name: 'The Tom Nichol',
+      id: 'the-tom-nichol',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -493,6 +444,7 @@ export default {
     {
 
       name: 'Vodka & Tonic',
+      id: 'vodka-and-tonic',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -515,6 +467,7 @@ export default {
     {
 
       name: 'Gin & Juice',
+      id: 'gin-and-juice',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -537,6 +490,7 @@ export default {
     {
 
       name: 'Vodka Minted',
+      id: 'vodka-minted',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -563,6 +517,7 @@ export default {
     {
 
       name: 'Death of a Scotsman',
+      id: 'death-of-a-scotsman',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -587,6 +542,7 @@ export default {
     {
 
       name: 'Scotch & Soda',
+      id: 'scotch-and-soda',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -609,6 +565,7 @@ export default {
     {
 
       name: 'Ponche Corsario',
+      id: 'ponche-corsario',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -635,6 +592,7 @@ export default {
     {
 
       name: 'Espresso Martini',
+      id: 'expresso-martini',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -658,6 +616,7 @@ export default {
     {
 
       name: 'TLC',
+      id: 'tlc',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -684,6 +643,7 @@ export default {
     {
 
       name: 'Ron Bloody Madras',
+      id: 'ron-bloody-madras',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -706,6 +666,7 @@ export default {
     {
 
       name: 'Limonada con Bourbon',
+      id: 'bourbon-lemonade',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -727,6 +688,7 @@ export default {
     {
 
       name: 'Cuban T&T',
+      id: 'cuban-tt',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -750,30 +712,8 @@ export default {
 
     {
 
-      name: 'Vodka & Arándano',
-      img: 'mojito',
-      family: 'moderna',
-      type: 'directo',
-
-      ingredients: [
-        { ingredient: 'Vodka', portion: '1.5', unit: 'oz' },
-        { ingredient: 'Jugo de arándano', portion: '4', unit: 'oz' },
-        { ingredient: 'Jugo de pomelo rosado', portion: '0.5', unit: 'oz' }
-      ],
-
-      steps: [
-        'en una coctelera lleno de hielo combinar, jugo de arándano y jugo de pomelo.',
-        'Agitar bien.',
-        'Vaciar en un vaso de cristal o Collins con mucho hielo.',
-        'Adornar con rebanadas de lima.'
-
-      ]
-
-    },
-
-    {
-
       name: 'Paloma Rusa',
+      id: 'paloma-rusa',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -801,6 +741,7 @@ export default {
     {
 
       name: 'Vodka Greyhound',
+      id: 'vodka-greyhound',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -823,6 +764,7 @@ export default {
     {
 
       name: 'Ginebra Platinum',
+      id: 'ginebra-platinum',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -847,6 +789,7 @@ export default {
     {
 
       name: 'Chocolate Caliente con Crema Irlandesa',
+      id: 'hot-chocolate-irish-cream',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -869,6 +812,7 @@ export default {
     {
 
       name: 'Shrunken Head',
+      id: 'shrunken-head',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',
@@ -911,6 +855,7 @@ export default {
     {
 
       name: 'Spiced Barrel',
+      id: 'spiced-barrel',
       img: 'mojito',
       family: 'moderna',
       type: 'directo',

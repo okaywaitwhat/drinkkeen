@@ -1,40 +1,34 @@
 <template>
-  <div>
-    <div  class="card mb-3">
-      <img :src="imgPath">
-        <div class="card-body">
-          <h5 class="card-title second-font">{{ recipe.name }}</h5>
-            <div>
-<!--               <i
-                v-on:click="like = !like"
-                :class="{ pointer: true, fa: true, 'fa-heart-o': !like, 'fa-heart': like }"
-                ></i>
-              <i class="fa fa-share-alt"></i> -->
-              <a v-on:click="showDetails = !showDetails" class="pointer">
-                <span v-if="!showDetails">Ver receta</span>
-                <span v-if="showDetails">Ocultar receta</span>
-              <i
-                :class="{ pointer: true, fa: true, 'fa-angle-down': !showDetails, 'fa-angle-up': showDetails }"
-              ></i>
-              </a>
-            </div>
-        </div>
-        <div class="p-0 bg-light">
-        <ul class="list-group list-group-flush border-0" v-if="showDetails">
-          <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
-          <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
-          <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
-          <h5 class="mt-3 second-font">Ingredientes</h5>
-          <li class="ingredient bg-light d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
-            <span class="mr-auto pr-1 ingredient second-font">{{ ingredient.ingredient }}</span>
-            <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
-            <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
-          </li>
-          <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
-        </ul>
-        </div>
+  <section>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h1 class="card-title second-font text-center">{{ recipe.name }}</h1>
+        <img :src="imgPath">
+      </div>
+      <div class="col-12 col-lg-4 pt-5">
+        <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
+        <li class="border-0">Cantidad de ingredientes: {{ recipe.ingredients.length }}</li>
+        <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
+        <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
+      </div>
     </div>
-  </div>
+
+    <div class="container p-0">
+      <div class="col-12 col-lg-6">
+        <h5 class="mt-3 second-font text-center">Ingredientes</h5>
+        <li class="ingredient d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+          <span class="mr-auto pr-1 ingredient second-font">{{ ingredient.ingredient }}</span>
+          <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
+          <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
+        </li>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <h5 class="mt-3 second-font text-center">Procedimiento</h5>
+        <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -44,8 +38,6 @@ export default {
   props: [ 'recipe' ],
   data: () => {
     return {
-      // showDetalles
-      showDetails: false,
       like: false,
       level: '',
     }
@@ -105,35 +97,10 @@ export default {
 $lg-width: 900px;
 $border-color: rgba(0, 0, 0, 0.125);
 
-.card {
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  border: 0;
-  border-radius: 0;
-  p {
-    margin: 0;
-  }
-  i {
-    margin: 5px;
-    font-size: 18px;
-    transition: all .09s ease;
-    &:hover {
-    transform: scale(1.2);
-    }
-  }
-}
-
-.card-body {
-  background-color: transparent;
-}
-
-.ingredient {
-  font-size: 16px;
-}
-
-.card-item {
-  font-size: 15px;
+section {
+  padding-top: 4rem;
+  min-height: 100%;
+  align-items: center;
 }
 
 li {

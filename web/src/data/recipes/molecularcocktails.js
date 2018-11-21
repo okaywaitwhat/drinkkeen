@@ -6,6 +6,7 @@ export default {
   data: [
     {
       name: 'Luque',
+      id: 'luque1',
       img: 'luque',
       family: 'molecular',
       type: 'directo',
@@ -34,6 +35,7 @@ export default {
     {
 
       name: 'Luque',
+      id: 'luque2',
       img: 'luque',
       family: 'molecular',
       type: 'directo',
@@ -62,6 +64,7 @@ export default {
     },
     {
       name: 'Luque',
+      id: 'luque3',
       img: 'luque',
       family: 'molecular',
       type: 'directo',

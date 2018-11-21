@@ -5,6 +5,7 @@ export default {
   data: [
     {
       name: 'Top Shelf Long Island',
+      id: 'top-shelf-long-island',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -53,6 +54,7 @@ export default {
     },
     {
       name: 'Dirty Martini',
+      id: 'dirty-martini',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -81,6 +83,7 @@ export default {
     },
     {
       name: 'Extra Dry Martini',
+      id: 'extra-dry-martini',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -115,6 +118,7 @@ export default {
     },
     {
       name: 'Mint Julep',
+      id: 'mint-julep',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -151,6 +155,7 @@ export default {
     },
     {
       name: 'Harvey Wallbanger',
+      id: 'harvey-wallbanger',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -185,6 +190,7 @@ export default {
     },
     {
       name: 'Classic Singapore Sling',
+      id: 'classic-singapore-sling',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -239,6 +245,7 @@ export default {
     },
     {
       name: 'Cuba Libre',
+      id: 'cuba-libre',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -267,6 +274,7 @@ export default {
     },
     {
       name: 'Moscow Mule',
+      id: 'moscow-mule',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -289,6 +297,7 @@ export default {
     },
     {
       name: 'Mai Tai',
+      id: 'mai-tai',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -332,6 +341,7 @@ export default {
     },
     {
       name: 'Piña Colada',
+      id: 'pina-colada',
       img: 'negroni',
       family: 'clásica',
       type: 'frozen',
@@ -367,6 +377,7 @@ export default {
     },
     {
       name: 'Black Russian',
+      id: 'black-russian',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -390,6 +401,7 @@ export default {
     },
     {
       name: 'Martini',
+      id: 'martini',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -419,6 +431,7 @@ export default {
     },
     {
       name: 'Bloody Mary',
+      id: 'bloody-mary',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -469,6 +482,7 @@ export default {
     },
     {
       name: 'Tom Collins',
+      id: 'tom-collins',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -508,6 +522,7 @@ export default {
     },
     {
       name: 'Riviera Margarita',
+      id: 'riviera-margarita',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -548,6 +563,7 @@ export default {
     },
     {
       name: 'Bramble #10',
+      id: 'bramble-10',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -587,6 +603,7 @@ export default {
     },
     {
       name: "Horse's Neck",
+      id: 'horseneck',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -619,6 +636,7 @@ export default {
     },
     {
       name: 'Sex on the Beach',
+      id: 'sex-on-the-beach',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -657,6 +675,7 @@ export default {
     },
     {
       name: 'Southside',
+      id: 'southside',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -692,6 +711,7 @@ export default {
     },
     {
       name: 'Whisky Sour',
+      id: 'whisky-sour',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -727,6 +747,7 @@ export default {
     },
     {
       name: 'Vodka Martini',
+      id: 'vodka-martini',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -756,9 +777,10 @@ export default {
     },
     {
       name: 'French 75',
+      id: 'french-75',
       img: 'negroni',
       family: 'clásica',
-      type: 'directo',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Dry Gin',
@@ -789,6 +811,7 @@ export default {
     },
     {
       name: 'Sazerac',
+      id: 'sazerac',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -821,6 +844,7 @@ export default {
     },
     {
       name: 'Between the Sheets',
+      id: 'between-the-sheets',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -860,6 +884,7 @@ export default {
     },
     {
       name: 'Manhattan',
+      id: 'manhattan',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -893,6 +918,7 @@ export default {
     },
     {
       name: 'Martinez',
+      id: 'martinez',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -932,6 +958,7 @@ export default {
     },
     {
       name: 'White Russian',
+      id: 'white-russian',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -959,6 +986,7 @@ export default {
     },
     {
       name: 'Whisky Old Fashioned',
+      id: 'whisky-old-fashioned',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -997,6 +1025,7 @@ export default {
     },
     {
       name: 'Bloody Mary Vodka',
+      id: 'bloody-mary-vodka',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1025,6 +1054,7 @@ export default {
     },
     {
       name: 'Blood & Sand',
+      id: 'blood-and-sand',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1058,6 +1088,7 @@ export default {
     },
     {
       name: 'Irish Coffee',
+      id: 'irish-coffee',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1091,6 +1122,7 @@ export default {
     },
     {
       name: 'Old Fashioned',
+      id: 'old-fashioned',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1130,6 +1162,7 @@ export default {
     },
     {
       name: 'Bellini',
+      id: 'bellini',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1164,6 +1197,7 @@ export default {
     },
     {
       name: 'Gin Tonic',
+      id: 'gin-tonic',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1193,6 +1227,7 @@ export default {
     },
     {
       name: 'White Lady',
+      id: 'white-lady',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1225,6 +1260,7 @@ export default {
     },
     {
       name: 'Rossini',
+      id: 'rossini',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1264,6 +1300,7 @@ export default {
     },
     {
       name: 'Raspberry Caipiroska',
+      id: 'raspberry-caipiroska',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1305,6 +1342,7 @@ export default {
     },
     {
       name: 'Rob Roy',
+      id: 'rob-roy',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -1339,6 +1377,7 @@ export default {
     },
     {
       name: 'Martini Vodka',
+      id: 'martini-vodka',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1366,6 +1405,7 @@ export default {
     },
     {
       name: 'Negroni',
+      id: 'negroni',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1399,6 +1439,7 @@ export default {
     },
     {
       name: 'Rickey',
+      id: 'rickey',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1438,6 +1479,7 @@ export default {
     },
     {
       name: 'Rusty Nail',
+      id: 'rusty-nail',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1459,6 +1501,7 @@ export default {
     },
     {
       name: 'Vesper',
+      id: 'vesper',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1494,6 +1537,7 @@ export default {
     },
     {
       name: 'Clover Club',
+      id: 'clover-club',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1529,6 +1573,7 @@ export default {
     },
     {
       name: 'Stinger',
+      id: 'stinger',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1556,6 +1601,7 @@ export default {
     },
     {
       name: 'Sidecar',
+      id: 'sidecar',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1590,6 +1636,7 @@ export default {
     },
     {
       name: 'Alexander',
+      id: 'alexander',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1629,6 +1676,7 @@ export default {
     },
     {
       name: 'Dry Martini',
+      id: 'dry-martini',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -1663,6 +1711,7 @@ export default {
     },
     {
       name: 'John Collins',
+      id: 'john-collins',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1695,6 +1744,7 @@ export default {
     },
     {
       name: 'Gin Fizz',
+      id: 'gin-fizz',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1727,6 +1777,7 @@ export default {
     },
     {
       name: 'Derby',
+      id: 'derby',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',
@@ -1756,6 +1807,7 @@ export default {
     },
     {
       name: 'Casino',
+      id: 'casino',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1788,6 +1840,7 @@ export default {
     },
     {
       name: 'Bacardi',
+      id: 'bacardi',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1815,6 +1868,7 @@ export default {
     },
     {
       name: 'Americano',
+      id: 'americano',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1843,6 +1897,7 @@ export default {
     },
     {
       name: 'Mary Pickford',
+      id: 'mary-pickford',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1872,6 +1927,7 @@ export default {
     },
     {
       name: 'Monkey Gland',
+      id: 'monkey-gland',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -1903,6 +1959,7 @@ export default {
     },
     {
       name: 'Paradise',
+      id: 'paradise',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1929,6 +1986,7 @@ export default {
     },
     {
       name: "Planter's Punch",
+      id: 'planterspunch',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -1978,6 +2036,7 @@ export default {
     },
     {
       name: 'Porto Flip',
+      id: 'porto-flip',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -2005,6 +2064,7 @@ export default {
     },
     {
       name: 'Ramos Fizz',
+      id: 'ramos-fizz',
       img: 'negroni',
       family: 'clásica',
       type: 'batido',
@@ -2060,6 +2120,7 @@ export default {
     },
     {
       name: 'Screwdriver',
+      id: 'schewdriver',
       img: 'negroni',
       family: 'clásica',
       type: 'directo',
@@ -2083,6 +2144,7 @@ export default {
     },
     {
       name: 'Tuxedo',
+      id: 'tuxedo',
       img: 'negroni',
       family: 'clásica',
       type: 'mezclado',

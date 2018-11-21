@@ -2,7 +2,7 @@
   <div>
     <section v-if="category">
       <!-- TODO: sacar el style -->
-      <div v-if="recipe" style="padding: 5% 25%;">
+      <div v-if="recipe" class="container p-0">
         <Recipe :recipe="recipe" />
       </div>
       <Category v-else :category="category" />
