@@ -1,19 +1,22 @@
 <template>
   <section>
-    <div class="row">
-      <div class="col-12 col-lg-8">
-        <h1 class="card-title second-font text-center">{{ recipe.name }}</h1>
-        <img :src="imgPath">
-      </div>
-      <div class="col-12 col-lg-4 pt-5">
-        <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
-        <li class="border-0">Cantidad de ingredientes: {{ recipe.ingredients.length }}</li>
-        <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
-        <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
+    <div class="bg row justify-content-center" v-bind:style="{ 'background-image': 'url(' + imgPath + ')' }">
+      <div class="col-10 col-lg-6 bg-light pl-4 pr-4 mid text-justify">
+        <h1 class="text-center second-font p-3"> {{ recipe.name }}</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
       </div>
     </div>
 
-    <div class="container p-0">
+      <!-- <div class="col-12 col-lg-4 pt-5">
+      <li class="border-0">Método de preparación: <span class="text-capitalize">{{ recipe.type }}</span></li>
+      <li class="border-0">Cantidad de ingredientes: {{ recipe.ingredients.length }}</li>
+      <li class="text-capitalize border-0">Complejidad: {{ level }}</li>
+      <li class="text-capitalize border-0">Categoría: {{ recipe.family }}</li>
+      </div>
+
+    <div class="row justify-content-center p-0">
       <div class="col-12 col-lg-6">
         <h5 class="mt-3 second-font text-center">Ingredientes</h5>
         <li class="ingredient d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
@@ -27,7 +30,7 @@
         <h5 class="mt-3 second-font text-center">Procedimiento</h5>
         <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
       </div>
-    </div>
+    </div>-->
   </section>
 </template>
 
@@ -97,10 +100,23 @@ export default {
 $lg-width: 900px;
 $border-color: rgba(0, 0, 0, 0.125);
 
+.mid {
+  top: 35rem;
+  height: 25rem;
+}
+
+.bot {
+  top: 20rem;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38rem;
+}
+
 section {
-  padding-top: 4rem;
-  min-height: 100%;
-  align-items: center;
+  min-height: 1400px;
 }
 
 li {
