@@ -434,7 +434,7 @@ export default {
       id: 'bloody-mary',
       img: 'negroni',
       family: 'clásica',
-      type: 'directo',
+      type: 'batido',
       ingredients: [
         {
           ingredient: 'Vodka',
