@@ -31,6 +31,10 @@ html, body, header, #app {
   background-color: #fff;
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .view {
   /* TODO: julieta cambiar esto por variables en los 3 lugares */
   min-height: calc(100% - 55px - 100px);

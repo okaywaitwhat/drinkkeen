@@ -1,35 +1,35 @@
 <template>
   <section class="bg" v-bind:style="{ 'background-image': 'url(' + imgPath + ')' }">
-    <div class="mid">
-    <div class="row justify-content-center">
-      <div class="col-10 col-lg-8 bg-light pl-4 pr-4 pb-4 text-justify">
-        <h1 class="text-center second-font pt-3 pb-2"> {{ recipe.name }}</h1>
-        <h5 class="text-center second-font pb-3 text-capitalize">Coctelería {{ recipe.family }}</h5>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
+    <div class="mid o-hidden">
+      <div class="row justify-content-center">
+        <div class="col-10 col-lg-8 bg-light pl-4 pr-4 pb-4 text-justify">
+          <h1 class="text-center second-font pt-3 pb-2"> {{ recipe.name }}</h1>
+          <h5 class="text-center second-font pb-3 text-capitalize">Coctelería {{ recipe.family }}</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
 
-        <div class="text-center pt-4">
-          <span class="p-3 lead second-font">{{ recipe.ingredients.length }} ingredientes</span>
-          <span class="p-3 lead second-font">Complejidad {{ level }}</span>
+          <div class="text-center pt-4">
+            <span class="p-3 lead second-font">{{ recipe.ingredients.length }} ingredientes</span>
+            <span class="p-3 lead second-font">Complejidad {{ level }}</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="row justify-content-center pt-4">
-      <div class="col-12 col-lg-4">
-        <h5 class="mt-3 second-font text-center">Ingredientes</h5>
-        <li class="ingredient d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
-          <span class="mr-auto pr-1 ingredient second-font">{{ ingredient.ingredient }}</span>
-          <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
-          <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
-        </li>
-      </div>
+      <div class="row justify-content-center pt-4">
+        <div class="col-12 col-lg-4">
+          <h5 class="mt-3 second-font text-center">Ingredientes</h5>
+          <li class="ingredient d-flex border-0 mb-3" v-for="ingredient in recipe.ingredients" :key="ingredient.ingredient">
+            <span class="mr-auto pr-1 ingredient second-font">{{ ingredient.ingredient }}</span>
+            <span class="flex-grow-1 mx-auto border-dotted-separator ingredient"></span>
+            <span class="ml-auto pl-1 ingredient">{{ ingredient.portion }} <em>{{ ingredient.unit }}</em></span>
+          </li>
+        </div>
 
-      <div class="col-12 col-lg-4">
-        <h5 class="mt-3 second-font text-center">Procedimiento</h5>
-        <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+        <div class="col-12 col-lg-4">
+          <h5 class="mt-3 second-font text-center">Procedimiento</h5>
+          <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 </template>
