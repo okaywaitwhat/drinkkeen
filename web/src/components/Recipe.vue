@@ -2,7 +2,7 @@
   <section class="bg" v-bind:style="{ 'background-image': 'url(' + imgPath + ')' }">
     <div class="mid o-hidden">
       <div class="row justify-content-center">
-        <div class="col-10 col-lg-8 bg-light pl-4 pr-4 pb-4 text-justify">
+        <div class="col-10 col-lg-8 bg-light pl-4 pr-4 pb-4 text-justify rounded">
           <h1 class="text-center second-font pt-3 pb-2"> {{ recipe.name }}</h1>
           <h5 class="text-center second-font pb-3 text-capitalize">Coctelería {{ recipe.family }}</h5>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, id mollitia perspiciatis temporibus, ipsum eos velit doloremque voluptates sapiente, nobis quae magni praesentium! Ex atque consequuntur eos consectetur cumque porro!</p>
