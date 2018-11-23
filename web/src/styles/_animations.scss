@@ -32,6 +32,24 @@
   animation-fill-mode: forwards;
 }
 
+/* Zoom Soft */
+
+@keyframes zoomInSoft {
+  from {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+
+  50% {
+    opacity: 2;
+  }
+}
+
+.zoomInSoft {
+  animation: zoomInSoft 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 /* Slide Left*/
 @keyframes slideInLeft {
   from {

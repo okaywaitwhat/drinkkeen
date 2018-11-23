@@ -1,8 +1,8 @@
 <template>
   <div>
     <blockquote class="blockquote mb-0">
-      <h1 class="display-4">"{{ quote.quote }}"</h1>
-      <p class="lead">{{ quote.author }}</p>
+      <h1 class="display-4 second-font">“ {{ quote.quote }} ”</h1>
+      <p class="lead second-font">{{ quote.author }}</p>
     </blockquote>
     <div class="social-share flipInX" v-if="mouseOver">
       <!-- target="_blank" es para abrir un link en una tab nueva y no en la misma -->

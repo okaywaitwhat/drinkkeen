@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="p-2 zoomInSoft">
     <router-link :to="subpath">
-      <div class="card mb-3">
+      <div class="card">
         <img :src="imgPath">
         <div class="card-body">
           <h5 class="card-title second-font">{{ recipe.name }}</h5>
@@ -27,6 +27,7 @@ computed: {
 </script>
 
 <style lang="scss" scoped>
+
 img {
   width: 100%;
 }
