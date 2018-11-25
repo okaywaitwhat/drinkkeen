@@ -29,6 +29,7 @@
         <h5 class="mt-3 second-font text-center">Procedimiento</h5>
         <li class="border-0" v-for="(step, index) in recipe.steps" :key="step.step"><strong>{{ index+1 }}.</strong> {{ step }}</li>
       </div>
+
     </div>
     </div>
   </section>
