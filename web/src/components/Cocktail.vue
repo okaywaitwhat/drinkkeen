@@ -1,10 +1,10 @@
 <template>
   <section class="p-2 zoomInSoft">
-    <router-link :to="subpath">
-      <div class="card">
+    <router-link tag="div" class="pointer" :to="subpath">
+      <div class="card rounded shadow">
         <img :src="imgPath">
-        <div class="card-body">
-          <h5 class="card-title second-font">{{ recipe.name }}</h5>
+        <div class="card-body bg-light p-3">
+          <h5 class="card-title second-font m-0">{{ recipe.name }}</h5>
         </div>
       </div>
     </router-link>

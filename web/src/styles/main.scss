@@ -31,6 +31,10 @@ html, body, header, #app {
   background-color: #fff;
 }
 
+.o-hidden {
+  overflow: hidden;
+}
+
 .view {
   /* TODO: julieta cambiar esto por variables en los 3 lugares */
   min-height: calc(100% - 55px - 100px);
@@ -63,5 +67,5 @@ p span // check this, we could use a div instead of a span if display block is n
 // router-link stop shitting my titles
 a, a:hover {
   text-decoration: none;
-  color:inherit;
-  }
+  color: inherit;
+}
