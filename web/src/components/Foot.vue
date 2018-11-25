@@ -22,7 +22,7 @@
         <ul class="font-weight-light">
           <li>Condiciones de uso</li>
           <li>Accesibilidad</li>
-          <router-link to="/glosario">
+          <router-link tag="section" to="/glosario">
             <li>Glosario</li>
           </router-link>
           <li>Acerca de nosotros</li>
