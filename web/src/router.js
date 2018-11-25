@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import Quotes from './components/Quotes'
 import Jobs from './components/Jobs'
 import Social from './components/Social'
-import Glosary from './components/Glosary'
+import Glossary from './components/Glossary'
 import Registration from './components/Registration'
 import Beverages from './components/Beverages'
 import Products from './components/Products'
@@ -20,7 +20,7 @@ const routes = [
   { path: '/quotes', component: Quotes },
   { path: '/jobs', component: Jobs },
   { path: '/social', component: Social },
-  { path: '/glosario', component: Glosary },
+  { path: '/glosario', component: Glossary },
   {
     name: 'beverages',
     path: '/beverages/:category?/:beverage?',

@@ -10,7 +10,7 @@
         </div>
         <div class="row justify-content-center pt-4">
           <div class="col-10 col-lg-7">
-            <div class="p-4 text-justify" v-for="item in words" :key="item.word">
+            <div class="p-4 text-justify" v-for="item in sortedWords" :key="item.word">
               <h5 class="second-font"> {{item.word}} </h5>
               <span class="mr-auto pr-1"> {{ item.mean }} </span>
             </div>
@@ -29,8 +29,21 @@ export default {
   data: () => {
     return {
       words,
+      letter: [],
     }
   },
+  computed: {
+    sortedWords: function() {
+      function compare(a, b) {
+        if (a.word < b.word)
+          return -1;
+        if (a.word > b.word)
+          return 1;
+        return 0;
+      }
+      return this.words.sort(compare);
+    }
+  }
 }
 </script>
 
