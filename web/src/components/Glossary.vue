@@ -24,14 +24,25 @@
 <script>
 import words from '../data/glosario.js';
 
+/**
+    let glossary = {}
+    words.forEach(obj => {
+      let word = obj.word
+      let letra = word[0]
+      if(!glossary[letra]) {
+        glossary[letra] = [ word ]
+      } else {
+        glossary[letra].push(word)
+      }
+    })
+    return glossary
+ */
+
 export default {
   name: 'glosario',
-  data: () => {
-    return {
-      words,
-      letter: [],
-    }
-  },
+  data: () => ({
+    words
+  }),
   computed: {
     sortedWords: function() {
       function compare(a, b) {
