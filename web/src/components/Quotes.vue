@@ -19,6 +19,7 @@
 <script>
 import Quote from './Quote'
 import quotes from '../data/quotes.js'
+import { getQuotes } from '../http.js'
 
 export default {
   name: 'quotes',
@@ -31,11 +32,9 @@ export default {
     }
   },
   created () {
-    fetch('https://api.myjson.com/bins/1fbkj6')
-      .then(response => response.json())
-      .then(json => {
-        this.quotes = json.quotes;
-      })
+    getQuotes().then(quotes => {
+      this.quotes = quotes
+    })
   },
   mounted () {
     /* hacemos el intervalo que seleccione y cambie una quote aleatoria */
