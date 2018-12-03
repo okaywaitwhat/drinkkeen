@@ -15,4 +15,5 @@ export function getCocktails (categoryId) {
 export function getQuotes () {
   return fetch('https://api.myjson.com/bins/1fbkj6')
   .then(response => response.json())
+  .then(response => response.quotes)
 }
