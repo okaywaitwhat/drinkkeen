@@ -11,7 +11,7 @@
 $font-stack: Roboto, sans-serif;
 $shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
 $border: 1px solid rgba(0, 0, 0, 0.125);
-$light-bg: #d8cca6;
+$light-bg: #f8f9fa;
 $white-bg: #ffff;
 $light-text: #f8f9fa;
 $grey-text: #52585e;
@@ -25,6 +25,7 @@ html, body, header, #app {
   height: 100%;
   font-weight: 300;
   color: $dark-text;
+  background-color: $light-bg;
 }
 
 #app {
