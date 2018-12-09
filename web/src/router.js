@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Quotes from './components/Quotes'
-import Jobs from './components/Jobs'
-import Social from './components/Social'
-import Glossary from './components/Glossary'
-import Registration from './components/Registration'
-import Beverages from './components/Beverages'
-import Products from './components/Products'
-import Login from './components/Login'
-import CocktailsView from './components/CocktailsView'
+import Quotes from './views/quotes/Quotes'
+import Jobs from './views/jobs/Jobs'
+import Social from './views/social/Social'
+import Glossary from './views/glossary/Glossary'
+import Registration from './views/registration/Registration'
+import Beverages from './views/beverages/Beverages'
+import Products from './views/products/Products'
+import Login from './views/login/Login'
+import CocktailsView from './views/cocktails/CocktailsView'
 
 Vue.use(VueRouter)
 

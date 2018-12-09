@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Intro from './components/Intro'
-import Foot from './components/Foot'
-import Navbar from './components/NavBar'
-import Modal from './components/Modal'
+import Intro from './views/app/Intro'
+import Foot from './views/app/Foot'
+import Navbar from './views/app/NavBar'
+import Modal from './views/app/Modal'
 
 // variables para el localStorage
 const lsKeys = {
