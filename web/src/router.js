@@ -2,12 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Quotes from './views/quotes/Quotes'
-import Jobs from './views/jobs/Jobs'
-import Social from './views/social/Social'
-import Glossary from './views/glossary/Glossary'
+import Jobs from './views/jobs/JobsView'
+import Social from './views/social/SocialView'
+import Glossary from './views/glossary/GlossaryView'
 import Registration from './views/registration/Registration'
-import Beverages from './views/beverages/Beverages'
-import Products from './views/products/Products'
+import Drinks from './views/drinks/DrinksView'
+import Products from './views/products/ProductsView'
 import Login from './views/login/Login'
 import CocktailsView from './views/cocktails/CocktailsView'
 
@@ -22,9 +22,9 @@ const routes = [
   { path: '/social', component: Social },
   { path: '/glosario', component: Glossary },
   {
-    name: 'beverages',
-    path: '/beverages/:category?/:beverage?',
-    component: Beverages
+    name: 'drinks',
+    path: '/drinks/:category?/:drink?',
+    component: Drinks
   },
   {
     name: 'products',

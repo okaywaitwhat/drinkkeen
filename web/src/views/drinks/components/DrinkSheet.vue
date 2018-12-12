@@ -7,23 +7,23 @@
     </div>
   <div class="col-12 p-1 col-lg-5 p-lg-5">
     <div class="slideInDown">
-      <h3 class="tab-title pb-3 second-font">{{ beverage.name }}</h3>
-      <p class="text-justify second-font">{{ beverage.description }}</p>
+      <h3 class="tab-title pb-3 second-font">{{ drink.name }}</h3>
+      <p class="text-justify second-font">{{ drink.description }}</p>
     </div>
   </div>
   <div class="col-12 p-1 col-lg-3 p-lg-5 p-4 pb-lg-0">
-    <BeverageCard class="slideInUp" :beverage="beverage"/>
+    <DrinkCard class="slideInUp" :drink="drink"/>
   </div>
   </div>
 </template>
 
 <script>
-import BeverageCard from './BeverageCard'
+import DrinkCard from './DrinkCard'
 
 export default {
   name: 'BeverageSheet',
-  components: { BeverageCard },
-  props: [ 'beverage' ],
+  components: { DrinkCard },
+  props: [ 'drink' ],
   data () {
     return {
       BeverageCard,
@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     imgPath () {
-      return require ('../../../assets/mediabebidas/' + this.beverage.img + '-min.png')
+      return require ('../../../assets/mediabebidas/' + this.drink.img + '-min.png')
     }
   },
 }

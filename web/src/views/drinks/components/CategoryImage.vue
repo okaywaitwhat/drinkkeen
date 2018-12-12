@@ -1,6 +1,6 @@
 <template>
   <div class="item fadeIn p-2">
-    <router-link :to="`/beverages/${category.id}`">
+    <router-link :to="`/drinks/${category.id}`">
       <img
       :src="imgPath"
       alt="name"

@@ -2,7 +2,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-@import 'filters';
 @import 'cards';
 @import 'dropdown';
 @import 'modal';
@@ -52,7 +51,7 @@ figure {
   cursor: pointer;
 }
 
-/* /beverages route */
+/* /drinks route */
 .tab-title {
   color: #3f4347;
   font-weight: 300;

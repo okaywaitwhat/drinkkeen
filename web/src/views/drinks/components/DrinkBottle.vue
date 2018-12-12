@@ -1,7 +1,7 @@
 <template>
     <div>
-      <router-link :to="`/beverages/${categoryId}/${beverage.id}`">
-      <img @load="imgLoaded()" :src="imgPath" alt="name" :title="beverage.id">
+      <router-link :to="`/drinks/${categoryId}/${drink.id}`">
+      <img @load="imgLoaded()" :src="imgPath" alt="name" :title="drink.id">
 </router-link>
     </div>
 </template>
@@ -9,13 +9,13 @@
 <script>
 
 export default {
-  name: 'beverage',
+  name: 'drink',
   props: [
-    'beverage', 'categoryId'
+    'drink', 'categoryId'
   ],
    computed: {
     imgPath () {
-      return require ('../../../assets/mediabebidas/' + this.beverage.img + '-min.png')
+      return require ('../../../assets/mediabebidas/' + this.drink.img + '-min.png')
     }
   },
   methods: {
