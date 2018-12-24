@@ -32,7 +32,7 @@ div.item {
 }
 img {
   width: 16rem;
-  padding: 0rem 1.5rem 0rem 1.5rem;
+  padding: 0rem 1.5rem; /* cuando ponemos dos valores solos son padding eje Y (arriba/abajo) y padding eje X (izq/der) */
 }
 
 </style>
