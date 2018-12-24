@@ -1,5 +1,5 @@
 <template>
-  <div class="item fadeIn p-2">
+  <div class="item fadeIn p-2 text-center d-inline-block">
     <router-link :to="`/beverages/${category.id}`">
       <img
       :src="imgPath"
@@ -25,10 +25,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div.item {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
+.item {
+  transform: scale(1);
+  transition: transform .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 img {
   width: 16rem;
