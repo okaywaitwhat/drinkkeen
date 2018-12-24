@@ -1,7 +1,7 @@
 <template>
   <div>
     <blockquote class="blockquote mb-0">
-      <h1 class="display-4 second-font">“ {{ quote.quote }} ”</h1>
+      <h1 class="display-4 second-font">“{{ quote.quote }}”</h1>
       <p class="lead second-font">{{ quote.author }}</p>
     </blockquote>
     <div class="social-share flipInX" v-if="mouseOver">

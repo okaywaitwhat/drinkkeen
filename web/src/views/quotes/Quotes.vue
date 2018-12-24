@@ -28,13 +28,14 @@ export default {
       quotes: [],
       mouseOver: false,
       quoteActual: {
-        quote: 'Sobre las cartas la mesa, al pan pan'
+        quote: '...'
       },
     }
   },
   created () {
     getQuotes().then(quotes => {
       this.quotes = quotes
+      this.quoteActual = this.getRandomQuote()
     })
   },
   mounted () {
