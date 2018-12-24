@@ -6,7 +6,7 @@
         <DrinkSheet
         v-if="selectedDrink" :drink="selectedDrink"
         />
-        <div class="card-deck p-5" :key="category.name">
+        <div class="card-deck p-5 justify-content-center" :key="category.name">
             <figure :key="category.name" class="pointer d-flex align-items-center">
               <i class="fa fa-chevron-left"></i>
             </figure>
