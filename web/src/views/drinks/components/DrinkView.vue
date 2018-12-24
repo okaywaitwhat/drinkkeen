@@ -1,17 +1,17 @@
 <template>
   <section>
-      <BeveragesNav />
+      <DrinksNav />
       <CategorySheet :category="category" :key="category.name" />
       <div>
-        <BeverageSheet
-        v-if="selectedBeverage" :beverage="selectedBeverage"
+        <DrinkSheet
+        v-if="selectedDrink" :drink="selectedDrink"
         />
         <div class="card-deck p-5" :key="category.name">
             <figure :key="category.name" class="pointer d-flex align-items-center">
               <i class="fa fa-chevron-left"></i>
             </figure>
-              <Beverage class="bottle-img"
-                :beverage="beverage" v-for="beverage in category.marks" :key="beverage.img"
+              <Bottle class="bottle-img"
+                :drink="drink" v-for="drink in category.marks" :key="drink.img"
                 :class="{ show: bottlesLoaded === category.marks.length }"
                 @load="bottleImageLoad()"
                 :categoryId="categoryId"
@@ -25,16 +25,16 @@
 </template>
 
 <script>
-import beverages from '../../../data/beverages.js'
+import drinks from '../../../data/drinks.js'
 
-import Beverage from './Beverage'
-import BeverageSheet from './BeverageSheet'
+import Bottle from './DrinkBottle'
+import DrinkSheet from './DrinkSheet'
 import CategorySheet from './CategorySheet'
-import BeveragesNav from './BeveragesNav'
+import DrinksNav from './DrinksNav'
 
 export default {
-  name: 'beverages-view',
-  components: { Beverage, CategorySheet, BeverageSheet, BeveragesNav },
+  name: 'drinks-view',
+  components: { Bottle, CategorySheet, DrinkSheet, DrinksNav },
   props: [ 'categoryId' ],
   data () {
     return {
@@ -43,10 +43,10 @@ export default {
   },
   computed: {
     category () {
-      return beverages.find(category => category.id === this.categoryId)
+      return drinks.find(category => category.id === this.categoryId)
     },
-    selectedBeverage () {
-      return this.category.marks.find(beverage => beverage.id === this.$route.params.beverage)
+    selectedDrink () {
+      return this.category.marks.find(drink => drink.id === this.$route.params.drink)
     }
   },
   methods: {

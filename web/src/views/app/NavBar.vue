@@ -8,7 +8,7 @@
             <b-navbar-toggle target="nav_collapse" right></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
-                    <b-nav-item class="hover-scale" to="/beverages">Bebidas</b-nav-item>
+                    <b-nav-item class="hover-scale" to="/drinks">Bebidas</b-nav-item>
                     <b-nav-item class="hover-scale" to="/cocktails">Recetas</b-nav-item>
                     <b-nav-item class="hover-scale" to="/products">Productos</b-nav-item>
                     <b-nav-item class="hover-scale" to="/quotes">Quotes</b-nav-item>

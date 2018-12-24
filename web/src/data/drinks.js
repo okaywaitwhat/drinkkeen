@@ -626,7 +626,7 @@ export default [
         version: '',
         unit: 'cc',
         graduation: '',
-        description: 'Blavod es un vodka inglés, de 37,5 % alc./vol., producido por triple destilación de granos de cereales, al que se añade un extracto de "catechu" una hierba procedente de Birmania, que le proporciona un color negro, sin afectar a su sabor. El nombre deriva de "Black vodka". Está destilado en Escocia por Haymans Ltd., y producido por Blavod Drinks Ltd., desde el año 1996. Blavod es de un curioso color entre negro, gris, azulado y violeta. En nariz, se pueden encontrar dulcez notas levemente anisadas y de regaliz oscuro (no dudo que influenciadas por el color) levemente balsámicas. En boca, es un vodka sedoso con un punto sabroso y levemente punzante. En boca, mezcla sensaciones dulzonas de cereal con toques de regaliz balsámica, mentolada. El final es medio e invita da un nuevo trago.',
+        description: 'Blavod es un vodka inglés, de 37,5 % alc./vol., producido por triple destilación de granos de cereales, al que se añade un extracto de "catechu" una hierba procedente de Birmania, que le proporciona un color negro, sin afectar a su sabor. El nombre deriva de "Black vodka". Está destilado en Escocia por Haymans Ltd., y producido por Blavod drinks Ltd., desde el año 1996. Blavod es de un curioso color entre negro, gris, azulado y violeta. En nariz, se pueden encontrar dulcez notas levemente anisadas y de regaliz oscuro (no dudo que influenciadas por el color) levemente balsámicas. En boca, es un vodka sedoso con un punto sabroso y levemente punzante. En boca, mezcla sensaciones dulzonas de cereal con toques de regaliz balsámica, mentolada. El final es medio e invita da un nuevo trago.',
         legacy: '',
         cata: [
           {

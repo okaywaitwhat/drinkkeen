@@ -1,20 +1,20 @@
 <template>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb justify-content-center bg-transparent p-0">
-      <li v-for="category in beverages" :key="category.name" class="breadcrumb-item pointer">
-        <router-link :to="`/beverages/${category.id}`">{{ category.name }}</router-link>
+      <li v-for="category in drinks" :key="category.name" class="breadcrumb-item pointer">
+        <router-link :to="`/drinks/${category.id}`">{{ category.name }}</router-link>
       </li>
     </ol>
   </nav>
 </template>
 
 <script>
-import beverages from '../../../data/beverages.js'
+import drinks from '../../../data/drinks.js'
 
 export default {
-  name: 'beveragesnav',
+  name: 'drinksnav',
   data () {
-    return { beverages }
+    return { drinks }
   }
 }
 </script>

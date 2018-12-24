@@ -5,26 +5,26 @@
     </transition>
     <CategoryImage
       v-if="!categoryId"
-      v-for="category in beverages"
+      v-for="category in drinks"
       :key="category.name"
       :category="category"/>
-    <BeveragesView
+    <DrinkView
       v-if="categoryId"
       :categoryId="categoryId" />
   </section>
 </template>
 
 <script>
-import beverages from '../../data/beverages.js'
-import BeveragesView from './components/BeveragesView.vue'
+import drinks from '../../data/drinks.js'
+import DrinkView from './components/DrinkView.vue'
 import CategoryImage from './components/CategoryImage'
 
 export default {
-  name: 'beverages',
-  components: { BeveragesView, CategoryImage, },
+  name: 'drinks',
+  components: { DrinkView, CategoryImage, },
   data () {
     return {
-      beverages,
+      drinks,
       showTitle: true,
     }
   },
