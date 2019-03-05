@@ -12,9 +12,7 @@
 
         <div class="form-group form-inline">
           <!-- v-model hace que se sincronicen en el codigo y en el input siempre -->
-          <input type="text" ref="day" v-model.number="day" class="form-control m-1" placeholder="Día" size="3" autocomplete='off' @keyup.enter="access()"> /
-          <input type="text" ref="month" v-model.number="month" class="form-control m-1" placeholder="Mes" size="3" autocomplete='off' @keyup.enter="access()"> /
-          <input type="text" ref="year" v-model.number="year" class="form-control m-1" placeholder="Año" size="4" autocomplete='off' @keyup.enter="access()">
+          <b-form-input type="date" v-model="birthDate" @keyup.enter="access()"/>
         </div>
 
         <p v-if="errors.length">
@@ -24,7 +22,7 @@
 
       <div class="modal-footer">
         <button type="button" class="btn btn-dark"
-        :class="{ disabled: !isValid, hasErrors }"
+        :class="{ disabled: !validDate }"
         @click="access()">Acceder</button>
         <button type="button" class="btn btn-dark"
         @click="backToIntro()">Cancelar</button>
@@ -40,36 +38,22 @@ export default {
   data () {
     return {
       errors: [],
-      day: '',
-      month: '',
-      year: ''
+      birthDate: null,
     }
   },
   computed: {
-    isValid () {
-      if (this.day > 31) return false
-      if (this.month > 12) return false
-      if (this.year > 2000 || this.year < 1900) return false
-      return this.day && this.month && this.year
-      // return this.day !== '' && this.month !== '' && this.year !== ''
-    },
-    hasErrors () {
-      this.errors = [];
-      if (this.day > 31) {
-        this.errors.push('El día ingresado no es válido.')
-        //this.$refs.day.style.color = 'rgb(165, 37, 37)';
-      }
-      if (this.month > 12) {
-        this.errors.push('El mes ingresado no es válido.')
-      }
-      if (this.year > 2000) {
-        this.errors.push('El año ingresado no es válido.')
-      }
+    validDate () {
+      var dateFormat = "YYYY/MM/DD";
+      if (moment(this.birthDate, dateFormat).isValid()) {
+        return true
+      } else {
+        return false
+      };
     },
   },
   methods: {
     access () {
-      if (this.isValid) {
+      if (this.validDate) {
         this.$emit('dismissModal')
       }
     },

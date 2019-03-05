@@ -7,11 +7,16 @@ import router from './router'
 import VueProgressiveImage from 'vue-progressive-image'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import store from './store'
+import moment from 'moment'
 //import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+Vue.prototype.moment = moment
 Vue.use(BootstrapVue)
 Vue.use(VueProgressiveImage)
 Vue.config.productionTip = false
+
+window.moment = require('moment');
+window.moment.locale('ru');
 
 /* eslint-disable no-new */
 new Vue({
