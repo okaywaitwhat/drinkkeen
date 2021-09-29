@@ -15,7 +15,7 @@
     "babel-preset-es2015": "^6.24.1",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "latest",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "moment": "^2.24.0",
     "npm": "^6.3.0",
     "popper.js": "^1.12.9",
