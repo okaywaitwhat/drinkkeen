@@ -16,7 +16,7 @@
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "latest",
     "i": "^0.3.6",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "npm": "^6.3.0",
     "popper.js": "^1.12.9",
     "vue": "^2.5.2",
